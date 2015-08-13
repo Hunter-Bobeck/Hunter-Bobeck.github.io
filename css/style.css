@@ -677,6 +677,15 @@ textarea.form-control {
 
 }
 
+.freelancing {
+	background-image: url(../images/Astral-Projection.jpg);
+}
+@media (max-width: 768px) {
+	.freelancing {
+		background-image: url(../images/Astral-Projection-mobile.jpg);
+	}
+}
+
 @media (max-width: 480px) {
 
 	h1 {
