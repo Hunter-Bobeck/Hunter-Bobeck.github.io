@@ -26,3 +26,8 @@ body {
   color: #000;
   opacity: 0.8;
 }
+
+
+svg {
+  width: 200px;
+}

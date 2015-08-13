@@ -71,14 +71,17 @@ a {
   background-image: url('../../../images/twinkle-twinkle.png');
 }
 
+.nontiny-hidden-break {
+  display: none;
+}
 
 .text {
   margin: 0 auto;
   width: 800px;
 }
-@media (max-width: 800px) {
-  #big-text-panel {
-    width: 500px;
+@media (max-width: 1000px) {
+  .text {
+    width: 100%;
   }
 }
 @media (min-width: 800px) and (max-width: 1000px) {
@@ -86,9 +89,34 @@ a {
     width: 700px;
   }
 }
-@media (max-width: 1000px) {
-  .text {
-    width: 100%;
+@media (max-width: 800px) {
+  #big-text-panel {
+    width: 500px;
+  }
+  #top-panel {
+    width: 400px;
+  }
+}
+@media (max-width: 700px) {
+  #big-text-panel {
+    width: 400px;
+  }
+  #top-panel {
+    width: 300px;
+  }
+  .nontiny-hidden-break {
+    display: inline;
+  }
+  .nontiny-visible-space {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  #big-text-panel {
+    width: 300px;
+  }
+  #top-panel {
+    width: 200px;
   }
 }
 
@@ -149,6 +177,9 @@ h1 {
   text-align: center;
   padding: 40px;
 }
+.title {
+
+}
 
 @media (max-width: 1000px) {
   .topic h1 {
@@ -172,6 +203,12 @@ a:hover {
   text-decoration: underline;
 }
 
+.video-wrapper {
+  margin: 0 auto;
+  width = 100%;
+  max-width: 560px;
+  height: 315px;
+}
 iframe {
   border-radius: 25px;
 }
@@ -213,13 +250,18 @@ iframe {
   font-size: smaller;
 }
 
-.sectioner {
+.topic-sectioner {
   font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
   position: relative;
   top: 43px;
   pointer-events: none;
+}
+.sectioner {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .underlined {
@@ -256,6 +298,9 @@ iframe {
 }
 
 .centered {
+  margin: 0 auto;
+}
+.text-centered {
   text-align: center;
 }
 .centered-beveled-image {        

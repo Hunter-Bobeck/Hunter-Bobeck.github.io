@@ -310,3 +310,15 @@ body {
 .banner-social-buttons li:hover {
     color: gold;
 }
+
+#tiny-visible {
+    display: none;;
+}
+@media (max-width: 522px) {
+    #tiny-hidden {
+        display: none;
+    }
+    #tiny-visible {
+        display: inline;
+    }
+}

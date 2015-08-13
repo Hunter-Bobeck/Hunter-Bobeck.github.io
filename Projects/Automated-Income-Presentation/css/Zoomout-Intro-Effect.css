@@ -1,7 +1,8 @@
-@media only screen and (max-width: 768px) {
-  iframe {
-    width: 100%;
-  }
+.video-wrapper {
+  margin: 0 auto;
+  width = 100%;
+  max-width: 560px;
+  height: 315px;
 }
 
 
