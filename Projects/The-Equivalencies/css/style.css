@@ -50,14 +50,13 @@ a {
 
 
 .panel {
-  background-image: url('../../../images/twinkle-twinkle.png');
+  border-radius: 25px;
   padding: 30px;
   padding-top: 10px;
   padding-right: 20px;
   padding-bottom: 0px;
   position: relative;
   left: 5px;
-  border-radius: 25px;
 }
 
 #background {
@@ -79,30 +78,36 @@ a {
   margin: 0 auto;
   width: 800px;
 }
+#small-panel {
+  width: 500px;
+}
+#big-panel {
+  width: 800px;
+}
 @media (max-width: 1000px) {
   .text {
     width: 100%;
   }
 }
 @media (min-width: 800px) and (max-width: 1000px) {
-  #big-text-panel {
+  #big-panel {
     width: 700px;
   }
 }
 @media (max-width: 800px) {
-  #big-text-panel {
-    width: 500px;
-  }
-  #top-panel {
+  #small-panel {
     width: 400px;
+  }
+  #big-panel {
+    width: 500px;
   }
 }
 @media (max-width: 700px) {
-  #big-text-panel {
-    width: 400px;
-  }
-  #top-panel {
+  #small-panel {
     width: 300px;
+  }
+  #big-panel {
+    width: 400px;
   }
   .nontiny-hidden-break {
     display: inline;
@@ -111,17 +116,23 @@ a {
     display: none;
   }
 }
-@media (max-width: 500px) {
-  #big-text-panel {
-    width: 300px;
-  }
-  #top-panel {
+@media (max-width: 522px) {
+  #small-panel {
     width: 200px;
   }
-}
-
-#top {
-  width: 500px;
+  #big-panel {
+    width: 300px;
+  }
+  #small-panel, #big-panel {
+    left: auto;
+    position: static;
+    border-radius: 0px;
+    width: 100%;
+  }
+  #small-panel p, #big-panel p {
+    padding: 0px, 5px;
+    width: 90%;
+  }
 }
 
 #The-Equivalencies {
@@ -312,6 +323,10 @@ iframe {
 @media (max-width: 900px) {
   .centered-beveled-image {
     width: 100%;
+  }
+  #Alan-Watts-portrait {
+    width: 300px;
+    height: auto;
   }
 }
 
