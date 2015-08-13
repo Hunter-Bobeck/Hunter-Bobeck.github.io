@@ -1,0 +1,92 @@
+/* selection highlight coloring */
+::selection {
+  background: #99edda;
+}
+::-moz-selection {
+  background: #99edda;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: crosshair;
+  /* making the text unselectable */
+  -webkit-user-select: none; /* Chrome/Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+  /* Rules below not implemented in browsers yet */
+  -o-user-select: none;
+  user-select: none;
+}
+
+body, input {
+  font-family: arial;
+  font-size: 1em;
+}
+
+.controls {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  width: 250px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,.3);
+  padding: .5em 1em;
+  box-sizing: border-box;
+}
+
+.controls label,
+.controls input {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 40%;
+  margin: .5em 0;
+  padding: .2em;
+  -moz-user-select: none;
+}
+
+.controls input {
+  width: 60%;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  padding-right: 20%;
+  -moz-user-select: auto;
+}
+
+.help-message {
+  text-align: center;
+  margin: 0;
+  font-weight: normal;
+  color: white;
+  text-shadow: 0 0 5px rgba(0,0,0,.3);
+  pointer-events: none;
+  -moz-user-select: none;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+svg.hidden {
+  visibility: hidden;
+}
+
+#line {
+  stroke-width: 2;
+  stroke: #555;
+  marker-start: url(#line-marker);
+  marker-end: url(#line-marker);
+}
+
+#angle-label {
+  fill: #555;
+  font-size: 12px;
+}
