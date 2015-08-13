@@ -66,6 +66,14 @@ a {
 Main Components 
 
 -------------------------------- */
+#nontiny-hidden {
+  display: none;
+}
+@media (max-width: 521px) {
+  #nontiny-hidden {
+    display: inline;
+  }
+}
 @media only screen and (min-width: 1170px) {
   .cd-section {
     height: 100vh;
