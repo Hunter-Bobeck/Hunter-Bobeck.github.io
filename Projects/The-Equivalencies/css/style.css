@@ -124,10 +124,7 @@ a {
     width: 300px;
   }
   #small-panel, #big-panel {
-    left: auto;
     position: static;
-    border-radius: 0px;
-    width: 100%;
   }
   #small-panel p, #big-panel p {
     padding: 0px, 5px;
