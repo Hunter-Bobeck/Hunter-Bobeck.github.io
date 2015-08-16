@@ -131,6 +131,30 @@ a {
     width: 90%;
   }
 }
+@media (max-width: 375px) {
+  #small-panel {
+    width: 180px;
+  }
+  #big-panel {
+    width: 250px;
+  }
+}
+@media (max-width: 350px) {
+  #small-panel {
+    width: 170px;
+  }
+  #big-panel {
+    width: 225px;
+  }
+}
+@media (max-width: 320px) {
+  #small-panel {
+    width: 150px;
+  }
+  #big-panel {
+    width: 200px;
+  }
+}
 
 #The-Equivalencies {
   color: black;
