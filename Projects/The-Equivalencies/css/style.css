@@ -51,12 +51,8 @@ a {
 
 .panel {
   border-radius: 25px;
-  padding: 30px;
-  padding-top: 10px;
-  padding-right: 20px;
-  padding-bottom: 0px;
-  position: relative;
-  left: 5px;
+  padding: 15px;
+  padding-bottom: 6px;
 }
 
 #background {
@@ -152,7 +148,7 @@ a {
     width: 150px;
   }
   #big-panel {
-    width: 200px;
+    width: 150px;
   }
 }
 
