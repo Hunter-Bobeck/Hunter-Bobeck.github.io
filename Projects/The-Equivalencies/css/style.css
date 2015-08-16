@@ -132,18 +132,18 @@ h1 {
   }
 }
 @media (max-width: 375px) {
-  .panel {
+  #big-panel, #small-panel {
     width: 250px;
   }
 }
 @media (max-width: 350px) {
-  .panel {
+  #big-panel, #small-panel {
     width: 225px;
   }
 }
 @media (max-width: 320px) {
-  .panel {
-    width: 150px;
+  #big-panel, #small-panel {
+    width: 220px;
   }
   #The-Equivalencies {
     font-size: 30px;
