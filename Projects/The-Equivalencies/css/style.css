@@ -119,6 +119,8 @@ h1 {
   #big-panel {
     width: 400px;
   }
+}
+@media (max-width: 700px) {
   .nontiny-hidden-break {
     display: inline;
   }
