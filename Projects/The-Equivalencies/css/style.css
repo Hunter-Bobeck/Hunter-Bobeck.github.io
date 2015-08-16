@@ -129,6 +129,9 @@ h1 {
   }
 }
 @media (min-width: 351px) and (max-width: 522px) {
+  #small-panel {
+    width: 300px;
+  }
   #big-panel {
     width: 300px;
   }
