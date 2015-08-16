@@ -99,12 +99,12 @@ h1 {
     width: 100%;
   }
 }
-@media (min-width: 800px) and (max-width: 1000px) {
+@media (min-width: 801px) and (max-width: 999px) {
   #big-panel {
     width: 700px;
   }
 }
-@media (max-width: 800px) {
+@media (min-width: 701px) and (max-width: 800px) {
   #small-panel {
     width: 400px;
   }
@@ -112,7 +112,7 @@ h1 {
     width: 500px;
   }
 }
-@media (max-width: 700px) {
+@media (min-width: 523px) and (max-width: 700px) {
   #small-panel {
     width: 300px;
   }
@@ -126,23 +126,18 @@ h1 {
     display: none;
   }
 }
-@media (max-width: 522px) {
+@media (min-width: 351px) and (max-width: 522px) {
   #big-panel {
     width: 300px;
   }
 }
-@media (max-width: 375px) {
-  #big-panel, #small-panel {
-    width: 250px;
-  }
-}
-@media (max-width: 350px) {
-  #big-panel, #small-panel {
+@media (min-width: 321px) and (max-width: 350px) {
+  #small-panel, #big-panel {
     width: 225px;
   }
 }
 @media (max-width: 320px) {
-  #big-panel, #small-panel {
+  #small-panel, #big-panel {
     width: 220px;
   }
   #The-Equivalencies {
