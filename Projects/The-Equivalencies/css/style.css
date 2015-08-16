@@ -143,7 +143,7 @@ h1 {
 }
 @media (max-width: 320px) {
   .panel {
-    width: 160px;
+    width: 150px;
   }
   #The-Equivalencies {
     font-size: 30px;
