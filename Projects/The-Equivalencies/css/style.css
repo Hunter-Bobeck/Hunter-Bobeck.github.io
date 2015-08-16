@@ -70,6 +70,13 @@ a {
   display: none;
 }
 
+h1 {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  padding: 40px;
+}
 #The-Equivalencies {
   color: black;
   font-size: 40px;
@@ -144,7 +151,7 @@ a {
 }
 
 #progress {
-  color: gold;
+  color: Gold;
 }
 
 @media (max-width: 1000px) {
@@ -179,18 +186,6 @@ text {
   text-rendering:geometricPrecision;
   dominant-baseline:mathematical;
   font-family: 'Indie Flower', cursive;
-}
-
-
-h1 {
-  color: white;
-  font-size: 30px;
-  font-weight: 700;
-  text-align: center;
-  padding: 40px;
-}
-.title {
-
 }
 
 @media (max-width: 1000px) {
