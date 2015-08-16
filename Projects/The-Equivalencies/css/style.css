@@ -70,6 +70,13 @@ a {
   display: none;
 }
 
+#The-Equivalencies {
+  color: black;
+  font-size: 40px;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+
 .text {
   margin: 0 auto;
   width: 800px;
@@ -129,15 +136,11 @@ a {
 }
 @media (max-width: 320px) {
   .panel {
-    width: 195px;
+    width: 160px;
   }
-}
-
-#The-Equivalencies {
-  color: black;
-  font-size: 40px;
-  text-transform: uppercase;
-  padding-bottom: 15px;
+  #The-Equivalencies {
+    font-size: 30px;
+  }
 }
 
 #progress {
