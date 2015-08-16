@@ -113,48 +113,29 @@ a {
   }
 }
 @media (max-width: 522px) {
-  #small-panel {
-    width: 200px;
-  }
   #big-panel {
     width: 300px;
   }
-  #small-panel, #big-panel {
-    position: static;
-  }
-  #small-panel p, #big-panel p {
-    padding: 0px, 5px;
-    width: 90%;
-  }
 }
 @media (max-width: 375px) {
-  #small-panel {
-    width: 180px;
-  }
-  #big-panel {
+  .panel {
     width: 250px;
   }
 }
 @media (max-width: 350px) {
-  #small-panel {
-    width: 170px;
-  }
-  #big-panel {
+  .panel {
     width: 225px;
   }
 }
 @media (max-width: 320px) {
-  #small-panel {
-    width: 150px;
-  }
-  #big-panel {
-    width: 150px;
+  .panel {
+    width: 195px;
   }
 }
 
 #The-Equivalencies {
   color: black;
-  font-size: 40;
+  font-size: 40px;
   text-transform: uppercase;
   padding-bottom: 15px;
 }
