@@ -376,9 +376,13 @@ textarea.form-control {
 	-webkit-transform-origin: 50% 50% 0;
 	transform-origin: 50% 50% 0;
 }
+#my-name-is h3 {
+	color: white;
+}
 
 .iconbox {
 	background: #fff;
+	background-image: url('../images/twinkle-twinkle.png');
 	border-bottom: 1px solid #d4d4d4;
 	text-align: center;
 	padding: 40px 20px;
@@ -415,6 +419,11 @@ textarea.form-control {
 	-webkit-transform-origin: 50% 50% 0;
 	transform-origin: 50% 50% 0;
 }
+
+#available {
+	text-transform: none;
+}
+
 .chart {
     display: inline-block;
     height: 140px;

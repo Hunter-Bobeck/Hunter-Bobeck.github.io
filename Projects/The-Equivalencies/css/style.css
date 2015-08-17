@@ -335,3 +335,12 @@ iframe {
 .black-background {
   background-color: black;
 }
+
+#dot {
+  margin: 0 auto;
+}
+@media (max-width: 800px) {
+  #dot {
+    width: 600px;
+  }
+}
