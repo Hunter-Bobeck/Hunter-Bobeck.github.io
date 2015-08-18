@@ -37,6 +37,17 @@ h1 {
 #Flash-Mob {
 	font-size: 120%;
 }
+#mobile-break {
+	display: none;
+}
+@media (max-width: 573px) {
+	#mobile-break {
+		display: inline;
+	}
+	#mobile-space {
+	display: none;
+	}
+}
 h1, h2 {
 	text-align: center;
 	-webkit-box-sizing: border-box;
