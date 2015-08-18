@@ -96,6 +96,10 @@ h1 {
   .text {
     width: 100%;
   }
+  #topics p {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
 @media (min-width: 801px) and (max-width: 999px) {
   #big-panel {
