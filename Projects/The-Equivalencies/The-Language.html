@@ -93,15 +93,15 @@
 			<p class="tabbed">
 				That's how I declare text variables in Java, the language <a href="../Flash-Mob/index.html" target="blank">Flash Mob</a> is written in. This isn't just true of Java, though. In fact, <span class="italic">the paragraph above</span> is encoded in 'HTML5' as the following..
 			</p>
-			<pre class="content">					&lt;p class="doubletabbed content">
-							String hello_world = "Hello world!";
-						&lt;/p></pre>
+			<p class="doubletabbed content">
+				&lt;p class="doubletabbed content">String hello_world = "Hello world!";&lt;/p>
+			</p>
 			<p class="tabbed">
 				The interpretation would be very different if, say, the '<span class="content">></span>' denoting <span class="content">the end of the opening tag of the paragraph element</span> ('<span class="content">&lt;p class="doubletabbed content"<span class="regularly-underlined">></span></span>') was moved one place to the left, like so..
 			</p>
-			<pre class="content">					&lt;p class="doubletabbed content>"<span class="regular" style="font-size: 30px"> ↲</span>
-							String hello_world = "Hello world!";
-						&lt;/p></pre>
+			<p class="doubletabbed content">
+				&lt;p class="doubletabbed content>"String hello_world = "Hello world!";&lt;/p>
+			</p>
 			<p class="tabbed">
 				See the result below – oh wait, it doesn't even display as anything other than some slight line spacing, even though in the code, it's right below this paragraph!
 			</p>
