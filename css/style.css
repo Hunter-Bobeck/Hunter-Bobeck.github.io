@@ -438,6 +438,7 @@ textarea.form-control {
     top: 0;
 }
 #hire-me {
+	padding-bottom: 0px;
 	border: 1px solid white;
 }
 @media (min-width: 768px) and (max-width: 1000px) {

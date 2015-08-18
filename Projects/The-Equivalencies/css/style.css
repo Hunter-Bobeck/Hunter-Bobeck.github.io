@@ -228,6 +228,9 @@ iframe {
   font-weight: bold;
 }
 
+.halftabbed {
+  padding-left: 2.5em !important;
+}
 .tabbed {
   padding-left: 5em !important;
 }
@@ -337,7 +340,7 @@ iframe {
 }
 
 #dot {
-  margin: 0 auto;
+  
 }
 @media (max-width: 800px) {
   #dot {
