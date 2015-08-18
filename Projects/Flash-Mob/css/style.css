@@ -26,6 +26,12 @@ a {
   transition: all .2s ease-in-out;
 }
 
+@media (max-width: 573px) {
+	#splash {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
 h1 {
 	color: #101;
 	margin-top: 350px;
@@ -50,7 +56,6 @@ h1, h2 {
 	-webkit-border-radius: 0;
 	border-radius: 0;
 	color: rgba(255,255,255,1);
-	text-decoration: normal;
 	text-align: center;
 	-o-text-overflow: clip;
 	text-overflow: clip;
