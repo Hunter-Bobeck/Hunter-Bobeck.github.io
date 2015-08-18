@@ -356,4 +356,7 @@ iframe {
   #fundamental-equivalencies {
     font-size: 150%;
   }
+  #background {
+    background-image: url('../images/Istering-mobile.jpg');
+  }
 }
