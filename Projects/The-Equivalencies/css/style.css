@@ -358,6 +358,9 @@ iframe {
   }
 }
 
+#fundamental-equivalencies {
+  font-size: 200%;
+}
 @media (max-width: 573px) {
   #fundamental-equivalencies {
     font-size: 150%;
