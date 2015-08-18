@@ -71,8 +71,6 @@ a {
 }
 
 h1 {
-  color: white;
-  font-size: 30px;
   font-weight: 700;
   text-align: center;
   padding: 40px;
@@ -188,12 +186,16 @@ text {
   font-family: 'Indie Flower', cursive;
 }
 
-@media (max-width: 1000px) {
-  .topic h1 {
-    padding: 40px 100px 40px 100px;
+.topic h1 {
+    color: white;
+    font-size: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
   }
+@media (max-width: 1000px) {
   .topic p {
-    padding: 0px 30px 10px 30px;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
 
@@ -231,11 +233,26 @@ iframe {
 .halftabbed {
   padding-left: 2.5em !important;
 }
+@media (max-width: 1000px) {
+  .halftabbed {
+    padding-left: 1.25em !important;
+  }
+}
 .tabbed {
   padding-left: 5em !important;
 }
+@media (max-width: 1000px) {
+  .tabbed {
+    padding-left: 2.5em !important;
+  }
+}
 .doubletabbed {
   padding-left: 10em !important;
+}
+@media (max-width: 1000px) {
+  .doubletabbed {
+    padding-left: 5em !important;
+  }
 }
 
 .content {
