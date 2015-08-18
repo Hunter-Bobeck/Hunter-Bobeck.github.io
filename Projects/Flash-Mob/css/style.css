@@ -26,11 +26,9 @@ a {
   transition: all .2s ease-in-out;
 }
 
-@media (max-width: 573px) {
-	#splash {
-		margin-left: 10px;
-		margin-right: 10px;
-	}
+#splash {
+	margin-left: 10px;
+	margin-right: 10px;
 }
 h1 {
 	color: #101;
