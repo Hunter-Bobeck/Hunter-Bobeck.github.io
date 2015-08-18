@@ -349,15 +349,6 @@ iframe {
   background-color: black;
 }
 
-#dot {
-  
-}
-@media (max-width: 800px) {
-  #dot {
-    width: 600px;
-  }
-}
-
 #fundamental-equivalencies {
   font-size: 200%;
 }
