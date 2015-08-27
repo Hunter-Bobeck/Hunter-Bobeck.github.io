@@ -1,0 +1,1 @@
+The Clean [Script Eden] template has been modified by the extent of customizing it into this site. Not only the HTML content has been added to largely modified; its CSS has undergone many changes for this purpose as well. Past those changes, there are a few other changes such as placeholder files being replaced. Many custom files have been integrated too.
