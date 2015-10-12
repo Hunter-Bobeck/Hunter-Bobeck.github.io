@@ -1,2 +1,2 @@
 # HunterBobeck.me
-I'm an artist, a designer, a developer, and a technology enthusiast. Check out my projects!
+My personal website, detailing my profile, interests, and skills, and including my other projects.
