@@ -6,16 +6,10 @@ jQuery(document).ready(function($){
 	  	}
 	});
 
-	$(".cd-single-project").click(function(event) {
-        if (event.target.id == "programming-link") { 
-            window.location.href = "Programming/index.html";
-        }
-    });
-
 	//open project
-	$('.cd-single-project').on('click', function(event){
+	$('.cd-single-project').on('click', function(){
 		var selectedProject = $(this),
-		toggle = !selectedProject.hasClass('is-full-width');
+			toggle = !selectedProject.hasClass('is-full-width');
 		if(toggle) toggleProject($(this), $('.projects-container'), toggle);
 	});
 
