@@ -285,6 +285,7 @@ Main Components
   font-size: 2.5rem;
   line-height: 1.5;
   font-weight: 700;
+  text-shadow: 5px 5px 15px #000000;
 }
 .cd-title p {
   font-size: 1.4rem;

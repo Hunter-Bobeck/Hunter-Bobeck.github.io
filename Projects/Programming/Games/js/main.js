@@ -6,18 +6,6 @@ jQuery(document).ready(function($){
 	  	}
 	});
 
-	$(".cd-single-project").click(function(event) {
-        if (event.target.id == "websites-link") { 
-            window.location.href = "Websites/index.html";
-        }
-    });
-
-	$(".cd-single-project").click(function(event) {
-        if (event.target.id == "games-link") { 
-            window.location.href = "Games/index.html";
-        }
-    });
-
 	//open project
 	$('.cd-single-project').on('click', function(){
 		var selectedProject = $(this),
