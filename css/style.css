@@ -31,9 +31,11 @@
   -moz-transition: 3s;
   -webkit-transition: 3s;
   transition: 3s;
+  color: black !important;
+  margin-top: 18px;
 }
 .intro h1:hover {
-	color: black;
+	font-size: 500%;
 }
 
 img {
@@ -304,7 +306,7 @@ textarea.form-control {
 }
 
 /* ---------------------------------------------- /*
- * Cover
+ * Cover (and Interests)
 /* ---------------------------------------------- */
 
 #cover {
@@ -321,7 +323,7 @@ textarea.form-control {
 }
 
 .cover-overlay {
-    background-color: rgba(44, 62, 80, 0.3);
+    background-color: rgba(44, 62, 80, 0.1);
     background-repeat: repeat;
     height: 100%;
     left: 0;
@@ -688,11 +690,11 @@ textarea.form-control {
 }
 
 .freelancing {
-	background-image: url(../images/Astral-Projection.jpg);
+	background-image: url(../images/Skills.jpg);
 }
 @media (max-width: 768px) {
 	.freelancing {
-		background-image: url(../images/Astral-Projection-mobile.jpg);
+		background-image: url(../images/Skills-mobile.jpg);
 	}
 }
 
