@@ -31,11 +31,14 @@
   -moz-transition: 3s;
   -webkit-transition: 3s;
   transition: 3s;
-  color: black !important;
+  color: white !important;
   margin-top: 18px;
+  text-shadow: 0 0 0.2em #33cb30, 0 0 0.2em #33cb30, 0 0 0.2em #33cb30;
 }
 .intro h1:hover {
 	font-size: 500%;
+  color: black !important;
+  text-shadow: 0 0 0em #33cb30, 0 0 0em #33cb30, 0 0 0em #33cb30;
 }
 
 img {
