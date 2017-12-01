@@ -6,18 +6,6 @@ jQuery(document).ready(function($){
 	  	}
 	});
 
-	$(".cd-single-project").click(function(event) {
-        if (event.target.id == "virtual-link") { 
-            window.location.href = "Virtual/index.html";
-        }
-    });
-
-	$(".cd-single-project").click(function(event) {
-        if (event.target.id == "apps-link") { 
-            window.location.href = "Apps/index.html";
-        }
-    });
-
 	//open project
 	$('.cd-single-project').on('click', function(){
 		var selectedProject = $(this),
