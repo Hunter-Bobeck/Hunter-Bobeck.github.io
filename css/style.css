@@ -540,7 +540,7 @@ textarea.form-control {
 .navbar-custom .navbar-nav > li > a,
 .navbar-custom .navbar-nav .dropdown-menu > li > a {
 	letter-spacing: 3px;
-	color: #222;
+	color: #ddd;
 }
 
 .navbar-custom .nav li.active,
