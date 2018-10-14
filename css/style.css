@@ -87,21 +87,24 @@ a:link {
 	background: linear-gradient(90deg, orange 25%, blue 100%);
 }
 .background-Daumhauser {
-	background-image: url("../images/daumhauser.png");
+	background-image: url("../images/Daumhauser.jpg");
 	background-size: cover;
     background-repeat: no-repeat;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 
 /* # */
 
-#logoage {
-	/* positioning */
-    margin: 0;
-    position: absolute;
-    top: 10%;
-	-ms-transform: translate(13.75%, -30%);
-    transform: translate(13.75%, -30%);
+#paddington {
+	margin-left: 2%;
+	margin-top:	2%;
 }
 
 #logo {
@@ -109,38 +112,8 @@ a:link {
 	height: auto;
 }
 
-#headerage {
-	/* positioning */
-    margin: 0;
-    position: absolute;
-    top: 12.5%;
-	-ms-transform: translate(100%, -30%);
-    transform: translate(100%, -30%);
-}
-
-/* titleage */
-#titleage {
-	/* positioning */
-    margin: 0;
-    position: absolute;
-    top: 40%;
-	-ms-transform: translate(7%, -30%);
-    transform: translate(7%, -30%);
-
-	/* formatting */
-	line-height: 1;
-}
-/* (from before using image for titleage)
 #title {
-	font-size: 17rem;
-	line-height: .975;
-}
-#subtitle {
-	font-size: 5rem;
-	letter-spacing: 1px;
-}
-*/
-#title {
+	margin-top: 10%;
 	width: 42rem;
 	height: auto;
 }
