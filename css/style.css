@@ -109,6 +109,9 @@ a:link {
 	width: 10em;
 	height: auto;
 }
+#nonmobile-spacer {
+	display: none;
+}
 #title {
 	margin-top: 30%;
 	margin-left: 2%;
@@ -118,6 +121,9 @@ a:link {
 
 /* at least: smartphones in landscape mode */
 @media only screen and (min-width: 480px) {
+	#nonmobile-spacer {
+		display: inline-block;
+	}
 	#title {
 		margin-top: 20%;
 	}
