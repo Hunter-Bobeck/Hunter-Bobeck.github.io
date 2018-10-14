@@ -103,17 +103,57 @@ a:link {
 /* # */
 
 #paddington {
-	margin-left: 2%;
-	margin-top:	2%;
+	margin:	4%;
 }
-
 #logo {
 	width: 10em;
 	height: auto;
 }
-
 #title {
-	margin-top: 10%;
-	width: 42rem;
+	margin-top: 30%;
+	margin-left: 2%;
+	width: 28rem;
 	height: auto;
+}
+
+/* at least: smartphones in landscape mode */
+@media only screen and (min-width: 480px) {
+	#title {
+		margin-top: 20%;
+	}
+}
+
+/* at least: tablets in portrait mode */
+@media only screen and (min-width: 600px) {
+	#title {
+		margin-top: 15%;
+	}
+}
+
+/* at least: tablets in landscape mode */
+@media only screen and (min-width: 768px) {
+	#paddington {
+		margin:	2%;
+	}
+	#title {
+		margin-top: 10%;
+		margin-left: 1.5%;
+		width: 34rem;
+	}
+}
+
+/* at least: desktop */
+@media only screen and (min-width: 1024px) {
+	#title {
+		margin-top: 10%;
+		margin-left: .5%;
+		width: 34rem;
+	}
+}
+
+/* at least: large desktop */
+@media only screen and (min-width: 1920px) {
+	#title {
+		width: 38rem;
+	}
 }
