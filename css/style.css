@@ -99,8 +99,26 @@ a:link {
     height: 100%;
 }
 
+.button-square {
+  border-radius: 0;
+}
+
+.button-green {
+	background-color: #5cb85c;
+	border-color: #5cb85c;
+	color: rgb(251, 247, 241);
+}
+
 
 /* # */
+
+#background-video {
+	position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
 
 #paddington {
 	margin:	4%;
@@ -117,6 +135,9 @@ a:link {
 	margin-left: 2%;
 	width: 28rem;
 	height: auto;
+}
+#portfolio-button {
+	margin-top: 5%;
 }
 
 /* at least: smartphones in landscape mode */
