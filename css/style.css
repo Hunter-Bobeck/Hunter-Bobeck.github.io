@@ -1,5 +1,6 @@
 /*  */
 
+
 body {
 	color: rgb(251, 247, 241);
 
@@ -66,7 +67,10 @@ a:link {
 }
 
 
+
+
 /* . */
+
 
 /* fonts */
 .font-bebas {
@@ -97,8 +101,17 @@ a:link {
 	color: rgb(251, 247, 241);
 }
 
+.grid-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
 
 /* # */
+
 
 #Daumhauser {
 	background-image: url("../images/Daumhauser - Mobile.jpg");
@@ -128,8 +141,11 @@ a:link {
 	width: 10em;
 	height: auto;
 }
-#luxury-spacer {
-	display: none;
+#grid-container {
+	display: inline-grid;
+	grid-gap: 1em;
+	grid-template-rows: auto auto;
+	grid-template-columns: auto auto auto auto;
 }
 #titleage {
 	display: inline;
@@ -144,8 +160,9 @@ a:link {
 
 /* at least: smartphones in landscape mode */
 @media only screen and (min-width: 480px) {
-	#luxury-spacer {
-		display: inline-block;
+	#grid-container {
+		grid-template-rows: auto;
+		grid-template-columns: auto auto auto auto auto auto auto auto;
 	}
 	#titleage {
 		margin-top: 20%;
