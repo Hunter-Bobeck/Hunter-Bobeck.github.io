@@ -91,20 +91,48 @@ a:link {
 	background: linear-gradient(90deg, orange 25%, blue 100%);
 }
 
+/* buttons */
 .button-square {
   border-radius: 0;
 }
-
 .button-green {
 	background-color: #5cb85c;
 	border-color: #5cb85c;
 	color: rgb(251, 247, 241);
 }
 
-.grid-item {
+/* grid items */
+.links-grid-item {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+.portfolio-grid-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.portfolio-grid-item-description {
+	display: block;
+}
+
+/* containers */
+.paddington {
+	text-align: center;
+	margin:	4%;
+}
+/* at least: tablets in landscape mode */
+@media only screen and (min-width: 768px) {
+	.paddington {
+		text-align: start;
+		margin:	2%;
+	}
+}
+
+/* frames */
+iframe {
+	width: 90%;
+	height: 55%;
 }
 
 
@@ -113,6 +141,7 @@ a:link {
 /* # */
 
 
+/* index.html */
 #Daumhauser {
 	background-image: url("../images/Daumhauser - Mobile.jpg");
 	background-size: cover;
@@ -133,19 +162,15 @@ a:link {
     min-height: 100%;
 	display: none;
 }
-#paddington {
-	text-align: center;
-	margin:	4%;
-}
 #logo {
 	width: 10em;
 	height: auto;
 }
-#grid-container {
+#links-grid-container {
 	display: inline-grid;
 	grid-gap: 1em;
-	grid-template-rows: auto auto;
 	grid-template-columns: auto auto auto auto;
+	grid-template-rows: auto auto;
 }
 #titleage {
 	display: inline;
@@ -157,12 +182,60 @@ a:link {
 #portfolio-button {
 	margin-top: 5%;
 }
+#portfolio-opener-container {
+    float: right;
+	/* margin only approximately set to mirror the positioning of the logo and links grid: */
+	margin-top: 2%;
+	margin-right: 1%;
+}
+#portfolio-opener {
+	width: 16rem;
+	height: auto;
+}
+/* portfolio.html */
+#deep-sky {
+	background-image: url("../images/Deep Sky 21 - modified.jpg");
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#portfolio-about-container {
+	
+}
+#portfolio-about-header {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+#portfolio-about-description {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+#portfolio-grid-container-centerer {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 100vh;		/* arbitrary large number to support a practically infinite amount of rows */
+	width: 100%;
+}
+#portfolio-grid-container {
+	display: inline-grid;
+	grid-gap: 1em;
+	grid-template-columns: auto auto auto auto;
+	grid-template-rows: auto auto auto;
+}
 
 /* at least: smartphones in landscape mode */
 @media only screen and (min-width: 480px) {
-	#grid-container {
-		grid-template-rows: auto;
+	#links-grid-container {
 		grid-template-columns: auto auto auto auto auto auto auto auto;
+		grid-template-rows: auto;
 	}
 	#titleage {
 		margin-top: 20%;
@@ -183,10 +256,6 @@ a:link {
 	}
 	#reel {
 		display: inline-block;
-	}
-	#paddington {
-		text-align: start;
-		margin:	2%;
 	}
 	#titleage {
 		display: none;
