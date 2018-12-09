@@ -1,0 +1,129 @@
+/* Felewin baseline CSS */
+
+
+/* COLORS */
+
+:root {
+    --color-Felewin: #5cb85c;
+    --color-dark: #232325;
+	--color-selection: #b0f3e6;
+	--color-link: var(--color-Felewin);
+	--color-link-hovered: #428bca;
+}
+
+
+/* ELEMENTS */
+
+/* plain dark styling */
+html {
+	background-color: var(--color-dark);		/* dark background color */
+}
+body {
+	color: white;
+}
+
+/* selection coloring */
+::selection {
+  background: var(--color-selection);
+}
+::-moz-selection {
+  background: var(--color-selection);
+}
+
+/* links */
+a {
+	color: var(--color-link);
+    text-decoration: none;
+
+	/* transition duration */
+	-o-transition:.2s;
+	-ms-transition:.2s;
+	-moz-transition:.2s;
+	-webkit-transition:.2s;
+	transition:.2s;
+}
+a:hover {
+	color: var(--color-link-hovered);
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:active {
+    color: var(--color-selection);
+    text-decoration: none;
+}
+a:link {
+    text-decoration: none;
+}
+
+/* buttons */
+button:focus {
+	outline: 0;
+}
+
+
+/* CLASSES */
+
+/* uninteractibility */
+.unselectable {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.undraggable {
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+	user-drag: none;
+}
+
+/* alignment */
+.align-left {
+	text-align: left;
+}
+.align-center {
+	text-align: center;
+}
+.align-right {
+	text-align: right;
+}
+
+/* text formatting */
+.weight-light {
+	font-weight: lighter;
+}
+.weight-normal {
+	font-weight: normal;
+}
+.weight-bold {
+	font-weight: bold;
+}
+.weight-heavy {
+	font-weight: 900;
+}
+.unitalicized {
+	font-style: normal;
+}
+.italicized {
+	font-style: italic;
+}
+
+/* backgrounds */
+.background-white {
+	background-color: white;
+	color: black;
+}
+.background-dark {
+	background-color: var(--color-dark);
+	color: white;
+}
+
+/* blocks */
+.block-padded {
+	padding: 2em;
+}
