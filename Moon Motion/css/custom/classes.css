@@ -1,0 +1,21 @@
+/* CLASSES */
+
+
+/* fonts */
+.font-Open-Sans {
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* backgrounds */
+.background-OBS-light {
+	background: #242e57;
+	color: white;
+}
+.background-OBS-dark {
+	background: #1a2138;
+	color: white;
+}
+.background-Steam-dark {
+	background: #171a21;
+	color: white;
+}

@@ -1,0 +1,46 @@
+/* ELEMENTS */
+
+
+/* styling */
+html {
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* links */
+a {
+	font-weight: bold;
+}
+
+/* buttons */
+button {
+	/* sizing */
+    font-size: 1em;
+    padding: 7px 14px;
+	overflow: hidden;
+	margin: 1rem;
+	padding: 0;
+	width: 150px;
+	height: 40px;
+
+	/* shaping */
+	border-radius: 2em;
+	
+	/* font */
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+    letter-spacing: .075em;
+
+	/* coloring */
+	color: white;
+	background-color: transparent;
+	border: 2px solid white;
+}
+button:hover {
+	color: var(--color-main);
+	background-color: white;
+}
+button:active {
+	color: white;
+	background-color: var(--color-main);
+}
