@@ -1,2 +1,2 @@
 # HunterBobeck.me
-My personal website, detailing my profile, interests, and skills, and including my other projects.
+My personal landing page / portfolio site
