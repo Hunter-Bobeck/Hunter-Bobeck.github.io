@@ -12,9 +12,9 @@
 		this.slidesNumber = this.slides.length;
 		this.newSlideIndex = 0;
 		this.oldSlideIndex = 0;
-		this.autoplay = hasClass(this.element, "js-cd-autoplay");
+		/*this.autoplay = hasClass(this.element, "js-cd-autoplay");
 		this.autoPlayId;
-		this.autoPlayDelay = 5000;
+		this.autoPlayDelay = 5000;*/
 		this.init();
 	};
 
@@ -23,7 +23,7 @@
 		//upload video (if not on mobile devices)
 		this.uploadVideo();
 		//autoplay slider
-		this.setAutoplay();
+		/*this.setAutoplay();*/
 		//listen for the click event on the slider navigation
 		this.navigation.addEventListener('click', function(event){
 			if( event.target.tagName.toLowerCase() == 'div' )
@@ -37,10 +37,10 @@
 			self.newSlide();
 			self.updateNavigationMarker();
 			self.updateSliderNavigation();
-			self.setAutoplay();
+			/*self.setAutoplay();*/
 		});
 
-		if(this.autoplay) {
+		/*if(this.autoplay) {
 			// on hover - pause autoplay
 			this.element.addEventListener("mouseenter", function(){
 				clearInterval(self.autoPlayId);
@@ -48,7 +48,7 @@
 			this.element.addEventListener("mouseleave", function(){
 				self.setAutoplay();
 			});
-		}
+		}*/
 	};
 
 	HeroSlider.prototype.uploadVideo = function() {
@@ -66,10 +66,10 @@
 
 	HeroSlider.prototype.setAutoplay = function() {
 		var self = this;
-		if(this.autoplay) {
+		/*if(this.autoplay) {
 			clearInterval(self.autoPlayId);
 			self.autoPlayId = window.setInterval(function(){self.autoplaySlider()}, self.autoPlayDelay);
-		}
+		}*/
 	};
 
 	HeroSlider.prototype.autoplaySlider = function() {
