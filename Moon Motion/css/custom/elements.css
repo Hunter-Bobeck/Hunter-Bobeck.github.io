@@ -5,6 +5,9 @@
 html {
 	font-family: 'Open Sans', sans-serif;
 }
+body {
+	background-color: var(--color-cover-average);
+}
 
 /* links */
 a {

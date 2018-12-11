@@ -7,15 +7,12 @@
 }
 
 /* backgrounds */
-.background-OBS-light {
-	background: #242e57;
-	color: white;
+.background-light {
+	background-color: var(--color-light);
 }
-.background-OBS-dark {
-	background: #1a2138;
-	color: white;
+.background-dark {
+	background-color: var(--color-dark);
 }
 .background-Steam-dark {
-	background: #171a21;
-	color: white;
+	background-color: var(--color-Steam-dark);
 }

@@ -1,112 +1,147 @@
+<!-- Hunter Bobeck WIP portfolio proof-of-concept experiment, using https://codyhouse.co/gem/hero-slider/ (layout credit to Codyhouse); previous website iterations can be found at: https://github.com/Hunter-Bobeck --> 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
-	<!-- metadata -->
-    <meta charset="utf-8">	<!-- Unicode characterset -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">	<!-- Internet Explorer compatibility -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">	<!-- renders the page according to the device width -->
-    <meta name="description" content="VR Developer">		<!-- description (shown on searchengine result) -->
-    <meta name="keywords" content="Hunter, Bobeck, VR, developer, portfolio, Felewin">		<!-- keywords for searchengine optimization -->
-    <meta name="author" content="Hunter Bobeck">		<!-- author name -->
-	<meta name="theme-color" content="#5cb85c">		<!-- Android Chrome bar color -->
-    <link rel="icon" href="images/HB.png">	<!-- favicon -->
-    <title>Hunter Bobeck | VR Developer</title>		<!-- title -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- CSS -->
-		<!-- Reset -->						<link rel="stylesheet" href="css/reset.css">
-		<!-- Bootstrap -->					<link rel="stylesheet" href="css/bootstrap.min.css">
-		<!-- Bebas [Dafont] font -->		<link rel="stylesheet" href="css/webfontkit-bebas/stylesheet.css" type="text/css" charset="utf-8">
-		<!-- BTTF [Dafont] font -->			<link rel="stylesheet" href="css/webfontkit-bttf/stylesheet.css" type="text/css" charset="utf-8">
-		<!-- Roboto [Google] font -->		<link rel="stylesheet" href="css/webfontkit-roboto/stylesheet.css" type="text/css" charset="utf-8">
-		<!-- Font Awesome -->				<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-		<!-- Animate (required by Wow) -->	<link rel="stylesheet" href="css/animate.css">
-		<!-- Hover -->						<link rel="stylesheet" href="css/hover-min.css">
-		<!-- Felewin baseline -->			<link rel="stylesheet" href="css/Felewin-baseline.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
 		<!-- custom - colors -->			<link rel="stylesheet" href="css/custom/colors.css">
 		<!-- custom - elements -->			<link rel="stylesheet" href="css/custom/elements.css">
 		<!-- custom - classes -->			<link rel="stylesheet" href="css/custom/classes.css">
 		<!-- custom - identifiers -->		<link rel="stylesheet" href="css/custom/identifiers.css">
-
-	<!-- preJS -->
-		<!-- none -->
+  	
+    <link rel="icon" href="images/HB.png">	<!-- favicon -->
+	<title>Hunter Bobeck | VR Developer</title>
 </head>
+<body style="background-color: #232325;">
+	<header class="cd-header">
+		<div class="cd-header__logo"><a href="#0"><img src="images/HB.png" alt="Logo"></a></div>
+		<nav class="cd-header__nav js-cd-header__nav">
+			<ul>
+				<li><a href="https://hunter-bobeck.itch.io" target="blank">Itch</a></li>
+				<li><a href="https://github.com/Hunter-Bobeck" target="blank">GitHub</a></li>
+				<li><a href="http://www.linkedin.com/in/hunterbobeck" target="blank">Linkedin</a></li>
+				<li><a href="mailto:hunterbobeck@gmail.com" target="blank">Contact</a></li>
+			</ul>
+		</nav> <!-- .cd-header__nav -->
+	</header>
 
-<body class="unselectable">
-	<div id="Daumhauser">
+	<section class="cd-hero js-cd-hero "><!--js-cd-autoplay-->
+		<ul class="cd-hero__slider">
+			<li class="cd-hero__slide cd-hero__slide--selected js-cd-slide">
+				<div class="cd-hero__content cd-hero__content--full-width">
+					<!--<h2></h2>
+					<p></p>
+					<a href="http://codyhouse.co/gem/hero-slider/" class="cd-hero__btn">Article &amp; Download</a>-->
+				</div> <!-- .cd-hero__content -->
+			</li>
 
-		<!--<video autoplay muted loop oncontextmenu="return false;" id="reel" poster="images/Daumhauser - Titleaged.jpg">
-			<source src="videos/Reel.mp4" type="video/mp4">
-		</video>-->
+			<li class="cd-hero__slide js-cd-slide">
+				<div class="cd-hero__content cd-hero__content--half-width">
+					<h2>One Giant Leap</h2>
+					<p>Fly across the moon in VR with a motion-controlled jetpack! One Giant Leap will release in 2019, but it's already been in Early Access, thus far maintaining 100% positive reviews!<br><br>As the first experience to demonstrate vertical booster jet locomotion, it also inspired me to develop the open-source <a href="https://hunter-bobeck.itch.io/propulsion-locomotion" target="blank" style="font-weight: bold">Propulsion Locomotion Toolkit</a>.</p>
+					<a href="https://hunter-bobeck.itch.io/one-giant-leap" class="cd-hero__btn">Visit Itch</a>
+					<a href="https://store.steampowered.com/app/512750/One_Giant_Leap/" target="blank" class="cd-hero__btn cd-hero__btn--secondary">Visit Steam</a>
+				</div> <!-- .cd-hero__content -->
 
-		<div class="paddington">
+				<div class="cd-hero__content cd-hero__content--half-width cd-hero__content--img">
+					<img src="assets/tech-1.png">
+				</div> <!-- .cd-hero__content -->
+			</li>
 
-			<a href="index.html">
-				<img id="logo" class="hvr-shrink" src="images/HB.png">
-			</a>
+			<li class="cd-hero__slide js-cd-slide">
+				<div class="cd-hero__content cd-hero__content--half-width cd-hero__content--img">
+					<img src="assets/tech-2.png">
+				</div> <!-- .cd-hero__content -->
 
-			<span>
-				&nbsp;&nbsp;&nbsp;
-			</span>
-			<div id="links-grid-container">
-				<div class="links-grid-item">
-					<a href="mailto:hunterbobeck@gmail.com" target="blank">
-						<i class="fa fa-envelope fa-lg wow fadeIn zoomInLeft"></i>
-					</a>
-				</div>
-				<div class="links-grid-item">
-					<a href="https://hunter-bobeck.itch.io" target="blank">
-						<i class="fas fa-info fa-lg wow fadeIn zoomInLeft"></i>
-					</a>
-				</div>
-				<div class="links-grid-item">
-					<a href="https://github.com/Hunter-Bobeck" target="blank">
-						<i class="fab fa-github fa-lg wow fadeIn zoomInLeft"></i>
-					</a>
-				</div>
-				<div class="links-grid-item">
-					<a href="http://www.linkedin.com/in/hunterbobeck" target="blank">
-						<i class="fab fa-linkedin fa-lg wow fadeIn zoomInLeft"></i>
-					</a>
-				</div>
-				<div class="links-grid-item">
-					<a href="Resume.pdf" target="blank">
-						<i class="fas fa-file-alt fa-lg wow fadeIn zoomInLeft"></i>
-					</a>
-				</div>
-				<div class="links-grid-item">
-					<a href="https://twitter.com/BobeckHunter" target="blank">
-						<i class="fab fa-twitter fa-lg wow fadeIn zoomInLeft"></i>
-					</a>
-				</div>
-				<div class="links-grid-item">
-					<a href="https://www.deviantart.com/felewin" target="blank">
-						<i class="fab fa-deviantart fa-lg wow fadeIn zoomInLeft"></i>
-					</a>
-				</div>
-				<div class="links-grid-item">
-					<a href="https://www.youtube.com/Felewin" target="blank">
-						<i class="fab fa-youtube fa-lg wow fadeIn zoomInLeft"></i>
-					</a>
-				</div>
-			</div>
+				<div class="cd-hero__content cd-hero__content--half-width">
+					<h2>Batteries Included</h2>
+					<p>As Lead Programmer at Shadow Shrimp Studios, I'm leading development of the game Batteries Included. In this Action-RTS VR title, engage with toys that have come to life by commanding the battle from above, or shrink down to toy scale to fight.<br><br><a href="https://shadowshrimpstudios.blogspot.com/" target="blank" style="font-weight: bold">Visit the blog</a> to learn more about my work behind the scenes to achieve the unique scaling effect and more.</p>
+					<!--<a href="#0" class="cd-hero__btn">Start</a>-->
+					<a href="https://shadowshrimpstudios.blogspot.com/" target="blank" class="cd-hero__btn cd-hero__btn--secondary">Visit the Blog</a>
+				</div> <!-- .cd-hero__content -->
+				
+			</li>
 
-			<div id="portfolio-opener-container" class="wow fadeIn zoomInRight">
-				<a href="portfolio.html">
-					<img id="portfolio-opener" class="hvr-shrink" src="images/Portfolio Opener.png">
-				</a>
-			</div>
+			<li class="cd-hero__slide js-cd-slide">
+				<div class="cd-hero__content cd-hero__content--half-width cd-hero__content--img">
+					<img src="assets/tech-3.png">
+				</div> <!-- .cd-hero__content -->
 
-			<div>
-				<img id="titleage" class="wow fadeIn" src="images/Titleage.png" oncontextmenu="return false;">
-			</div>
+				<div class="cd-hero__content cd-hero__content--half-width">
+					<h2>Project Mandelblot</h2>
+					<p>Mandelblot explores a new medium for artistic expression in VR:<br><a href="https://www.tiltbrush.com/" target="blank" style="font-weight: bold">Tilt Brush</a> meets <a href="https://www.youtube.com/watch?v=THSSOJ2pksI" target="blank" style="font-weight: bold">Doodal</a>.</p>
+					<!--<a href="#0" class="cd-hero__btn">Start</a>-->
+					<a href="https://www.youtube.com/watch?v=H5qF68bfIhA" target="blank" class="cd-hero__btn cd-hero__btn--secondary">Demo Video</a>
+				</div> <!-- .cd-hero__content -->
+				
+			</li>
 
-		</div>
+		<div class="cd-hero__nav js-cd-nav">
+			<nav>
+				<span class="cd-hero__marker cd-hero__marker--item-1 js-cd-marker"></span>
+				
+				<ul>
+					<li class="cd-selected"><a href="#0">Home<br>&nbsp;<br>&nbsp;</a></li>
+					<li><a href="#0">&nbsp;&nbsp;One Giant Leap<br>&nbsp;<br>&nbsp;</a></li>
+					<li><a href="#0">Batteries Included<br>&nbsp;<br>&nbsp;</a></li>
+					<li><a href="#0">Project Mandelblot<br>&nbsp;<br>&nbsp;</a></li>
+				</ul>
+			</nav> 
+		</div> <!-- .cd-hero__nav -->
+	</section> <!-- .cd-hero -->
 
-	</div>
-	<!-- postJS -->
-		<!-- Jquery -->							<script src="js/jquery-3.3.1.js"></script>
-		<!-- Bootstrap -->						<script src="js/bootstrap.min.js"></script>		
-		<!-- Wow -->							<script src="js/wow.min.js"></script>		
-		<!-- activate Wow -->					<script>new WOW().init();</script>
+	<main class="cd-main-content">
+		<h1 style="color: white; font-size: 6em;">
+			Hi, I'm Hunter.
+		</h1>
+		<br>
+		<br>
+		<h2 style="color: white; font-size: 3em;">
+			I develop virtual reality experiences.
+		</h2>
+
+		<p style="color: white;">
+			Along the way I'm coming up with new VR <a href="https://www.youtube.com/watch?v=eY7q76rHzA4" target="blank" style="font-weight: bold;">locomotions</a>, <a href="https://www.youtube.com/watch?v=oWiETzhIFOM" target="blank" style="font-weight: bold;">interactions</a>, and <a href="https://www.youtube.com/watch?v=RKLbPb1fjBM" target="blank" style="font-weight: bold;">mediums of artistic expression</a>.
+		</p>
+
+		<h2 style="color: white; font-size: 3em;">
+			I'm also a dreamer and space nerd.
+		</h2>
+
+		<p style="color: white;">
+			My voyage into outer space begins through an exploration of inner space. Virtual reality provides a way for us to turn our minds inside out: to let our dreams become reality by condensing imagination into something more tangible and visceral. In doing so, the act of playing becomes closer to the act of dreaming. The dream experience, too, becomes more vivid and aware. My goal is to connect the lucid dream and VR experience through mechanics that make them mutually implicit. Stay tuned for news about <span style="font-weight: bold">Project Astralnaut</span>.
+		</p>
+
+		<img src="images/Bigscreenshot.jpg"/>
+
+		<br>
+		<br>
+
+		<h2 style="color: white; font-size: 3em;">
+			Join me, and together, we can rule the galaxy...
+		</h2>
+
+		<p style="color: white;">
+			If you're interested in developing for VR, consider getting started by using my open source <a href="https://hunter-bobeck.itch.io/propulsion-locomotion" target="blank" style="font-weight: bold">Propulsion Locomotion Toolkit</a> for Unity/SteamVR.
+		</p>
+
+		<p style="color: white;">
+			If you'd like to work together, contact me at:
+			<a href="mailto:hunterbobeck@gmail.com" target="blank" style="font-weight: bold">hunterbobeck@gmail.com</a>
+		</p>
+
+		<br>
+
+		<p>
+			layout by Codyhouse - design by Hunter Bobeck - all thoughts are my own
+		</p>
+	</main> <!-- .cd-main-content -->
+
+	<script src="js/main.js"></script> <!-- Resource JavaScrip -->
 </body>
 </html>

@@ -2,6 +2,12 @@
 
 :root {
     --color-main: #259ece;
-    --color-link: #53bdd3;
-    --color-link-hovered: #1996cd;
+	--color-cover-average: #0c3040;
+	--color-light: var(--color-cover-average);
+	--color-dark: #09212c;
+	--color-icon-light: #53bdd3;
+	--color-icon-dark: #1996cd;
+    --color-link: var(--color-icon-light);
+    --color-link-hovered: var(--color-icon-dark);
+	--color-Steam-dark: #171a21;
 }
