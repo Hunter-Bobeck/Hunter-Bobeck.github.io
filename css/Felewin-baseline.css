@@ -5,6 +5,7 @@
 
 :root {
     --color-Felewin: #5cb85c;
+    --color-light: white;
     --color-dark: #232325;
 	--color-selection: #b0f3e6;
 	--color-link: var(--color-Felewin);
@@ -36,11 +37,11 @@ a {
     text-decoration: none;
 
 	/* transition duration */
-	-o-transition:.2s;
-	-ms-transition:.2s;
-	-moz-transition:.2s;
-	-webkit-transition:.2s;
-	transition:.2s;
+	-o-transition: .2s;
+	-ms-transition: .2s;
+	-moz-transition: .2s;
+	-webkit-transition: .2s;
+	transition: .2s;
 }
 a:hover {
 	color: var(--color-link-hovered);
@@ -58,6 +59,9 @@ a:link {
 }
 
 /* buttons */
+button {
+	cursor: pointer;
+}
 button:focus {
 	outline: 0;
 }
@@ -117,6 +121,10 @@ button:focus {
 .background-white {
 	background-color: white;
 	color: black;
+}
+.background-light {
+	background-color: var(--color-light);
+	color: white;
 }
 .background-dark {
 	background-color: var(--color-dark);

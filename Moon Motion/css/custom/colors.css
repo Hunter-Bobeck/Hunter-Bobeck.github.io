@@ -1,13 +1,23 @@
 /* COLORS */
 
 :root {
-    --color-main: #259ece;
-	--color-cover-average: #0c3040;
-	--color-light: var(--color-cover-average);
-	--color-dark: #09212c;
+	/* cover */
+	--color-cover-average: #0073ad;
+
+	/* other brands */
+	--color-Vive: #25a1c3;
+	--color-Steam: #171a21;
+
+	/* general */
+    --color-main: var(--color-cover-average);
+	--color-light: var(--color-Vive);
+	--color-dark: var(--color-Steam);
+
+	/* icon */
 	--color-icon-light: #53bdd3;
 	--color-icon-dark: #1996cd;
+
+	/* links */
     --color-link: var(--color-icon-light);
     --color-link-hovered: var(--color-icon-dark);
-	--color-Steam-dark: #171a21;
 }

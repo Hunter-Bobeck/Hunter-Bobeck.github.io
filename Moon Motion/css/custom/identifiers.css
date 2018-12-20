@@ -23,7 +23,7 @@
     width: 100%;
 
 	/* height set to match background image's height: https://stackoverflow.com/a/22211990/3900755 */
-    padding-bottom: 52.0833333333%;	/* (img-height / img-width * container-width) so (1000 / 1920 * 100) */
+    padding-bottom: 51.5625%;	/* (img-height / img-width * container-width) so (990 / 1920 * 100) */
 
 	padding-left: 0%;
 	padding-right: 0%;
@@ -32,11 +32,20 @@
 #cover-buttons-group {
 	position: absolute;
 	float: left;
-	top: 56%;
+	top: 43.55%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
 
+/* block: features */
+#locomotions-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+/* block: platforms support */
 #platforms-support {
 	width: 40%;
 	height: auto;
