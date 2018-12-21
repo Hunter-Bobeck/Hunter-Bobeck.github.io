@@ -44,5 +44,8 @@
 }
 
 #link-Hunter-Bobeck {
-	color: var(--color-Felewin);
+	color: var(--color-link-Felewin);
+}
+#link-Hunter-Bobeck:hover {
+	color: var(--color-link-Felewin-hovered);
 }

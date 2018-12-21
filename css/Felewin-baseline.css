@@ -5,11 +5,14 @@
 
 :root {
     --color-Felewin: #5cb85c;
+    --color-Felewin-saturated: #34af34;
     --color-light: white;
     --color-dark: #232325;
 	--color-selection: #b0f3e6;
 	--color-link: var(--color-Felewin);
 	--color-link-hovered: #428bca;
+	--color-link-Felewin: var(--color-Felewin);
+	--color-link-Felewin-hovered: var(--color-Felewin-saturated);
 }
 
 
