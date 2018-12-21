@@ -97,6 +97,24 @@ button:focus {
 	text-align: right;
 }
 
+/* flipping */
+.flipped-vertically {
+	-moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+}
+.flipped-horizontally {
+	-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
 /* text formatting */
 .weight-light {
 	font-weight: lighter;

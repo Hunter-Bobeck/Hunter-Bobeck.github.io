@@ -7,11 +7,13 @@
 	/* other brands */
 	--color-Vive: #25a1c3;
 	--color-Steam: #171a21;
+	--color-Steam-lightened: #2b303d;
 
 	/* general */
     --color-main: var(--color-cover-average);
 	--color-light: var(--color-Vive);
 	--color-dark: var(--color-Steam);
+	--color-dark-lighter: var(--color-Steam-lightened);
 
 	/* icon */
 	--color-icon-light: #53bdd3;
