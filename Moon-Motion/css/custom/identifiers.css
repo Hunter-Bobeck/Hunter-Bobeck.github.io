@@ -43,6 +43,19 @@
 	height: auto;
 }
 
+/* footer */
+#footer {
+	display: table;
+	overflow: hidden;
+	width: 100%;
+}
+#footer-text {
+	display: table-cell;
+	vertical-align: middle;
+}
+#footer-text > p {
+	margin-bottom: 0;
+}
 #link-Hunter-Bobeck {
 	color: var(--color-link-Felewin);
 }

@@ -18,7 +18,36 @@
 	width: 10%;
 }
 
-/* video grids */
+/* block headers */
+.block-padded > h2 {
+	color: var(--color-Steam-text);
+	letter-spacing: .04em;
+	font-size: 2.5rem;
+	text-shadow: 0 1px 2px #000;
+}
+
+/* block "article" padding */
+.block-article-padding {
+	/* padding */
+	padding-left: 30%;
+	padding-right: 30%;
+}
+
+/* block dividers */
+.block-divider {
+	/* padding */
+	padding-top: 1em;
+
+	/* margin */
+	margin-left: 32.5%;
+	margin-right: 32.5%;
+
+	/* border */
+	border-bottom: 2.5px solid var(--color-light);
+    border-radius: 3px;
+}
+
+/* videos grids */
 .videos-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(30em, 1fr));
@@ -30,15 +59,78 @@
 	padding-left: 4em;
 	padding-right: 4em;
 	padding-bottom: 2em;
-}
-.videos-grid-video > h4 {
-	text-transform: uppercase;
-    font-size: 1.3em;
-    letter-spacing: .08em;
+
+	/* transition duration */
+	-o-transition: 1s;
+	-ms-transition: 1s;
+	-moz-transition: 1s;
+	-webkit-transition: 1s;
+	transition: 1s;
 }
 .videos-grid-video > video {
 	border: 5px solid var(--color-light);
 }
 .videos-grid-video > h4 {
+	padding-top: .5em;
+	text-transform: uppercase;
+    font-size: 1.3em;
+    letter-spacing: .08em;
 	color: var(--color-light);
+}
+.videos-grid-video > p {
+	color: var(--color-light);
+}
+.videos-grid-video:hover {
+	color: var(--color-link-hovered);
+}
+.videos-grid-video:hover > video {
+	border: 5px solid var(--color-link-hovered);
+}
+.videos-grid-video:hover > h4 {
+	color: var(--color-link-hovered);
+}
+.videos-grid-video:hover > p {
+	color: var(--color-link-hovered);
+}
+
+/* socials grids */
+.socials-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.socials-grid-social {
+	text-align: center;
+
+	/* padding */
+	padding-top: 2em;
+	padding-left: 4em;
+	padding-right: 4em;
+	padding-bottom: 2em;
+}
+.socials-grid-social > a > i {
+	color: white;
+	padding-bottom: .15em;
+
+	/* transition duration */
+	-o-transition: .2s;
+	-ms-transition: .2s;
+	-moz-transition: .2s;
+	-webkit-transition: .2s;
+	transition: .2s;
+}
+.socials-grid-social > a > p {
+	color: white;
+
+	/* transition duration */
+	-o-transition: .2s;
+	-ms-transition: .2s;
+	-moz-transition: .2s;
+	-webkit-transition: .2s;
+	transition: .2s;
+}
+.socials-grid-social:hover > a > .social-hover-styling-Discord {
+	color: var(--color-Discord);
+}
+.socials-grid-social:hover > a > .social-hover-styling-Git-Hub {
+	color: var(--color-Git-Hub);
 }

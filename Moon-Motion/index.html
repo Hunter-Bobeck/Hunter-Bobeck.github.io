@@ -43,9 +43,17 @@
 			<div class="unselectable wow fadeIn" id="cover-buttons-group">
 				<button id="button-Features">Features</button>
 				<button id="button-Git-Started">Git Started</button>
-				<button id="button-Contribute">Contribute</button>
+				<button id="button-Collaborate">Collaborate</button>
 			</div>
 		</div>
+
+		<!-- block: platforms support -->
+		<!--<div class="block-padded background-white">
+			<br>
+			<div class="align-center wow fadeIn">
+				<img src="images/Platforms Support.jpg" id="platforms-support"/>
+			</div>
+		</div>-->
 		
 		<!-- block: Features -->
 		<div class="block-padded background-dark" id="Features">
@@ -54,12 +62,12 @@
 				Features
 			</h2>
 			<div class="align-center">
-				<img src="images/Brace.png" class="brace"/>
+				<img src="images/Brace.png" class="brace wow fadeIn"/>
 			</div>
 
 			<div class="videos-grid wow fadeIn">
 				<a href="Locomotions.html">
-					<div class="videos-grid-video hvr-grow">
+					<div class="videos-grid-video hvr-grow wow fadeIn">
 						<video width="100%" height="auto" autoplay muted loop>
 							<source src="videos/Boosting.mp4" type="video/mp4"/>
 							Your browser does not support the video tag.
@@ -67,10 +75,13 @@
 						<h4>
 							Locomotions
 						</h4>
+						<p>
+							Set up an unlimited number of scenes you can switch between seamlessly via custom transitions.
+						</p>
 					</div>
 				</a>
 				<a href="Player.html">
-					<div class="videos-grid-video hvr-grow">
+					<div class="videos-grid-video hvr-grow wow fadeIn">
 						<video width="100%" height="auto" autoplay muted loop>
 							<source src="videos/Booster Aesthetics Cycling.mp4" type="video/mp4"/>
 							Your browser does not support the video tag.
@@ -83,7 +94,7 @@
 			</div>
 
 			<div class="align-center">
-				<img src="images/Brace.png" class="brace flipped-vertically"/>
+				<img src="images/Brace.png" class="brace flipped-vertically wow fadeIn"/>
 			</div>
 		</div>
 
@@ -93,36 +104,44 @@
 			<h2 class="weight-heavy wow fadeIn">
 				Git Started
 			</h2>
+			<div class="block-divider wow fadeIn"></div>
 			<br>
 			<br>
 			<br>
 			<br>
 		</div>
 
-		<!-- block: Contribute -->
-		<div class="block-padded background-dark" id="Contribute">
+		<!-- block: Collaborate -->
+		<div class="block-padded background-dark" id="Collaborate">
 			<br>
 			<h2 class="weight-heavy wow fadeIn">
-				Contribute
+				Collaborate
 			</h2>
+			<div class="block-divider wow fadeIn"></div>
 			<br>
-			<br>
-			<br>
-			<br>
-		</div>
-
-		<!-- block: platforms support -->
-		<div class="block-padded background-white">
-			<br>
-			<div class="align-center wow fadeIn">
-				<img src="images/Platforms Support.jpg" id="platforms-support"/>
+			<div class="block-article-padding socials-grid">
+				<div class="socials-grid-social hvr-grow wow fadeIn">
+					<a href="#" target="blank">
+						<i class="fab fa-discord fa-4x social-hover-styling-Discord"></i>
+						<p class="wow fadeIn">
+							Join the Discord
+						</p>
+					</a>
+				</div>
+				<div class="socials-grid-social hvr-grow wow fadeIn">
+					<a href="https://github.com/MoonMotionProject" target="blank">
+						<i class="fab fa-github fa-4x social-hover-styling-Git-Hub"></i>
+						<p class="wow fadeIn">
+							Contribute on GitHub
+						</p>
+					</a>
+				</div>
 			</div>
 		</div>
 
-		<!-- block: footer -->
-		<div class="block-padded background-dark">
-			<br>
-			<div class="align-center wow fadeIn">
+		<!-- footer -->
+		<div class="block-padded background-dark-lighter" id="footer">
+			<div class="align-center wow fadeIn" id="footer-text">
 				<p>
 					&copy; 2018<script>new Date().getFullYear()>2018&&document.write("-"+new Date().getFullYear());</script> <a href="https://github.com/MoonMotionProject" target="blank">Moon Motion Project</a>. Development by <a href="https://github.com/MoonMotionProject/MoonMotion/graphs/contributors" target="blank">Moon Motion contributors</a>.
 Website created by <a href="http://hunterbobeck.me/" target="blank" id="link-Hunter-Bobeck">Hunter Bobeck</a>.
@@ -136,6 +155,7 @@ Website created by <a href="http://hunterbobeck.me/" target="blank" id="link-Hun
 		<!-- Bootstrap -->						<script src="../js/bootstrap.min.js"></script>		
 		<!-- Wow -->							<script src="../js/wow.min.js"></script>		
 		<!-- activate Wow -->					<script>new WOW().init();</script>
+		<!-- Animate (not required by Wow) -->	<script src="../js/animate.js"></script>
 		<!-- Felewin baseline -->				<script src="../js/Felewin-baseline.js"></script>
 		<!-- smooth identifier scrolling -->
 		<script>
@@ -147,9 +167,9 @@ Website created by <a href="http://hunterbobeck.me/" target="blank" id="link-Hun
 			{
 				scrollTo("#Git-Started", 400);
 			});
-			$("#button-Contribute").click(function()
+			$("#button-Collaborate").click(function()
 			{
-				scrollTo("#Contribute", 400);
+				scrollTo("#Collaborate", 400);
 			});
 		</script>
 </body>

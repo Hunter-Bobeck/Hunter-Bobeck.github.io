@@ -138,6 +138,61 @@ button:focus {
 	font-style: italic;
 }
 
+/* text hovering shadowing */
+.text-hovering-shadowing {
+	-webkit-animation: hovering-shadowing 2s ease-in-out alternate infinite;
+	-moz-animation: hovering-shadowing 2s ease-in-out alternate infinite;
+	-ms-animation: hovering-shadowing 2s ease-in-out alternate infinite;
+	-o-animation: hovering-shadowing 2s ease-in-out alternate infinite;
+	animation: hovering-shadowing 2s ease-in-out alternate infinite;
+}
+@-webkit-keyframes hovering-shadowing {
+  0% {  
+    -webkit-transform: translateY(.1em);
+    text-shadow: 0 0 .5em rgba(255, 255, 255, .4), 0 0 .2em rgba(0, 0, 0, .3), 0 .3em .2em rgba(0, 0, 0, .3);
+  }
+  100% {
+    text-shadow: 0 0 .2em rgba(0, 0, 0, .3), 0 .5em .5em rgba(0, 0, 0, .3);
+  }
+}
+@-moz-keyframes hovering-shadowing {
+  0% {  
+    -moz-transform: translateY(.1em);
+    text-shadow: 0 0 .2em rgba(0, 0, 0, .3), 0 .3em .2em rgba(0, 0, 0, .3);
+  }
+  100% {
+    text-shadow: 0 0 .2em rgba(0, 0, 0, .3), 0 .5em .5em rgba(0, 0, 0, .3);
+  }
+}
+@-ms-keyframes hovering-shadowing {
+  0% {  
+    -ms-transform: translateY(.1em);
+    text-shadow: 0 0 .2em rgba(0, 0, 0, .3), 0 .3em .2em rgba(0, 0, 0, .3);
+  }
+  100% {
+    text-shadow:0 0 .2em rgba(0, 0, 0, .3), 0 .5em .5em rgba(0, 0, 0, .3);
+  }
+}
+@-o-keyframes hovering-shadowing {
+  0% {  
+    -o-transform: translateY(.1em);
+    text-shadow: 0 0 .2em rgba(0, 0, 0, .3), 0 .3em .2em rgba(0, 0, 0, .3);
+
+  }
+  100% {
+    text-shadow: 0 0 .2em rgba(0, 0, 0, .3), 0 .5em .5em rgba(0, 0, 0, .3);
+  }
+}
+@keyframes hovering-shadowing {
+  0% {  
+    transform: translateY(.1em);
+    text-shadow: 0 0 .2em rgba(0, 0, 0, .3), 0 .3em .2em rgba(0, 0, 0, .3);
+  }
+  100% {
+    text-shadow: 0 0 .2em rgba(0, 0, 0, .3), 0 .5em .5em rgba(0, 0, 0, .3);
+  }
+}
+
 /* backgrounds */
 .background-white {
 	background-color: white;

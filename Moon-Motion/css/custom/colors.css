@@ -8,6 +8,9 @@
 	--color-Vive: #25a1c3;
 	--color-Steam: #171a21;
 	--color-Steam-lightened: #2b303d;
+	--color-Steam-text: #b8b6b4;
+	--color-Discord: #7289DA;
+	--color-Git-Hub: #9869ad;
 
 	/* general */
     --color-main: var(--color-cover-average);
