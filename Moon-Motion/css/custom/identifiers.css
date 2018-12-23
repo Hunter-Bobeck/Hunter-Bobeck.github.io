@@ -37,10 +37,20 @@
 	transform: translate(-50%, -50%);
 }
 
-/* block: platforms support */
-#platforms-support {
+/* block: Platforms Support */
+#platforms-support-brands-image {
 	width: 40%;
 	height: auto;
+}
+#platforms-support-Oculus-logo {
+	width: 7%;
+	height: auto;
+	margin-bottom: 2em;
+}
+
+/* block: In Development */
+#construction-divider {
+	width: 50%;
 }
 
 /* footer */
@@ -55,10 +65,4 @@
 }
 #footer-text > p {
 	margin-bottom: 0;
-}
-#link-Hunter-Bobeck {
-	color: var(--color-link-Felewin);
-}
-#link-Hunter-Bobeck:hover {
-	color: var(--color-link-Felewin-hovered);
 }

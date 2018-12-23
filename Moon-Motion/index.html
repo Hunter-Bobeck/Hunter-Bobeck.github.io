@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
 	<!-- metadata -->
-    <meta charset="utf-8">	<!-- Unicode characterset -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">	<!-- Internet Explorer compatibility -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">	<!-- renders the page according to the device width -->
-    <meta name="description" content="Free and open source toolkit for VR locomotion in Unity.">		<!-- description (shown on searchengine result) -->
-    <meta name="keywords" content="moon, motion, toolkit, VR, locomotion, booster, jet, propulsion, smooth, snap-turning, One Giant Leap, Unity, SteamVR, open, source">		<!-- keywords for searchengine optimization -->
-    <meta name="author" content="Moon Motion Project">		<!-- author name -->
-	<!--<meta name="theme-color" content="#5cb85c">-->		<!-- Android Chrome bar color -->
-    <link rel="icon" href="images/Icon.png">	<!-- favicon -->
-    <title>Moon Motion Toolkit</title>		<!-- title -->
+		<meta charset="utf-8">	<!-- Unicode characterset -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">	<!-- Internet Explorer compatibility -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">	<!-- renders the page according to the device width -->
+		<meta name="description" content="Free and open source toolkit for VR locomotion in Unity.">		<!-- description (shown on searchengine result) -->
+		<meta name="keywords" content="moon, motion, toolkit, VR, locomotion, booster, jet, propulsion, smooth, snap-turning, One Giant Leap, Unity, SteamVR, open, source">		<!-- keywords for searchengine optimization -->
+		<meta name="author" content="Moon Motion Project">		<!-- author name -->
+		<!--<meta name="theme-color" content="#5cb85c">-->		<!-- Android Chrome bar color -->
+		<link rel="icon" href="images/Icon.png">	<!-- favicon -->
+		<title>Moon Motion Toolkit</title>		<!-- title -->
 	
 	<!-- CSS -->
 		<!-- Reset -->						<link rel="stylesheet" href="../css/reset.css">
@@ -31,44 +31,47 @@
 
 <body>
 	<div>
+
+		<!-- logo -->
+		<a href="index.html">
+			<img src="images/Logo.png" class="unselectable hvr-skew wow fadeIn" id="logo"/>
+		</a>
 		
 		<!-- modified Git Hub Corner (https://github.com/tholman/github-corners); original © Tim Holman 2016 -->
-		<a href="https://github.com/MoonMotionProject/MoonMotion" class="git-hub-corner" aria-label="Access the repository"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:var(--color-main); color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.git-hub-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.git-hub-corner:hover .octo-arm{animation:none}.git-hub-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+		<div>
+			<a href="https://github.com/MoonMotionProject/MoonMotion" class="git-hub-corner" aria-label="Access the repository"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:var(--color-main); color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.git-hub-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.git-hub-corner:hover .octo-arm{animation:none}.git-hub-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+		</div>
 		
 		<!-- cover -->
 		<div id="cover">
-			<a href="index.html">
-				<img src="images/Logo.png" class="unselectable wow fadeIn" id="logo"/>
-			</a>
+			<!-- buttons group -->
 			<div class="unselectable wow fadeIn" id="cover-buttons-group">
 				<button id="button-Features">Features</button>
 				<button id="button-Git-Started">Git Started</button>
-				<button id="button-Collaborate">Collaborate</button>
 			</div>
 		</div>
 
-		<!-- block: platforms support -->
-		<!--<div class="block-padded background-white">
+		<!-- block: Create Moving Experiences -->
+		<div class="block-padded background-dark-lighter" id="Features">
 			<br>
-			<div class="align-center wow fadeIn">
-				<img src="images/Platforms Support.jpg" id="platforms-support"/>
-			</div>
-		</div>-->
-		
-		<!-- block: Features -->
-		<div class="block-padded background-dark" id="Features">
-			<br>
+			<!-- header -->
 			<h2 class="weight-heavy wow fadeIn">
-				Features
+				Create Moving Experiences
 			</h2>
-			<div class="align-center">
-				<img src="images/Brace.png" class="brace wow fadeIn"/>
+			<!-- divider -->
+			<div class="block-divider wow fadeIn"></div>
+			<br>
+
+			<!-- article -->
+			<div class="block-article-padding align-center">
 			</div>
 
-			<div class="videos-grid wow fadeIn">
-				<a href="Locomotions.html">
-					<div class="videos-grid-video hvr-grow wow fadeIn">
-						<video width="100%" height="auto" autoplay muted loop>
+			<!-- mediad Features -->
+			<div class="media-grid">
+				<!-- Locomotions -->
+				<div class="media-grid-media hvr-grow wow fadeIn">
+					<a href="Locomotions.html">
+						<video width="100%" height="auto" no-controls autoplay muted loop>
 							<source src="videos/Boosting.mp4" type="video/mp4"/>
 							Your browser does not support the video tag.
 						</video>
@@ -76,62 +79,224 @@
 							Locomotions
 						</h4>
 						<p>
-							Set up an unlimited number of scenes you can switch between seamlessly via custom transitions.
+							Choose from a number of modular locomotions and cycle through combinations.
 						</p>
-					</div>
-				</a>
-				<a href="Player.html">
-					<div class="videos-grid-video hvr-grow wow fadeIn">
-						<video width="100%" height="auto" autoplay muted loop>
+					</a>
+				</div>
+				<!-- Player -->
+				<div class="media-grid-media hvr-grow wow fadeIn">
+					<a href="Player.html">
+						<video width="100%" height="auto" no-controls autoplay muted loop>
 							<source src="videos/Booster Aesthetics Cycling.mp4" type="video/mp4"/>
 							Your browser does not support the video tag.
 						</video>
 						<h4>
 							Player
 						</h4>
-					</div>
-				</a>
+						<p>
+							Drag-and-drop a premade VR player prefab with a multitude of settings.
+						</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<!-- block: Additional Features -->
+		<div class="block-padded background-dark">
+			<br>
+			<!-- header -->
+			<h2 class="weight-heavy wow fadeIn">
+				Additional Features
+			</h2>
+			<!-- divider -->
+			<div class="block-divider wow fadeIn"></div>
+			<br>
+			<!-- brace - downward -->
+			<div class="align-center">
+				<img src="images/Brace - Small.png" class="brace-small wow fadeIn"/>
 			</div>
 
+			<!-- article -->
+			<div class="block-article-padding align-center">
+				<!-- linked Features -->
+				<div class="linked-features">
+					<a href="Scenes.html">
+						<h4 class="hvr-grow wow fadeIn">
+							Scenes
+						</h4>
+					</a>
+					<br>
+					<a href="Prefabs.html">
+						<h4 class="hvr-grow wow fadeIn">
+							Prefabs
+						</h4>
+					</a>
+					<br>
+					<a href="Utilities.html">
+						<h4 class="hvr-grow wow fadeIn">
+							Utilities
+						</h4>
+					</a>
+				</div>
+			</div>
+
+			<!--
+				• Interaction System Player
+
+				• Virtuality Controls and their modifications of the Interaction System Player (which include blablabla)
+
+				• body collision
+
+				• adjustable curves
+
+				• 3D sound
+
+				• modularly disableable blablabla-modules
+
+				• singleton reference patterns for blablabla scripts
+
+				• alternate button mapping functionality
+
+				• controller models and textures including fuel gauge at different amounts
+
+				• powerups in Propulsion Testing Grounds for demonstrating the most salient features and settings, although many of the more fine-tuned settings must be tested via changes made in the inspector
+			-->
+			
+			<!-- brace - upward -->
 			<div class="align-center">
-				<img src="images/Brace.png" class="brace flipped-vertically wow fadeIn"/>
+				<img src="images/Brace - Small.png" class="brace-small flipped-vertically wow fadeIn"/>
+			</div>
+		</div>
+
+		<!-- block: Platforms Support -->
+		<div class="block-padded background-dark-lighter" id="Platforms-Support">
+			<br>
+			<!-- header -->
+			<h2 class="weight-heavy wow fadeIn">
+				Platforms Support
+			</h2>
+			<!-- divider -->
+			<div class="block-divider wow fadeIn"></div>
+			<br>
+			<!-- brands image -->
+			<div class="align-center wow fadeIn">
+				<img src="images/Platforms Support Brands Image.png" id="platforms-support-brands-image"/>
+			</div>
+			<!-- article -->
+			<div class="block-article-padding">
+				<!-- Unity compatibility statement -->
+				<p class="wow fadeIn">
+					Tested to work with Unity version 2018.1.0f2.
+				</p>
+			</div>
+		</div>
+
+		<!-- block: In Development -->
+		<div class="block-padded background-dark-lighter" id="In-Development">
+			<br>
+			<!-- header -->
+			<h2 class="weight-heavy wow fadeIn">
+				In Development
+			</h2>
+			<!-- construction divider image -->
+			<div class="align-center">
+				<img src="images/Construction Divider.jpg" id="construction-divider"/>
+			</div>
+			<br>
+
+			<!-- article -->
+			<div class="block-article-padding">
+				<!-- Oculus compatibility statement -->
+				<p class="align-center wow fadeIn">
+					Not yet tested with Oculus.
+					<br>
+					Should work with minimal changes.
+					<br>
+					Please contribute!
+				</p>
+			</div>
+			<!-- Oculus logo -->
+			<div class="align-center wow fadeIn">
+				<img src="images/Platforms Support Oculus Logo.png" id="platforms-support-Oculus-logo"/>
 			</div>
 		</div>
 
 		<!-- block: Git Started -->
-		<div class="block-padded background-dark-lighter" id="Git-Started">
+		<div class="block-padded background-dark" id="Git-Started">
 			<br>
-			<h2 class="weight-heavy wow fadeIn">
+			<!-- header -->
+			<h2 class="weight-heavy">
 				Git Started
 			</h2>
+			<!-- divider -->
 			<div class="block-divider wow fadeIn"></div>
 			<br>
-			<br>
-			<br>
-			<br>
+			<!-- article -->
+			<div class="block-article-padding">
+				<!-- GitHub social -->
+				<div class="socials-grid socials-grid-singles">
+					<div class="socials-grid-social wow fadeIn">
+						<a href="https://github.com/MoonMotionProject/MoonMotion" target="blank" class="hvr-grow">
+							<i class="fab fa-github fa-4x social-hover-styling-Git-Hub"></i>
+							<p>
+								MoonMotion on GitHub
+							</p>
+						</a>
+					</div>
+				</div>
+				<!-- article -->
+				<div class="align-center">
+					<!-- Git Started statement -->
+					<p class="wow fadeIn">
+						The <span class="italicized">MoonMotion</span> repo contains a project template for starting a new Moon Motion project. The Moon Motion Toolkit is included under <span class="italicized">Assets\Plugins\Moon Motion Toolkit</span>.
+					</p>
+					<p class="wow fadeIn">
+						I suggest first cloning the repo via Git Hub, then duplicating the repository to create your new project (manually removing any potentially hidden Git files that carry over). Then you can pull updates to the official repository locally as they are released, and copy the changes you want to your project. I would recommend starting a Git Hub repository for your project as well.
+					</p>
+					<!-- Setup guide -->
+					<!--
+						write a guide on how to add Moon Motion to a project (import plugin, setup layers, remove Steam VR if you already have it, remove any Player prefab you already have (or temporarily keep it to reference what components are on it), etc.)
+
+						but encourage people to start projects from the template instead
+
+						Detail the template-chosen controls and also the default controls.
+					-->
+					<!-- Documentation link -->
+					<p class="wow fadeIn">
+						<a href="Documentation.html">
+							Documentation
+						</a>
+					</p>
+				</div>
+			</div>
 		</div>
 
 		<!-- block: Collaborate -->
 		<div class="block-padded background-dark" id="Collaborate">
 			<br>
+			<!-- header -->
 			<h2 class="weight-heavy wow fadeIn">
 				Collaborate
 			</h2>
+			<!-- divider -->
 			<div class="block-divider wow fadeIn"></div>
 			<br>
+			<!-- socials -->
 			<div class="block-article-padding socials-grid">
-				<div class="socials-grid-social hvr-grow wow fadeIn">
-					<a href="#" target="blank">
+				<!-- Discord -->
+				<div class="socials-grid-social wow fadeIn">
+					<a href="#" target="blank" class="hvr-grow">
 						<i class="fab fa-discord fa-4x social-hover-styling-Discord"></i>
-						<p class="wow fadeIn">
+						<p>
 							Join the Discord
 						</p>
 					</a>
 				</div>
-				<div class="socials-grid-social hvr-grow wow fadeIn">
-					<a href="https://github.com/MoonMotionProject" target="blank">
+				<!-- GitHub -->
+				<div class="socials-grid-social wow fadeIn">
+					<a href="https://github.com/MoonMotionProject/MoonMotion" target="blank" class="hvr-grow">
 						<i class="fab fa-github fa-4x social-hover-styling-Git-Hub"></i>
-						<p class="wow fadeIn">
+						<p>
 							Contribute on GitHub
 						</p>
 					</a>
@@ -141,10 +306,10 @@
 
 		<!-- footer -->
 		<div class="block-padded background-dark-lighter" id="footer">
+			<!-- text -->
 			<div class="align-center wow fadeIn" id="footer-text">
 				<p>
-					&copy; 2018<script>new Date().getFullYear()>2018&&document.write("-"+new Date().getFullYear());</script> <a href="https://github.com/MoonMotionProject" target="blank">Moon Motion Project</a>. Development by <a href="https://github.com/MoonMotionProject/MoonMotion/graphs/contributors" target="blank">Moon Motion contributors</a>.
-Website created by <a href="http://hunterbobeck.me/" target="blank" id="link-Hunter-Bobeck">Hunter Bobeck</a>.
+					&copy; 2018<script>new Date().getFullYear()>2018&&document.write("-"+new Date().getFullYear());</script> <a href="https://github.com/MoonMotionProject" target="blank">Moon Motion Project</a>. Development by <a href="https://github.com/MoonMotionProject/MoonMotion/graphs/contributors" target="blank">Moon Motion contributors</a>. Website created by <a href="http://hunterbobeck.me/" target="blank" class="link-Felewin">Hunter Bobeck</a>.
 				</p>
 			</div>
 		</div>
@@ -166,10 +331,6 @@ Website created by <a href="http://hunterbobeck.me/" target="blank" id="link-Hun
 			$("#button-Git-Started").click(function()
 			{
 				scrollTo("#Git-Started", 400);
-			});
-			$("#button-Collaborate").click(function()
-			{
-				scrollTo("#Collaborate", 400);
 			});
 		</script>
 </body>

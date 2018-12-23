@@ -72,6 +72,14 @@ button:focus {
 
 /* CLASSES */
 
+/* Felewin links */
+.link-Felewin {
+	color: var(--color-link-Felewin);
+}
+.link-Felewin:hover {
+	color: var(--color-link-Felewin-hovered);
+}
+
 /* uninteractibility */
 .unselectable {
 	-webkit-touch-callout: none;
@@ -98,6 +106,32 @@ button:focus {
 }
 .align-right {
 	text-align: right;
+}
+
+/* tabbing */
+.halftabbed {
+  padding-left: 2.5em;
+}
+@media (max-width: 1000px) {
+  .halftabbed {
+    padding-left: 1.25em;
+  }
+}
+.tabbed {
+  padding-left: 5em;
+}
+@media (max-width: 1000px) {
+  .tabbed {
+    padding-left: 2.5em;
+  }
+}
+.doubletabbed {
+  padding-left: 10em;
+}
+@media (max-width: 1000px) {
+  .doubletabbed {
+    padding-left: 5em;
+  }
 }
 
 /* flipping */
@@ -210,4 +244,9 @@ button:focus {
 /* blocks */
 .block-padded {
 	padding: 2em;
+}
+
+/* Wow visible-before-animating bugfix */
+.wow {
+	visibility: hidden;
 }

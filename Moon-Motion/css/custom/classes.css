@@ -3,27 +3,32 @@
 
 /* fonts */
 .font-Open-Sans {
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Open Sans", sans-serif;
 }
 
 /* backgrounds */
 .background-dark-lighter {
 	background-color: var(--color-dark-lighter);
-	color: white;
+	color: var(--color-Steam-text);
 }
 
 /* braces */
-.brace {
+.brace-small {
 	padding-top: 1em;
 	width: 10%;
 }
+.brace-large {
+	padding-top: 1em;
+	width: 14%;
+}
 
 /* block headers */
-.block-padded > h2 {
-	color: var(--color-Steam-text);
+.block-padded > h2, .block-padded > a > h2 {
 	letter-spacing: .04em;
 	font-size: 2.5rem;
-	text-shadow: 0 1px 2px #000;
+}
+.block-padded > a > h2 {
+	color: var(--color-link)
 }
 
 /* block "article" padding */
@@ -39,22 +44,22 @@
 	padding-top: 1em;
 
 	/* margin */
-	margin-left: 32.5%;
-	margin-right: 32.5%;
+	margin-left: 25%;
+	margin-right: 25%;
 
 	/* border */
 	border-bottom: 2.5px solid var(--color-light);
     border-radius: 3px;
 }
 
-/* videos grids */
-.videos-grid {
+/* media grids */
+.media-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(30em, 1fr));
 	margin-left: 15%;
 	margin-right: 15%;
 }
-.videos-grid-video {
+.media-grid-media {
 	padding-top: 4em;
 	padding-left: 4em;
 	padding-right: 4em;
@@ -67,36 +72,35 @@
 	-webkit-transition: 1s;
 	transition: 1s;
 }
-.videos-grid-video > video {
+.media-grid-media > a > video {
 	border: 5px solid var(--color-light);
 }
-.videos-grid-video > h4 {
+.media-grid-media > a > h4 {
 	padding-top: .5em;
-	text-transform: uppercase;
-    font-size: 1.3em;
-    letter-spacing: .08em;
+}
+.media-grid-media > a > p {
 	color: var(--color-light);
 }
-.videos-grid-video > p {
-	color: var(--color-light);
-}
-.videos-grid-video:hover {
+.media-grid-media:hover {
 	color: var(--color-link-hovered);
 }
-.videos-grid-video:hover > video {
+.media-grid-media:hover > a > video {
 	border: 5px solid var(--color-link-hovered);
 }
-.videos-grid-video:hover > h4 {
+.media-grid-media:hover > a > h4 {
 	color: var(--color-link-hovered);
 }
-.videos-grid-video:hover > p {
+.media-grid-media:hover > a > p {
 	color: var(--color-link-hovered);
 }
 
 /* socials grids */
 .socials-grid {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: repeat(2, 1fr);
+}
+.socials-grid-singles {
+	grid-template-columns: repeat(1, 1fr);
 }
 .socials-grid-social {
 	text-align: center;
@@ -129,8 +133,40 @@
 	transition: .2s;
 }
 .socials-grid-social:hover > a > .social-hover-styling-Discord {
-	color: var(--color-Discord);
+	/*color: var(--color-Discord);*/
 }
 .socials-grid-social:hover > a > .social-hover-styling-Git-Hub {
-	color: var(--color-Git-Hub);
+	/*color: var(--color-Git-Hub);*/
+}
+
+/* linked features */
+.linked-features {
+	margin-top: 1em;
+}
+.linked-features > a > h4 {
+	margin-bottom: 1em;
+}
+.linked-features > h4:hover > a {
+	color: var(--color-link-hovered);
+}
+
+/* feature link headers */
+.media-grid-media > a > h4, .linked-features > a > h4 {
+	text-transform: uppercase;
+    font-size: 1.3em;
+    letter-spacing: .08em;
+	color: var(--color-light);
+	text-shadow: none;
+	font-weight: normal;
+}
+
+/* headered features */
+.headered-feature {
+	margin-top: 3em;
+}
+
+/* Documentation link header */
+.documentation-link-header {
+	font-weight: 900;
+	margin-top: 3em;
 }
