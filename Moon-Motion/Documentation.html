@@ -29,12 +29,12 @@
 		<!-- none -->
 </head>
 
-<body>
+<body class="Documentation-scrollbar">
 	<div>
 		
 		<!-- logo -->
 		<a href="index.html">
-			<img src="images/Logo.png" class="unselectable hvr-skew" id="logo"/>
+			<img src="images/Logo.png" class="unselectable hvr-float-shadow" id="logo"/>
 		</a>
 		
 		<!-- modified Git Hub Corner (https://github.com/tholman/github-corners); original © Tim Holman 2016 -->
@@ -44,63 +44,72 @@
 		
 		<!-- block: Documentation -->
 		<div class="block-padded background-dark">
-			<!-- Documentation link header -->
-			<h2 class="documentation-link-header">
-				Documentation
-			</h2>
-			<!-- divider -->
-			<div class="block-divider"></div>
-			<br>
-			<!-- brace - downward -->
-			<div class="align-center">
-				<img src="images/Brace - Large.png" class="brace-large wow fadeIn"/>
+			<!-- Documentation top (to appear to keep among Documentations) -->
+			<div class="unselectable" id="Documentation-top">
+				<!-- Documentation link header -->
+				<a href="Documentation.html">
+					<h2 class="documentation-link-header">
+						Documentation
+					</h2>
+				</a>
+				<!-- divider -->
+				<div class="block-divider"></div>
+				<br>
 			</div>
 
-			<!-- article -->
-			<div class="block-article-padding align-center">
-				<!-- linked Documentations -->
-				<div class="linked-features">
-					<a href="Locomotions.html">
-						<h4 class="hvr-grow wow fadeIn">
-							Motion
-						</h4>
-					</a>
-					<br>
-					<a href="Player.html">
-						<h4 class="hvr-grow wow fadeIn">
-							Player
-						</h4>
-					</a>
-					<br>
-					<a href="Scenes.html">
-						<h4 class="hvr-grow wow fadeIn">
-							Scenes
-						</h4>
-					</a>
-					<br>
-					<a href="Prefabs.html">
-						<h4 class="hvr-grow wow fadeIn">
-							Prefabs
-						</h4>
-					</a>
-					<br>
-					<a href="Utilities.html">
-						<h4 class="hvr-grow wow fadeIn">
-							Utilities
-						</h4>
-					</a>
-					<br>
-					<a href="Conventions.html">
-						<h4 class="hvr-grow wow fadeIn">
-							Conventions
-						</h4>
-					</a>
+			<!-- Documentation meta (to animate out) -->
+			<div class="unselectable" id="Documentation-meta">
+				<!-- brace - downward -->
+				<div class="align-center">
+					<img src="images/Brace - Large.png" class="brace-large wow fadeIn"/>
 				</div>
-			</div>
-
-			<!-- brace - upward -->
-			<div class="align-center">
-				<img src="images/Brace - Large.png" class="brace-large flipped-vertically wow fadeIn"/>
+				<!-- article -->
+				<div class="block-article-padding align-center">
+					<!-- linked Documentations -->
+					<div class="linked-features">
+						<a class="linked-feature hvr-grow" href="Locomotions.html"><!-- onclick="linkedFeatureOnclick_Motion()" -->
+							<h4 class="wow fadeIn">
+								Motion
+							</h4>
+						</a>
+						<br>
+						<a class="linked-feature hvr-grow" href="Player.html"><!-- onclick="linkedFeatureOnclick_Player()" -->
+							<h4 class="wow fadeIn">
+								Player
+							</h4>
+						</a>
+						<br>
+						<a class="linked-feature hvr-grow" href="Scenes.html"><!-- onclick="linkedFeatureOnclick_Scenes()" -->
+							<h4 class="wow fadeIn">
+								Scenes
+							</h4>
+						</a>
+						<br>
+						<a class="linked-feature hvr-grow" href="Prefabs.html"><!-- onclick="linkedFeatureOnclick_Prefabs()" -->
+							<h4 class="wow fadeIn">
+								Prefabs
+							</h4>
+						</a>
+						<br>
+						<a class="linked-feature hvr-grow" href="Utilities.html"><!-- onclick="linkedFeatureOnclick_Utilities()" -->
+							<h4 class="wow fadeIn">
+								Utilities
+							</h4>
+						</a>
+						<br>
+						<a class="linked-feature hvr-grow" href="Conventions.html"><!-- onclick="linkedFeatureOnclick_Conventions()" -->
+							<h4 class="wow fadeIn">
+								Conventions
+							</h4>
+						</a>
+						<h4 class="wow fadeIn linked-feature-antibudging-placeholder">
+						</h4>
+					</div>
+				</div>
+				<!-- brace - upward -->
+				<div class="align-center">
+					<img src="images/Brace - Large.png" class="brace-large flipped-vertically wow fadeIn"/>
+				</div>
 			</div>
 		</div>
 		
@@ -116,5 +125,40 @@
 		<script>
 			document.title += " | "+(location.pathname.substring(location.pathname.lastIndexOf("/") + 1)).replace(".html", "");
 		</script>
+		<!-- Documentation meta animating out, then hiding and delayed loading of clicked Documentation link -->
+		<!--<script>
+			function linkedFeatureOnclick(link)
+			{
+				$("#Documentation-meta").animateCss('fadeOut', function()
+				{
+					$("#Documentation-meta").hide();
+					window.location.href = link;
+				});
+			}
+			function linkedFeatureOnclick_Motion()
+			{
+				linkedFeatureOnclick("Locomotions.html");
+			}
+			function linkedFeatureOnclick_Player()
+			{
+				linkedFeatureOnclick("Player.html");
+			}
+			function linkedFeatureOnclick_Scenes()
+			{
+				linkedFeatureOnclick("Scenes.html");
+			}
+			function linkedFeatureOnclick_Prefabs()
+			{
+				linkedFeatureOnclick("Prefabs.html");
+			}
+			function linkedFeatureOnclick_Utilities()
+			{
+				linkedFeatureOnclick("Utilities.html");
+			}
+			function linkedFeatureOnclick_Conventions()
+			{
+				linkedFeatureOnclick("Conventions.html");
+			}
+		</script>-->
 </body>
 </html>

@@ -49,6 +49,7 @@ a {
 a:hover {
 	color: var(--color-link-hovered);
     text-decoration: none;
+	cursor: pointer;
 }
 a:visited {
     text-decoration: none;

@@ -146,8 +146,19 @@
 .linked-features > a > h4 {
 	margin-bottom: 1em;
 }
-.linked-features > h4:hover > a {
+.linked-feature-antibudging-placeholder {
+	margin: 0;
+	padding: 0;
+}
+.linked-features > a:hover > h4 {
 	color: var(--color-link-hovered);
+
+	/* transition duration */
+	-o-transition: .2s;
+	-ms-transition: .2s;
+	-moz-transition: .2s;
+	-webkit-transition: .2s;
+	transition: .2s;
 }
 
 /* feature link headers */
@@ -165,8 +176,24 @@
 	margin-top: 3em;
 }
 
+/* Documentation scrollbar */
+.Documentation-scrollbar {
+	overflow: scroll;
+}
+
 /* Documentation link header */
 .documentation-link-header {
 	font-weight: 900;
 	margin-top: 3em;
+	color: var(--color-link);
+}
+.documentation-link-header:hover {
+	color: var(--color-link-hovered);
+
+	/* transition duration */
+	-o-transition: .2s;
+	-ms-transition: .2s;
+	-moz-transition: .2s;
+	-webkit-transition: .2s;
+	transition: .2s;
 }
