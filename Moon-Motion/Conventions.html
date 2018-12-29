@@ -45,10 +45,10 @@
 		<!-- block: Documentation - Conventions -->
 		<div class="block-padded background-dark">
 			<!-- Documentation top (to appear to keep among Documentations) -->
-			<div class="unselectable" id="Documentation-top">
+			<div class="unselectable">
 				<!-- Documentation link header -->
 				<a href="Documentation.html">
-					<h2 class="documentation-link-header">
+					<h2 class="documentation-link-header documentation-margin-top">
 						Documentation
 					</h2>
 				</a>
@@ -100,7 +100,7 @@
 									Singleton Reference Patterns
 								</h4>
 								<p class="wow fadeIn">
-									Easily access the Player reference, Player Body, left or right Hand/Controller/Booster/ other locomotion instances
+									Easily access the instance for the player, the player body, the left and right hands, the locomotions, and other aspects.
 								</p>
 							</div>
 							<!--
@@ -161,9 +161,6 @@
 		<!-- activate Wow -->					<script>new WOW().init();</script>
 		<!-- Animate (not required by Wow) -->	<script src="../js/animate.js"></script>
 		<!-- Felewin baseline -->				<script src="../js/Felewin-baseline.js"></script>
-		<!-- subpage titling -->
-		<script>
-			document.title += " | "+(location.pathname.substring(location.pathname.lastIndexOf("/") + 1)).replace(".html", "");
-		</script>
+		<!-- Felewin subpage titling -->		<script src="../js/Felewin-subpage-titling.js"></script>
 </body>
 </html>

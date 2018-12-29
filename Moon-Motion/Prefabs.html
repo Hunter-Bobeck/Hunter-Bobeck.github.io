@@ -45,10 +45,10 @@
 		<!-- block: Documentation - Prefabs -->
 		<div class="block-padded background-dark">
 			<!-- Documentation top (to appear to keep among Documentations) -->
-			<div class="unselectable" id="Documentation-top">
+			<div class="unselectable">
 				<!-- Documentation link header -->
 				<a href="Documentation.html">
-					<h2 class="documentation-link-header">
+					<h2 class="documentation-link-header documentation-margin-top">
 						Documentation
 					</h2>
 				</a>
@@ -82,7 +82,7 @@
 									Powerup Templates
 								</h4>
 								<p class="wow fadeIn">
-									Powerups setup to collide with the Player, which can be provided custom functionality, toggle a particular object's enablement, or point to particular class methods
+									Powerups setup to collide with the Player, which can be provided custom functionality, toggle a particular object's enablement, or point to particular class methods.
 								</p>
 							</div>
 				
@@ -92,7 +92,7 @@
 									Basic Platforms and Crates
 								</h4>
 								<p class="wow fadeIn">
-									Platforms with teleportation functionality built-in, and crates suitable for testing simple level designs
+									Platforms with teleportation functionality built-in, and crates suitable for testing simple level designs.
 								</p>
 							</div>
 						</div>
@@ -109,9 +109,6 @@
 		<!-- activate Wow -->					<script>new WOW().init();</script>
 		<!-- Animate (not required by Wow) -->	<script src="../js/animate.js"></script>
 		<!-- Felewin baseline -->				<script src="../js/Felewin-baseline.js"></script>
-		<!-- subpage titling -->
-		<script>
-			document.title += " | "+(location.pathname.substring(location.pathname.lastIndexOf("/") + 1)).replace(".html", "");
-		</script>
+		<!-- Felewin subpage titling -->		<script src="../js/Felewin-subpage-titling.js"></script>
 </body>
 </html>

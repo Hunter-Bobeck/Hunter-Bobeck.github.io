@@ -45,10 +45,10 @@
 		<!-- block: Documentation - Utilities -->
 		<div class="block-padded background-dark">
 			<!-- Documentation top (to appear to keep among Documentations) -->
-			<div class="unselectable" id="Documentation-top">
+			<div class="unselectable">
 				<!-- Documentation link header -->
 				<a href="Documentation.html">
-					<h2 class="documentation-link-header">
+					<h2 class="documentation-link-header documentation-margin-top">
 						Documentation
 					</h2>
 				</a>
@@ -72,6 +72,14 @@
 				<br>
 				<!-- subDocumentation flyer (to animate in intensely) -->
 				<div class="wow fadeInUp">
+
+					<!-- Dependencies -->
+					<h4 class="wow fadeIn">
+						<a href="Dependencies.html">
+							Dependencies
+						</a>
+					</h4>
+
 					<!-- article -->
 					<div class="block-article-padding align-center">
 						<!-- headered Utilities -->
@@ -82,7 +90,7 @@
 									Kinematizer
 								</h4>
 								<p class="wow fadeIn">
-									a
+									Controls the kinematicity of the attached rigidbody according to a dependencies setting.
 								</p>
 							</div>
 
@@ -92,7 +100,7 @@
 									Slower
 								</h4>
 								<p class="wow fadeIn">
-									a
+									Slows the velocity of an attached rigidbody by a set speed, so long as a dependencies setting is met.
 								</p>
 							</div>
 
@@ -102,7 +110,7 @@
 									Face Player Camera
 								</h4>
 								<p class="wow fadeIn">
-									a
+									Updates an object to always face the player camera.
 								</p>
 							</div>
 
@@ -112,25 +120,17 @@
 									Interpolation Curved
 								</h4>
 								<p class="wow fadeIn">
-									a
+									Enumerates interpolation curves and provides methods for using them. For example: <span class="italicized">linear, quadratic, sine, smooth,</span> and <span class="italicized">smoother</span>.
 								</p>
 							</div>
 
-							<!-- Dependencies -->
+							<!-- (and other convenient scripts) -->
 							<div class="headered-feature">
 								<h4 class="wow fadeIn">
-									Dependencies
+									(and other convenient scripts)
 								</h4>
-								<p class="wow fadeIn">
-									Define game state dependencies upon which locomotion and other features can depend; includes premade state requisites for: recognizing when the player is drifting, has a hand clipping through an object, is holding an object such as the Longbow, is hovering over an interactable, is within a gravity zone, and much more recognized states; supports the creation of custom game state definitions
-								</p>
 							</div>
 						</div>
-
-						<!-- stated Utilities -->
-						<p>
-							and other convenient scripts
-						</p>
 					</div>
 				</div>
 			</div>
@@ -144,9 +144,6 @@
 		<!-- activate Wow -->					<script>new WOW().init();</script>
 		<!-- Animate (not required by Wow) -->	<script src="../js/animate.js"></script>
 		<!-- Felewin baseline -->				<script src="../js/Felewin-baseline.js"></script>
-		<!-- subpage titling -->
-		<script>
-			document.title += " | "+(location.pathname.substring(location.pathname.lastIndexOf("/") + 1)).replace(".html", "");
-		</script>
+		<!-- Felewin subpage titling -->		<script src="../js/Felewin-subpage-titling.js"></script>
 </body>
 </html>
