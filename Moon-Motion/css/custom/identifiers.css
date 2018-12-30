@@ -15,28 +15,6 @@
 	padding-right: 0;
 }
 
-/* cover */
-#cover {
-	background-image: url("../../images/Cover.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-
-	/* height set to match background image's height: https://stackoverflow.com/a/22211990/3900755 */
-    padding-bottom: 51.5625%;	/* (img-height / img-width * container-width) so (990 / 1920 * 100) */
-
-	padding-left: 0%;
-	padding-right: 0%;
-	min-width: 100%;
-}
-#cover-buttons-group {
-	position: absolute;
-	float: left;
-	top: 43.55%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
 /* block: Platforms Support */
 #platforms-support-brands-image {
 	width: 40%;
