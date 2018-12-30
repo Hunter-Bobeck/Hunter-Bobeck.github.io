@@ -43,11 +43,21 @@
 			<a href="index.html">
 				<img src="images/Logo.png" class="unselectable wow fadeIn" id="logo"/>
 			</a>
-			<!-- buttons group -->
-			<div class="unselectable wow fadeIn" id="cover-buttons-group">
-				<button id="button-Features">Features</button>
-				<button id="button-Git-Started">Git Started</button>
-				<a href="Documentation.html"><button>View Docs</button></a>
+			<!-- buttons -->
+			<div id="cover-buttons-grid-positioner">
+				<div id="cover-buttons-grid-saver">
+					<div class="unselectable wow fadeIn" id="cover-buttons-grid">
+						<div class="cover-button-cell">
+							<button id="button-Features">Features</button>
+						</div>
+						<div class="cover-button-cell">
+							<button id="button-Git-Started">Git Started</button>
+						</div>
+						<div class="cover-button-cell">
+							<button id="button-Documentation">View Docs</button>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
@@ -316,6 +326,10 @@
 			$("#button-Git-Started").click(function()
 			{
 				scrollTo("#Git-Started", 400);
+			});
+			$("#button-Documentation").click(function()
+			{
+				window.location.href = "Documentation.html";
 			});
 		</script>
 </body>

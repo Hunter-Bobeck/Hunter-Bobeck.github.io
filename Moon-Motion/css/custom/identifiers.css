@@ -36,12 +36,24 @@
     width: 100%;
 	min-width: 100%;
 }
-#cover-buttons-group {
+
+/* cover buttons */
+#cover-buttons-grid-positioner {
 	/* positioning */
 	position: absolute;
-	top: 41.25%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	padding-top: 19vw;
+	left: 35vw;
+	right: 35vw;
+	margin: 0 auto;
+}
+#cover-buttons-grid-saver {
+	position: relative;
+}
+#cover-buttons-grid {
+	/* gridding */
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 7.5vw);
+	justify-content: space-between;
 }
 
 /* block: Platforms Support */

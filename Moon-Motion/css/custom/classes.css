@@ -6,6 +6,17 @@
 	font-family: "Open Sans", sans-serif;
 }
 
+/* cover */
+.cover-button-cell {
+	/* testing */
+	/*border: 2px solid red;*/
+
+	/* centering */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 /* backgrounds */
 .background-dark-lighter {
 	background-color: var(--color-dark-lighter);
