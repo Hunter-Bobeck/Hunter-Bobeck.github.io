@@ -98,6 +98,14 @@ button:focus {
 	user-drag: none;
 }
 
+/* positioning */
+.relative {
+	position: relative;
+}
+.absolute {
+	position: absolute;
+}
+
 /* alignment */
 .align-left {
 	text-align: left;
@@ -245,6 +253,27 @@ button:focus {
 /* blocks */
 .block-padded {
 	padding: 2em;
+}
+
+/* grids/cells */
+.grid {
+	/* testing */
+	/*border: 2px solid yellow;*/
+
+	/* gridding */
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 7.5vw);
+	justify-content: space-between;
+}
+.cell {
+	/* testing */
+	/*border: 2px solid red;*/
+}
+.cell-flex-centered {
+	/* centering */
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 /* Wow visible-before-animating bugfix */

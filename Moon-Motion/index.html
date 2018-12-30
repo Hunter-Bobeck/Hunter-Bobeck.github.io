@@ -38,27 +38,31 @@
 		</div>
 		
 		<!-- cover -->
-		<div id="cover">
+		<div class="relative">
 			<!-- logo -->
-			<a href="index.html">
-				<img src="images/Logo.png" class="unselectable wow fadeIn" id="logo"/>
-			</a>
+			<div class="absolute">
+				<a href="index.html">
+					<img src="images/Logo.png" class="unselectable wow fadeIn" id="logo"/>
+				</a>
+			</div>
 			<!-- buttons -->
-			<div id="cover-buttons-grid-positioner">
-				<div id="cover-buttons-grid-saver">
-					<div class="unselectable wow fadeIn" id="cover-buttons-grid">
-						<div class="cover-button-cell">
+			<div class="absolute" id="cover-buttons-grid-positioner">
+				<div class="relative">
+					<div class="grid unselectable wow fadeIn">
+						<div class="cell cell-flex-centered">
 							<button id="button-Features">Features</button>
 						</div>
-						<div class="cover-button-cell">
+						<div class="cell cell-flex-centered">
 							<button id="button-Git-Started">Git Started</button>
 						</div>
-						<div class="cover-button-cell">
+						<div class="cell cell-flex-centered">
 							<button id="button-Documentation">View Docs</button>
 						</div>
 					</div>
 				</div>
 			</div>
+			<!-- image -->
+			<img src="images/Cover.jpg" id="cover-image"/>
 		</div>
 
 		<!-- block: Create Moving Experiences -->
@@ -73,9 +77,9 @@
 			<br>
 
 			<!-- mediad Features -->
-			<div class="media-grid align-center">
+			<div class="grid media-grid align-center">
 				<!-- Locomotions -->
-				<div class="media-grid-media hvr-grow wow fadeIn">
+				<div class="cell media-cell hvr-grow wow fadeIn">
 					<a href="Locomotions.html">
 						<video width="100%" height="auto" no-controls autoplay muted loop>
 							<source src="videos/Locomotions.mp4" type="video/mp4"/>
@@ -90,7 +94,7 @@
 					</a>
 				</div>
 				<!-- Player -->
-				<div class="media-grid-media hvr-grow wow fadeIn">
+				<div class="cell media-cell hvr-grow wow fadeIn">
 					<a href="Player.html">
 						<video width="100%" height="auto" no-controls autoplay muted loop>
 							<source src="videos/Player.mp4" type="video/mp4"/>
@@ -105,7 +109,7 @@
 					</a>
 				</div>
 				<!-- Cycling -->
-				<div class="media-grid-media hvr-grow wow fadeIn">
+				<div class="cell media-cell hvr-grow wow fadeIn">
 					<a href="Player.html">
 						<video width="100%" height="auto" no-controls autoplay muted loop>
 							<source src="videos/Booster Aesthetics Cycling.mp4" type="video/mp4"/>
@@ -204,27 +208,27 @@
 			<div class="block-divider wow fadeIn"></div>
 			<br>
 			<!-- socials -->
-			<div class="block-article-padding socials-grid socials-grid-triples">
+			<div class="grid launchers-grid">
 				<!-- GitHub -->
-				<div class="socials-grid-social wow fadeIn">
+				<div class="cell launcher-cell wow fadeIn">
 					<a href="https://github.com/MoonMotionProject/MoonMotion" target="blank" class="hvr-grow">
-						<i class="fab fa-github fa-4x social-hover-styling-Git-Hub"></i>
+						<i class="fab fa-github fa-4x"></i>
 						<p>
 							Clone or Fork
 						</p>
 					</a>
 				</div>
 				<!-- Documentation -->
-				<div class="socials-grid-social wow fadeIn">
+				<div class="cell launcher-cell wow fadeIn">
 					<a href="Documentation.html" class="hvr-grow">
-						<i class="fa fa-book fa-4x social-hover-styling-Git-Hub"></i>
+						<i class="fa fa-book fa-4x"></i>
 						<p>
 							Read the Docs
 						</p>
 					</a>
 				</div>
 				<!-- Discord -->
-				<div class="socials-grid-social wow fadeIn">
+				<div class="cell launcher-cell wow fadeIn">
 					<a href="#" target="blank" class="hvr-grow">
 						<i class="fab fa-discord fa-4x social-hover-styling-Discord"></i>
 						<p>

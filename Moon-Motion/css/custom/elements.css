@@ -15,7 +15,7 @@ a {
 /* buttons */
 button {
 	/* sizing */
-    font-size: .9vw;
+    font-size: .7vw;
     padding: 7px 14px;
 	overflow: hidden;
 	padding: 0;
@@ -23,7 +23,7 @@ button {
 	height: 2vw;
 
 	/* shaping */
-	border-radius: 2em;
+	border-radius: 2vw;
 	
 	/* font */
 	text-transform: uppercase;
