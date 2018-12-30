@@ -24,50 +24,6 @@
 		<!-- custom - elements -->			<link rel="stylesheet" href="css/custom/elements.css">
 		<!-- custom - classes -->			<link rel="stylesheet" href="css/custom/classes.css">
 		<!-- custom - identifiers -->		<link rel="stylesheet" href="css/custom/identifiers.css">
-		<style>
-			/* cover */
-			#cover {
-				background-image: url("images/Cover - Background.jpg");
-				background-size: contain;
-				background-repeat: no-repeat;
-				width: 100%;
-
-				/* height set to match background image's height: https://stackoverflow.com/a/22211990/3900755 */
-				padding-bottom: 51.5625%;	/* (img-height / img-width * container-width) so (990 / 1920 * 100) */
-
-				padding-left: 0%;
-				padding-right: 0%;
-				min-width: 100%;
-			}
-			#cover-grid {
-				display: grid;
-				grid-template-columns: 1fr;
-				grid-template-rows: 1fr;
-
-				/* positioning */
-				position: absolute;
-				float: left;
-				top: 43.55%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-			}
-			.cover-grid-child {
-				border: 2px solid red;
-			}
-			#cover-grid-a {
-				
-			}
-			#cover-grid-b {
-				
-			}
-			/*#cover-buttons-group {
-				position: absolute;
-				float: left;
-				top: 43.55%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-			}*/
-		</style>
 
 	<!-- preJS -->
 		<!-- none -->
@@ -88,19 +44,12 @@
 		
 		<!-- cover -->
 		<div id="cover">
-			<div id="cover-grid">
-				<div class="cover-grid-child" id="cover-grid-a">
-				</div>
-				<div class="cover-grid-child" id="cover-grid-b">
-					<img src="images/Cover - Headers.png"/>
-				</div>
-			</div>
 			<!-- buttons group -->
-			<!--<div class="unselectable wow fadeIn" id="cover-buttons-group">
+			<div class="unselectable wow fadeIn" id="cover-buttons-group">
 				<button id="button-Features">Features</button>
 				<button id="button-Git-Started">Git Started</button>
 				<a href="Documentation.html"><button>View Docs</button></a>
-			</div>-->
+			</div>
 		</div>
 
 		<!-- block: Create Moving Experiences -->
