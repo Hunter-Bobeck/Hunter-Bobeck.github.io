@@ -48,6 +48,22 @@
 			<div class="unselectable wow fadeIn" id="cover-buttons-group">
 				<button id="button-Features">Features</button>
 				<button id="button-Git-Started">Git Started</button>
+				<a href="Documentation.html"><button>View Docs</button></a>
+			</div>
+		</div>
+
+		<!-- block: Platforms Support -->
+		<div class="block-padded background-dark" id="Platforms-Support">
+			<!-- brands image -->
+			<div class="align-center wow fadeIn">
+				<img src="images/Platforms Support Brands Image.png" id="platforms-support-brands-image"/>
+			</div>
+			<!-- article -->
+			<div class="block-article-padding">
+				<!-- Unity compatibility statement -->
+				<p class="wow fadeIn">
+					Tested to work with Unity version 2018.1.0f2.
+				</p>
 			</div>
 		</div>
 
@@ -62,12 +78,8 @@
 			<div class="block-divider wow fadeIn"></div>
 			<br>
 
-			<!-- article -->
-			<div class="block-article-padding align-center">
-			</div>
-
 			<!-- mediad Features -->
-			<div class="media-grid">
+			<div class="media-grid align-center">
 				<!-- Locomotions -->
 				<div class="media-grid-media hvr-grow wow fadeIn">
 					<a href="Locomotions.html">
@@ -94,13 +106,13 @@
 							Player
 						</h4>
 						<p>
-							Utilize a SteamVR Interaction System Player, now extended to support key features such as dynamic body colliders, terrain detection, wind feedback, and camera smoothing.
+							Utilize a SteamVR Interaction System Player, now extended to support key features such as dynamic body colliders, terrain detection, wind feedback, and camera motion smoothing.
 						</p>
 					</a>
 				</div>
 				<!-- Cycling -->
 				<div class="media-grid-media hvr-grow wow fadeIn">
-					<a href="Documentation.html">
+					<a href="Player.html">
 						<video width="100%" height="auto" no-controls autoplay muted loop>
 							<source src="videos/Booster Aesthetics Cycling.mp4" type="video/mp4"/>
 							Your browser does not support the video tag.
@@ -109,7 +121,7 @@
 							Cycling
 						</h4>
 						<p>
-							Setup controller input to cycle between controller models, locomotion combinations, booster aesthetics, and other modular components. 
+							With many locomotions comes a need for motion between locomotions. Cycle through locomotions, control schemes, hand models, or booster aesthetics &ndash; separately or in parallel.
 						</p>
 					</a>
 				</div>
@@ -126,26 +138,108 @@
 			<!-- divider -->
 			<div class="block-divider wow fadeIn"></div>
 			<br>
+			<br>
 			
 			<!-- article -->
-			<div class="block-article-padding align-center">
-				<div class="hvr-grow wow fadeIn">
-					<!-- Boosting Physics -->
-					<a href="Documentation.html">
-						<h4>
-							Boosting Physics
-						</h4>
+			<div class="block-article-padding align-left">
+				<!-- Assign Controls -->
+				<div class="wow fadeIn">
+					<h4 class="wow fadeIn">
+						Assign Controls
+					</h4>
+					<p class="wow fadeIn">
+						Do you prefer to fly with the trigger or touchpad? Grip to activate skis, jump, or both? Define a set of recognized controller inputs for each locomotion, cycler, and module.
+					</p>
+				</div>
+				<br>
+				<br>
+				<!-- Combine Locomotions -->
+				<div class="wow fadeIn">
+					<h4 class="wow fadeIn">
+						Combine Locomotions
+					</h4>
+					<p class="wow fadeIn">
+						Drag-and-drop locomotions into sets. Fuse the treading, turning, and jumping locomotions together to get the Skyrim VR movement scheme. Combine boosting and skiing to realize Tribes Ascend in VR. Discover tandem interactions between previously separate locomotions. What permutations have yet to emerge?
+					</p>
+				</div>
+				<br>
+				<br>
+				<!-- Alter the Physics -->
+				<div class="wow fadeIn">
+					<h4 class="wow fadeIn">
+						Alter the Physics
+					</h4>
+					<p class="wow fadeIn">
+						Multiply gravity. Dampen inertia. Apply curves to forces and sensitivities. Enable jumping to work in midair. Direct treading via the headset instead of the hand. Modulate booster fuel. Diminish boosting forces as they raycast terrain from farther away &ndash; or cause certain terrain layers to pull you in instead. Devise new movement mechanics!
+					</p>
+				</div>
+				<br>
+				<br>
+				<!-- Choose Procedural Audio -->
+				<div class="wow fadeIn">
+					<h4 class="wow fadeIn">
+						Choose Procedural Audio
+					</h4>
+					<p class="wow fadeIn">
+						Audio components play procedurally according to movement and context, from footstep foley to wind and gravity zone entry; these audio assets can all be swapped out.
+					</p>
+				</div>
+				<br>
+				<br>
+				<!-- Create Your Own Motion -->
+				<div class="wow fadeIn">
+					<h4 class="wow fadeIn">
+						Create Your Own Motion
+					</h4>
+					<p class="wow fadeIn">
+						Extend the base Locomotion classes to write your own. Hand locomotions have direct access to the relevant hand and its inputs. Cycle your locomotion along with the vanilla ones. Better yet, <a href="https://github.com/MoonMotionProject/MoonMotion">contribute to the repo</a> to make yours become vanilla!
+					</p>
+				</div>
+			</div>
+
+			<br>
+			<!-- divider -->
+			<div class="block-divider wow fadeIn"></div>
+			<br>
+			<br>
+		</div>
+
+		<!-- block: Git Started -->
+		<div class="block-padded background-dark-lighter" id="Git-Started">
+			<br>
+			<!-- header -->
+			<h2 class="weight-heavy">
+				Git Started
+			</h2>
+			<!-- divider -->
+			<div class="block-divider wow fadeIn"></div>
+			<br>
+			<!-- socials -->
+			<div class="block-article-padding socials-grid socials-grid-triples">
+				<!-- GitHub -->
+				<div class="socials-grid-social wow fadeIn">
+					<a href="https://github.com/MoonMotionProject/MoonMotion" target="blank" class="hvr-grow">
+						<i class="fab fa-github fa-4x social-hover-styling-Git-Hub"></i>
 						<p>
-							 
+							Clone the Repo
 						</p>
 					</a>
-					<!-- Movement Audio -->
-					<a href="Documentation.html">
-						<h4>
-							Movement Audio
-						</h4>
+				</div>
+				<!-- Documentation -->
+				<div class="socials-grid-social wow fadeIn">
+					<a href="Documentation.html" class="hvr-grow">
+						<i class="fa fa-book fa-4x social-hover-styling-Git-Hub"></i>
 						<p>
-							Procedurally-played footstep and wind foley, locomotion sound effects, gravity zone entry, and terrain landing and liftoff; these audio sources can all be swapped out.
+							Read the Docs
+						</p>
+					</a>
+				</div>
+				<!-- Discord -->
+				<div class="socials-grid-social wow fadeIn">
+					<a href="#" target="blank" class="hvr-grow">
+						<i class="fab fa-discord fa-4x social-hover-styling-Discord"></i>
+						<p>
+							Launch Discord
 						</p>
 					</a>
 				</div>
@@ -193,164 +287,10 @@
 					</h4>
 				</div>
 			</div>
-
-			<!--
-				• drag-and-drop setup and checkbox customizability
-				
-				• Forces and sensitivities can be mapped to different curves.
-				
-				• Midair jumping and fuel control can be resource-driven via powerups.
-
-				• Virtuality Controls and their modifications of the Interaction System Player (which include blablabla)
-
-				• body collision
-
-				• adjustable curves
-
-				• 3D sound
-
-				• modularly disableable blablabla-modules
-
-				• singleton reference patterns for blablabla scripts
-
-				• alternate button mapping functionality
-
-				• controller models and textures including fuel gauge at different amounts
-
-				• powerups in Propulsion Testing Grounds for demonstrating the most salient features and settings, although many of the more fine-tuned settings must be tested via changes made in the inspector
-			-->
 			
 			<!-- brace - upward -->
 			<div class="align-center">
 				<img src="images/Brace - Small.png" class="brace-small flipped-vertically wow fadeIn"/>
-			</div>
-		</div>
-
-		<!-- block: Git Started -->
-		<div class="block-padded background-dark-lighter" id="Git-Started">
-			<br>
-			<!-- header -->
-			<h2 class="weight-heavy">
-				Git Started
-			</h2>
-			<!-- divider -->
-			<div class="block-divider wow fadeIn"></div>
-			<br>
-			<!-- socials -->
-			<div class="block-article-padding socials-grid socials-grid-triples">
-				<!-- GitHub -->
-				<div class="socials-grid-social wow fadeIn">
-					<a href="https://github.com/MoonMotionProject/MoonMotion" target="blank" class="hvr-grow">
-						<i class="fab fa-github fa-4x social-hover-styling-Git-Hub"></i>
-						<p>
-							MoonMotion on GitHub
-						</p>
-					</a>
-				</div>
-				<!-- Documentation -->
-				<div class="socials-grid-social wow fadeIn">
-					<a href="Documentation.html" class="hvr-grow">
-						<i class="fa fa-book fa-4x social-hover-styling-Git-Hub"></i>
-						<p>
-							View the Documentation
-						</p>
-					</a>
-				</div>
-				<!-- Discord -->
-				<div class="socials-grid-social wow fadeIn">
-					<a href="#" target="blank" class="hvr-grow">
-						<i class="fab fa-discord fa-4x social-hover-styling-Discord"></i>
-						<p>
-							Join the Discord
-						</p>
-					</a>
-				</div>
-			</div>
-		</div>
-
-		<!-- block: Platforms Support -->
-		<div class="block-padded background-dark" id="Platforms-Support">
-			<br>
-			<!-- header -->
-			<h2 class="weight-heavy wow fadeIn">
-				Platforms Support
-			</h2>
-			<!-- divider -->
-			<div class="block-divider wow fadeIn"></div>
-			<br>
-			<!-- brands image -->
-			<div class="align-center wow fadeIn">
-				<img src="images/Platforms Support Brands Image.png" id="platforms-support-brands-image"/>
-			</div>
-			<!-- article -->
-			<div class="block-article-padding">
-				<!-- Unity compatibility statement -->
-				<p class="wow fadeIn">
-					Tested to work with Unity version 2018.1.0f2.
-				</p>
-			</div>
-		</div>
-
-		<!-- block: Further Development -->
-		<div class="block-padded background-dark-lighter" id="In-Development">
-			<br>
-			<!-- header -->
-			<h2 class="weight-heavy wow fadeIn">
-				Further Development
-			</h2>
-			<!-- construction divider image -->
-			<div class="align-center">
-				<img src="images/Construction Divider.jpg" id="construction-divider"/>
-			</div>
-			<br>
-			
-			<!-- Oculus logo -->
-			<div class="align-center wow fadeIn">
-				<img src="images/Platforms Support Oculus Logo.png" id="platforms-support-Oculus-logo"/>
-			</div>
-			<!-- article -->
-			<div class="block-article-padding">
-				<!-- Oculus compatibility statement -->
-				<p class="align-center wow fadeIn">
-					Not yet tested with Oculus.
-					<br>
-					Should work with minimal changes.
-					<br>
-					Please contribute!
-				</p>
-			</div>
-		</div>
-
-		<!-- block: Collaborate -->
-		<div class="block-padded background-dark" id="Collaborate">
-			<br>
-			<!-- header -->
-			<h2 class="weight-heavy wow fadeIn">
-				Collaborate
-			</h2>
-			<!-- divider -->
-			<div class="block-divider wow fadeIn"></div>
-			<br>
-			<!-- socials -->
-			<div class="block-article-padding socials-grid">
-				<!-- Discord -->
-				<div class="socials-grid-social wow fadeIn">
-					<a href="#" target="blank" class="hvr-grow">
-						<i class="fab fa-discord fa-4x social-hover-styling-Discord"></i>
-						<p>
-							Join the Discord
-						</p>
-					</a>
-				</div>
-				<!-- GitHub -->
-				<div class="socials-grid-social wow fadeIn">
-					<a href="https://github.com/MoonMotionProject/MoonMotion" target="blank" class="hvr-grow">
-						<i class="fab fa-github fa-4x social-hover-styling-Git-Hub"></i>
-						<p>
-							Contribute on GitHub
-						</p>
-					</a>
-				</div>
 			</div>
 		</div>
 

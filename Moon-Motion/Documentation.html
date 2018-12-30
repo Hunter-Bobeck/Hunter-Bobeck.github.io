@@ -79,26 +79,32 @@
 							</h4>
 						</a>
 						<br>
+						<a class="linked-feature hvr-grow" href="Intro.html"><!-- onclick="linkedFeatureOnclick_Intro()" -->
+							<h4 class="wow fadeIn" style="letter-spacing: .12em;">
+								Intro
+							</h4>
+						</a>
+						<br>
 						<a class="linked-feature hvr-grow" href="Scenes.html"><!-- onclick="linkedFeatureOnclick_Scenes()" -->
-							<h4 class="wow fadeIn">
+							<h4 class="wow fadeIn" style="letter-spacing: .05em;">
 								Scenes
 							</h4>
 						</a>
 						<br>
 						<a class="linked-feature hvr-grow" href="Prefabs.html"><!-- onclick="linkedFeatureOnclick_Prefabs()" -->
-							<h4 class="wow fadeIn">
+							<h4 class="wow fadeIn" style="letter-spacing: .05em;">
 								Prefabs
 							</h4>
 						</a>
 						<br>
 						<a class="linked-feature hvr-grow" href="Utilities.html"><!-- onclick="linkedFeatureOnclick_Utilities()" -->
-							<h4 class="wow fadeIn">
+							<h4 class="wow fadeIn" style="letter-spacing: .10em;">
 								Utilities
 							</h4>
 						</a>
 						<br>
 						<a class="linked-feature hvr-grow" href="Conventions.html"><!-- onclick="linkedFeatureOnclick_Conventions()" -->
-							<h4 class="wow fadeIn">
+							<h4 class="wow fadeIn" style="letter-spacing: .06em;">
 								Conventions
 							</h4>
 						</a>
@@ -131,6 +137,10 @@
 					$("#Documentation-meta").hide();
 					window.location.href = link;
 				});
+			}
+			function linkedFeatureOnclick_Intro()
+			{
+				linkedFeatureOnclick("Intro.html");
 			}
 			function linkedFeatureOnclick_Motion()
 			{

@@ -82,10 +82,15 @@
 .media-grid-media > video {
 	border: 5px solid var(--color-light);
 }
+.media-grid-media > h4 {
+	padding-top: .5em;
+	text-align: center;
+}	
 .media-grid-media > a > video {
 	border: 5px solid var(--color-light);
 }
 .media-grid-media > a > h4 {
+	text-align: center;
 	padding-top: .5em;
 }
 .media-grid-media > a > p {
@@ -188,6 +193,9 @@
 .headered-feature {
 	margin-top: 3em;
 }
+.headered-features > .headered-feature:first-of-type {
+	margin-top: 0em;
+}
 
 /* Documentation */
 .Documentation-scrollbar {
@@ -221,4 +229,8 @@
 
 	/* bevel */
 	border-radius: .5em;
+}
+.Dependencies-screenshot {
+	margin-top: .3em;
+	margin-bottom: 1em;
 }

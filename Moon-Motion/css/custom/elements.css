@@ -56,16 +56,18 @@ button:active {
 	box-shadow: 0 0 70px rgba(0, 69, 253, .4);
 
 	/* transition duration */
-	-o-transition: .05s;
-	-ms-transition: .05s;
-	-moz-transition: .05s;
-	-webkit-transition: .05s;
-	transition: .05s;
+	-o-transition: 0s;
+	-ms-transition: 0s;
+	-moz-transition: 0s;
+	-webkit-transition: 0s;
+	transition: 0s;
 }
 
 /* headers */
-h1, h2, h3, h4 {
+h2 {
 	text-align: center;
+}
+h1, h2, h3, h4 {
 	color: var(--color-Steam-text);
 	text-shadow: 0 1px 2px #000;
 }
