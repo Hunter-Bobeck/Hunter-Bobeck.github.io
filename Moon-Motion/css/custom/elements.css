@@ -15,12 +15,12 @@ a {
 /* buttons */
 button {
 	/* sizing */
-    font-size: .7vw;
+	width: 100%;
+	height: 100%;
+    font-size: 1.5vw;
     padding: 7px 14px;
 	overflow: hidden;
 	padding: 0;
-	width: 7.5vw;
-	height: 2vw;
 
 	/* shaping */
 	border-radius: 2vw;
@@ -42,6 +42,18 @@ button {
 	-moz-transition: .2s;
 	-webkit-transition: .2s;
 	transition: .2s;
+}
+@media only screen and (min-width: 768px) {		/* responsivity - at least: tablets in landscape mode */
+	button {
+		/* sizing */
+		font-size: 1.3vw;
+	}
+}
+@media only screen and (min-width: 1024px) {		/* responsivity - at least: desktop */
+	button {
+		/* sizing */
+		font-size: .7vw;
+	}
 }
 button:hover {
 	border: 2px solid rgba(255, 255, 255, 1);
