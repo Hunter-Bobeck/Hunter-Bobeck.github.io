@@ -51,7 +51,13 @@
 	}
 }
 
-/* block: Platforms Support */
+/* Create Moving Experiences */
+#Create-Moving-Experiences-media > .media-cell > a > h4 {
+	color: var(--color-Steam-text);
+	text-shadow: 0 1px 2px #000;
+}
+
+/* Platforms Support */
 #platforms-support-brands-image {
 	/* size */
 	width: 82vw;
@@ -90,7 +96,7 @@
 	margin-bottom: 2em;
 }
 
-/* block: In Development */
+/* In Development */
 #construction-divider {
 	width: 50%;
 }
