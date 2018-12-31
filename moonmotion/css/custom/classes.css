@@ -139,6 +139,11 @@
 	margin-top: 0em;
 }
 
+/* header icons */
+h4 > i {
+	padding-right: .5em;
+}
+
 /* buttons grids */
 .buttons-grid {
 	/* grid axes */
