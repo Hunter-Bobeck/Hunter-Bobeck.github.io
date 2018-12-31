@@ -29,13 +29,19 @@
 		<!-- none -->
 </head>
 
-<body class="Documentation-scrollbar">
+<body class="docs-scrollbar">
 	<div>
 		
-		<!-- logo -->
+		<!-- logo - icon only (for mobile) -->
 		<div class="absolute">
 			<a href="index.html">
-				<img src="images/Logo.png" class="unselectable hvr-float-shadow" id="logo"/>
+				<img src="images/Icon.png" class="logo docs-logo unselectable hvr-float-shadow nonmobile-hidden"/>
+			</a>
+		</div>
+		<!-- logo (for tablet+) -->
+		<div class="absolute">
+			<a href="index.html">
+				<img src="images/Logo.png" class="logo docs-logo unselectable hvr-float-shadow nonmobile-visible"/>
 			</a>
 		</div>
 		
@@ -50,7 +56,7 @@
 			<div class="unselectable">
 				<!-- Documentation link header -->
 				<a href="Documentation.html">
-					<h2 class="Documentation-link-header Documentation-margin-top">
+					<h2 class="docs-link-header docs-margin-top">
 						Documentation
 					</h2>
 				</a>
@@ -63,7 +69,7 @@
 			<div class="unselectable">
 				<!-- Locomotions link header -->
 				<a href="Locomotions.html">
-					<h2 class="Documentation-link-header">
+					<h2 class="docs-link-header">
 						Locomotions
 					</h2>
 				</a>
@@ -85,17 +91,17 @@
 				</div>
 				<!-- subDocumentation flyer (to animate in intensely) -->
 				<div class="wow fadeInUp">
+					<!-- video -->
+					<div class="grid media-grid">
+						<div class="cell media-cell wow fadeIn">
+							<video width="100%" height="auto" no-controls autoplay muted loop>
+								<source src="videos/Gravity Zone.mp4" type="video/mp4"/>
+								Your browser does not support the video tag.
+							</video>
+						</div>
+					</div>
 					<!-- article -->
 					<div class="block-article-padding align-left">
-						<!-- video -->
-						<div class="grid media-grid">
-							<div class="cell media-cell wow fadeIn">
-								<video width="100%" height="auto" no-controls autoplay muted loop>
-									<source src="videos/Gravity Zone.mp4" type="video/mp4"/>
-									Your browser does not support the video tag.
-								</video>
-							</div>
-						</div>
 						<!-- description -->
 						<p class="wow fadeIn">
 							The Gravity Zone locomotion is a <a href="Prefabs.html#Gravity-Zones-&-Launchers">prefab</a> locomotion; an indefinite number of Gravity Zone instances can be present.

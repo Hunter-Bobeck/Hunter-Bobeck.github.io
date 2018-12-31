@@ -269,6 +269,7 @@ button:focus {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, 7.5vw);
 	justify-content: space-between;
+	/*justify-items: center*/		/* useful at least for centering rows containing only one cell */
 }
 .cell {
 	/* testing */
@@ -279,6 +280,24 @@ button:focus {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+/* responsivity */
+.nonmobile-visible {
+	display: none;
+}
+@media only screen and (min-width: 768px) {		/* responsivity - at least: tablets in landscape mode */
+	.nonmobile-visible {
+		display: inline;
+	}
+}
+.nonmobile-hidden {
+	display: inline;
+}
+@media only screen and (min-width: 768px) {		/* responsivity - at least: tablets in landscape mode */
+	.nonmobile-hidden {
+		display: none;
+	}
 }
 
 /* Wow visible-before-animating bugfix */

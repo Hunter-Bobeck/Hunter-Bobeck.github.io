@@ -1,28 +1,6 @@
 /* IDENTIFIERS */
 
 
-/* logo */
-#logo {
-	/* size */
-	width: 35.2%;
-	height: auto;
-
-	/* padding */
-	padding-top: 0;
-	padding-bottom: 0;
-	padding-left: 2.4%;
-	padding-right: 0;
-}
-@media only screen and (min-width: 1024px) {		/* responsivity - at least: desktop */
-	#logo {
-		/* size */
-		width: 25.2%;
-
-		/* padding */
-		padding-left: 1.8%;
-	}
-}
-
 /* cover */
 #cover-image-mobile {
 	display: inline;
@@ -51,9 +29,9 @@
 }
 #cover-buttons-grid-positioner {
 	/* positioning */
-	padding-top: 36.5vw;
-	left: 20vw;
-	right: 20vw;
+	padding-top: 50vw;
+	left: 10vw;
+	right: 10vw;
 	margin: 0 auto;
 }
 @media only screen and (min-width: 768px) {		/* responsivity - at least: tablets in landscape mode */
@@ -75,12 +53,40 @@
 
 /* block: Platforms Support */
 #platforms-support-brands-image {
-	width: 40%;
+	/* size */
+	width: 82vw;
 	height: auto;
 }
+@media only screen and (min-width: 768px) {		/* responsivity - at least: tablets in landscape mode */
+	#platforms-support-brands-image {
+		/* size */
+		width: 90vw;
+	}
+}
+@media only screen and (min-width: 1024px) {		/* responsivity - at least: desktop */
+	#platforms-support-brands-image {
+		/* size */
+		width: 70vw;
+	}
+}
+@media only screen and (min-width: 1200px) {		/* responsivity - at least: {arbitrary} */
+	#platforms-support-brands-image {
+		/* size */
+		width: 50vw;
+	}
+}
+@media only screen and (min-width: 1400px) {		/* responsivity - at least: {arbitrary} */
+	#platforms-support-brands-image {
+		/* size */
+		width: 40vw;
+	}
+}
 #platforms-support-Oculus-logo {
-	width: 7%;
+	/* size */
+	width: 7vw;
 	height: auto;
+
+	/* margin */
 	margin-bottom: 2em;
 }
 

@@ -17,13 +17,13 @@ button {
 	/* sizing */
 	width: 100%;
 	height: 100%;
-    font-size: 1.5vw;
+    font-size: 2vw;
     padding: 7px 14px;
 	overflow: hidden;
 	padding: 0;
 
 	/* shaping */
-	border-radius: 2vw;
+	border-radius: 4.2856vw;
 	
 	/* font */
 	text-transform: uppercase;
@@ -35,7 +35,7 @@ button {
 	color: white;
 	background-color: transparent;
 	border: 2px solid rgba(255, 255, 255, .6);
-
+		
 	/* transition duration */
 	-o-transition: .2s;
 	-ms-transition: .2s;
@@ -47,12 +47,18 @@ button {
 	button {
 		/* sizing */
 		font-size: 1.3vw;
+
+		/* shaping */
+		border-radius: 3.7142vw;
 	}
 }
 @media only screen and (min-width: 1024px) {		/* responsivity - at least: desktop */
 	button {
 		/* sizing */
 		font-size: .7vw;
+
+		/* shaping */
+		border-radius: 2vw;
 	}
 }
 button:hover {

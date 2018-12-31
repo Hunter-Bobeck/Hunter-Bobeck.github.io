@@ -1,6 +1,42 @@
 /* CLASSES */
 
 
+/* logo */
+.logo {
+	/* size */
+	width: 15vw;
+	height: auto;
+
+	/* padding */
+	padding: 0;
+	padding-top: 1.45vw;
+	padding-left: 3vw;
+}
+.docs-logo {
+	/* size */
+	width: 20vw;
+}
+@media only screen and (min-width: 768px) {		/* responsivity - at least: tablets in landscape mode */
+	.logo {
+		/* size */
+		width: 35.2vw;
+
+		/* padding */
+		padding-top: .95vw;
+		padding-left: 2.4vw;
+	}
+}
+@media only screen and (min-width: 1024px) {		/* responsivity - at least: desktop */
+	.logo {
+		/* size */
+		width: 25.2vw;
+
+		/* padding */
+		padding-top: .2vw;
+		padding-left: 1.8vw;
+	}
+}
+
 /* fonts */
 .font-Open-Sans {
 	font-family: "Open Sans", sans-serif;
@@ -15,11 +51,11 @@
 /* braces */
 .brace-small {
 	padding-top: 1em;
-	width: 10%;
+	width: 10em;
 }
 .brace-large {
 	padding-top: 1em;
-	width: 14%;
+	width: 14em;
 }
 
 /* block headers */
@@ -34,8 +70,29 @@
 /* block "article" padding */
 .block-article-padding {
 	/* padding */
-	padding-left: 30%;
-	padding-right: 30%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+@media only screen and (min-width: 768px) {		/* responsivity - at least: tablets in landscape mode */
+	.block-article-padding {
+		/* padding */
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+}
+@media only screen and (min-width: 1024px) {		/* responsivity - at least: desktop */
+	.block-article-padding {
+		/* padding */
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+}
+@media only screen and (min-width: 1400px) {		/* responsivity - at least: {arbitrary} */
+	.block-article-padding {
+		/* padding */
+		padding-left: 30%;
+		padding-right: 30%;
+	}
 }
 
 /* block dividers */
@@ -85,8 +142,8 @@
 /* buttons grids */
 .buttons-grid {
 	/* grid axes */
-	grid-template-columns: repeat(auto-fit, 16.5vw);
-	grid-template-rows: repeat(auto-fit, 4.4vw);
+	grid-template-columns: repeat(auto-fit, 22.5vw);
+	grid-template-rows: repeat(auto-fit, 6vw);
 }
 @media only screen and (min-width: 768px) {		/* responsivity - at least: tablets in landscape mode */
 	.buttons-grid {
@@ -106,14 +163,25 @@
 /* media grids/cells */
 .media-grid {
 	/* grid columns */
-	grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(50vw, 1fr));
+	justify-items: center;
+}
+@media only screen and (min-width: 768px) {		/* responsivity - at least: tablets in landscape mode */
+	.media-grid {
+		/* grid columns */
+		grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
+	}
+}
+@media only screen and (min-width: 1024px) {		/* responsivity - at least: desktop */
+	.media-grid {
+		/* grid columns */
+		grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+	}
 }
 .media-cell {
 	/* padding */
-	padding-top: 4em;
-	padding-left: 4em;
-	padding-right: 4em;
-	padding-bottom: 2em;
+	padding: 3vw;
+	padding-bottom: 2vw;
 
 	/* transition duration */
 	-o-transition: 1s;
@@ -121,6 +189,9 @@
 	-moz-transition: 1s;
 	-webkit-transition: 1s;
 	transition: 1s;
+
+	/* size */
+	max-width: 1000px;
 }
 .media-cell > video {
 	border: 5px solid var(--color-light);
@@ -192,10 +263,25 @@
 
 /* launchers grids / launcher cells */
 .launchers-grid {
+	/* grid columns */
+	grid-template-columns: repeat(auto-fit, minmax(10vw, 1fr));
+
 	/* space around */
 	padding-top: 2em;
-	margin: 0 30vw;
+	margin: 0 0vw;
 	padding-bottom: 2em;
+}
+@media only screen and (min-width: 768px) {		/* responsivity - at least: tablets in landscape mode */
+	.launchers-grid {
+		/* space around */
+		margin: 0 14vw;
+	}
+}
+@media only screen and (min-width: 1024px) {		/* responsivity - at least: desktop */
+	.launchers-grid {
+		/* space around */
+		margin: 0 27.5vw;
+	}
 }
 .launcher-cell {
 	text-align: center;
@@ -212,14 +298,16 @@
 }
 
 /* Documentation */
-.Documentation-scrollbar {
+.docs-scrollbar {
 	overflow: scroll;
 }
-.Documentation-link-header {
+.docs-link-header {
 	font-weight: 900;
+}
+a > .docs-link-header {
 	color: var(--color-link);
 }
-.Documentation-link-header:hover {
+a > .docs-link-header:hover {
 	color: var(--color-link-hovered);
 
 	/* transition duration */
@@ -229,7 +317,7 @@
 	-webkit-transition: .2s;
 	transition: .2s;
 }
-.Documentation-margin-top {
+.docs-margin-top {
 	margin-top: 3em;
 }
 .derivation-image-link {
@@ -238,6 +326,7 @@
 	margin-bottom: 1em;
 
 	/* size */
+	min-width: 340px;
 	width: 20%;
 	height: auto;
 
@@ -247,4 +336,5 @@
 .Dependencies-screenshot {
 	margin-top: .3em;
 	margin-bottom: 1em;
+	max-width: 100%;
 }

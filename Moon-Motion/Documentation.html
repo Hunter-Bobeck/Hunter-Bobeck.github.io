@@ -29,13 +29,19 @@
 		<!-- none -->
 </head>
 
-<body class="Documentation-scrollbar">
+<body class="docs-scrollbar">
 	<div>
 		
-		<!-- logo -->
+		<!-- logo - icon only (for mobile) -->
 		<div class="absolute">
 			<a href="index.html">
-				<img src="images/Logo.png" class="unselectable hvr-float-shadow" id="logo"/>
+				<img src="images/Icon.png" class="logo docs-logo unselectable hvr-float-shadow nonmobile-hidden"/>
+			</a>
+		</div>
+		<!-- logo (for tablet+) -->
+		<div class="absolute">
+			<a href="index.html">
+				<img src="images/Logo.png" class="logo docs-logo unselectable hvr-float-shadow nonmobile-visible"/>
 			</a>
 		</div>
 		
@@ -49,18 +55,16 @@
 			<!-- Documentation top (to appear to keep among Documentations) -->
 			<div class="unselectable">
 				<!-- Documentation link header -->
-				<a href="Documentation.html">
-					<h2 class="Documentation-link-header Documentation-margin-top">
-						Documentation
-					</h2>
-				</a>
+				<h2 class="docs-link-header docs-margin-top">
+					Documentation
+				</h2>
 				<!-- divider -->
 				<div class="block-divider"></div>
 				<br>
 			</div>
 
 			<!-- Documentation meta (to animate out) -->
-			<div class="unselectable" id="Documentation-meta">
+			<div class="unselectable" id="docs-meta">
 				<!-- brace - downward -->
 				<div class="align-center">
 					<img src="images/Brace - large.png" class="brace-large wow fadeIn"/>
@@ -128,9 +132,9 @@
 		<!--<script>
 			function linkedFeatureOnclick(link)
 			{
-				$("#Documentation-meta").animateCss('fadeOut', function()
+				$("#docs-meta").animateCss('fadeOut', function()
 				{
-					$("#Documentation-meta").hide();
+					$("#docs-meta").hide();
 					window.location.href = link;
 				});
 			}
