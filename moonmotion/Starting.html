@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- metadata -->
+		<meta charset="utf-8">	<!-- Unicode characterset -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">	<!-- Internet Explorer compatibility -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">	<!-- renders the page according to the device width -->
+		<meta name="description" content="Free and open source toolkit for VR locomotion in Unity.">		<!-- description (shown on searchengine result) -->
+		<meta name="keywords" content="moon, motion, toolkit, VR, locomotion, booster, jet, propulsion, smooth, snap-turning, One Giant Leap, Unity, SteamVR, open, source">		<!-- keywords for searchengine optimization -->
+		<meta name="author" content="Moon Motion Project">		<!-- author name -->
+		<!--<meta name="theme-color" content="#5cb85c">-->		<!-- Android Chrome bar color -->
+		<link rel="icon" href="images/Icon.png">	<!-- favicon -->
+		<title>Moon Motion</title>		<!-- title -->
+	
+	<!-- CSS -->
+		<!-- Reset -->						<link rel="stylesheet" href="../css/reset.css">
+		<!-- Bootstrap -->					<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<!-- Open Sans [Google] font -->	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+		<!-- Font Awesome -->				<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+		<!-- Animate (required by Wow) -->	<link rel="stylesheet" href="../css/animate.css">
+		<!-- Hover -->						<link rel="stylesheet" href="../css/hover-min.css">
+		<!-- Felewin baseline -->			<link rel="stylesheet" href="../css/Felewin-baseline.css">
+		<!-- custom - colors -->			<link rel="stylesheet" href="css/custom/colors.css">
+		<!-- custom - elements -->			<link rel="stylesheet" href="css/custom/elements.css">
+		<!-- custom - classes -->			<link rel="stylesheet" href="css/custom/classes.css">
+		<!-- custom - identifiers -->		<link rel="stylesheet" href="css/custom/identifiers.css">
+
+	<!-- preJS -->
+		<!-- none -->
+</head>
+
+<body class="docs-scrollbar">
+	<div>
+		
+		<!-- logo - icon only (for mobile) -->
+		<div class="absolute">
+			<a href="index.html">
+				<img src="images/Icon.png" class="logo docs-logo unselectable hvr-float-shadow nonmobile-hidden"/>
+			</a>
+		</div>
+		<!-- logo (for tablet+) -->
+		<div class="absolute">
+			<a href="index.html">
+				<img src="images/Logo.png" class="logo docs-logo unselectable hvr-float-shadow nonmobile-visible"/>
+			</a>
+		</div>
+		
+		<!-- modified Git Hub Corner (https://github.com/tholman/github-corners); original © Tim Holman 2016 -->
+		<div>
+			<a href="https://github.com/MoonMotionProject/MoonMotion" class="git-hub-corner" aria-label="Access the repository"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:var(--color-main); color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.git-hub-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.git-hub-corner:hover .octo-arm{animation:none}.git-hub-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+		</div>
+		
+		<!-- block: docs -->
+		<div class="block-padded background-dark">
+			<!-- Documentation top (to appear to keep among Documentations) -->
+			<div class="unselectable">
+				<!-- Documentation link header -->
+				<a href="Documentation.html">
+					<h2 class="docs-link-header docs-margin-top">
+						Documentation
+					</h2>
+				</a>
+				<!-- divider -->
+				<div class="block-divider"></div>
+				<br>
+			</div>
+
+			<!-- subDocumentation (to animate in) -->
+			<div>
+				<!-- subDocumentation fader (to animate in softly) -->
+				<div class="wow fadeIn fadeInUp_disabled">
+					<!-- header -->
+					<h2 class="weight-heavy wow fadeIn">
+						Starting Guide
+					</h2>
+					<!-- divider -->
+					<div class="block-divider wow fadeIn"></div>
+				</div>
+				<br>
+				<br>
+				<!-- subDocumentation flyer (to animate in intensely) -->
+				<div class="wow fadeIn fadeInUp_disabled">
+					<!-- article -->
+					<div class="block-article-padding align-left">
+						<!-- description -->
+						<h4 class="wow fadeIn">
+							Briefing:
+						</h4>
+						<p class="halftabbed wow fadeIn">
+							Start from a copy of the template project (<a href="https://github.com/MoonMotionProject/MoonMotion" target="blank">the repo</a>). Test out the toolkit's <a href="Scenes.html">example scenes</a>. Once you're ready to get started, first copy the Moon Motion <a href="Player-Prefab.html">Player prefab</a> so you have your own to customize. Place it in the provided empty starting scene and lay out the beginnings of your scene. <a href="#Learn-More">Learn more</a> when you're ready to make further use of the Moon Motion player.
+						</p>
+						<h4 class="wow fadeIn">
+							In this guide:
+						</h4>
+						<p class="wow fadeIn">
+							<ul class="tabbed">
+								<a href="#New-to-VR-development">
+									<li class="wow fadeIn">
+										New to VR development?
+									</li>
+								</a>
+								<a href="#The-Unity-SteamVR-Plugin">
+									<li class="wow fadeIn">
+										The Unity SteamVR Plugin
+									</li>
+								</a>
+								<a href="#What-does-Moon-Motion-offer">
+									<li class="wow fadeIn">
+										What does Moon Motion offer?
+									</li>
+								</a>
+								<a href="#The-Interaction-System">
+									<li class="wow fadeIn">
+										The Interaction System
+									</li>
+								</a>
+								<a href="#Setting-up-Unity">
+									<li class="wow fadeIn">
+										Setting up Unity
+									</li>
+								</a>
+								<a href="#The-Moon-Motion-Template-Project">
+									<li class="wow fadeIn">
+										The Moon Motion Template Project
+									</li>
+								</a>
+								<a href="#Should-I-work-from-the-template-project">
+									<li class="wow fadeIn">
+										Should I work from the template project?
+									</li>
+								</a>
+								<a href="#Learn-More">
+									<li class="wow fadeIn">
+										Learn More
+									</li>
+								</a>
+							</ul>
+						</p>
+						<h4 class="weight-heavy wow fadeIn" id="New-to-VR-development">
+							New to VR development?
+						</h4>
+						<p class="wow fadeIn">
+							If you have developed in <a href="https://unity3d.com/" target="blank">Unity</a> or other engines before, you're probably familiar with the concept of a "<a href="https://docs.unity3d.com/Manual/class-CharacterController.html" target="blank">Character Controller</a>" as a way to create a player. Most games require a player to represent the person playing the game. For virtual reality, this is no exception &ndash; perhaps more so. Motion tracking practically necessitates the concept of a player in order to best immerse the human into the experience. As you will see, there are several resources available for creating a VR player. We can think of Moon Motion as one such way to achieve a VR player: in its case, it focuses especially on the locomotive aspects, on allowing the player to move. Its goal is to let the player experience freedom of motion, even though they are confined to a room-scale environment in real life.
+						</p>
+						<h4 class="weight-heavy wow fadeIn" id="The-Unity-SteamVR-Plugin">
+							The Unity SteamVR Plugin
+						</h4>
+						<p class="wow fadeIn">
+							When developing for virtual reality using Unity, the best place to start is to use Valve's <a href="https://github.com/ValveSoftware/steamvr_unity_plugin" target="blank">Unity SteamVR Plugin</a>. The plugin is compatible with all major virtual reality headsets, such as Valve's own <a href="http://vive.com" target="blank">Vive</a>. It is available for free <a href="https://assetstore.unity.com/packages/tools/integration/steamvr-plugin-32647" target="blank">on the Unity Asset Store</a> and is open source <a href="https://github.com/ValveSoftware/steamvr_unity_plugin" target="blank">on GitHub</a>. Valve's plugin provides the core functionality you need to get the virtual reality camera and motion tracking working in the engine, centered around a player object called the <span class="italicized">[CameraRig]</span>. It pretty much works out of the box once you drag the object into the scene and press play, assuming you have a VR headset connected.
+						</p>
+						<img src="images/Camera Rig.jpg" class="docs-screenshot wow fadeIn"/>
+						<p class="wow fadeIn">
+							If you are only interested in trying VR development for the immersion factor provided by the VR camera, plus motion tracking (and aren't interested in player movement mechanics), you probably just want to use Valve's plugin to keep your project lightweight.
+						</p>
+						<br>
+						<h4 class="weight-heavy wow fadeIn" id="What-does-Moon-Motion-offer">
+							What does Moon Motion offer?
+						</h4>
+						<p class="wow fadeIn">
+							On the other hand, <a href="index.html">Moon Motion</a> contains a modified version of the Unity SteamVR Plugin, as a subplugin:
+						</p>
+						<img src="images/Steam Virtuality Subplugin.jpg" class="docs-screenshot wow fadeIn"/>
+						<p class="wow fadeIn">
+							If you are interested in having access to Moon Motion's <a href="Locomotions.html">locomotions</a> and <a href="Documentation.html">other features</a> down the line, you'll want to start with Moon Motion, instead. That way you don't have to transition your project to a Moon Motion setup later, where you'll have to recreate your player prefab and project settings (such as physics layers).
+						</p>
+						<br>
+						<h4 class="weight-heavy wow fadeIn" id="The-Interaction-System">
+							The Interaction System
+						</h4>
+						<p class="wow fadeIn">
+							Valve's Unity plugin, interestingly enough, has a subplugin of its own: the <a href="SteamVR-Interaction-System.html">Interaction System</a>. This is the set of prefabs and scripts used in <a href="https://store.steampowered.com/app/450390/The_Lab/" target="blank">The Lab</a>. This is responsible for additional starting functionalities key to most VR experiences seen so far: the ability to pickup and throw objects, to use the basic <a href="Teleportation.html">teleportation</a> locomotion, and to wield a bow and arrow. As the second evolution of the VR player discussed so far, the Interaction System offers a superior alternative to the <span class="italicized">[CameraRig]</span> called simply the <span class="italicized">Player:</span>
+						</p>
+						<img src="images/Interaction System Player.jpg" class="docs-screenshot wow fadeIn"/>
+						<p class="wow fadeIn">
+							<ul class="tabbed">
+								<li class="wow fadeIn">
+									<a href="SteamVR-Interaction-System.html">Read more</a> about Moon Motion's changes to the Interaction System.
+								</li>
+								<li class="wow fadeIn">
+									Give <a href="https://www.youtube.com/watch?v=EPQougskzn8" target="blank">Fuseman's introduction video</a> a watch if you want to learn more about this part of the plugin.
+								</li>
+							</ul>
+						</p>
+						<p class="wow fadeIn">
+							The takeaway here is that Moon Motion includes all of this additional functionality, as well! Moon Motion's own iteration of the VR player is based on the Interaction System version, and is also called the <span class="italicized"><a href="Player-Prefab.html">Player</a></span>. Here you can see the Moon Motion <a href="Dynamic-Player-Colliders.html">player body</a> in action:
+						</p>
+						<!-- video -->
+						<div class="grid media-grid">
+							<div class="cell media-cell no-padding wow fadeIn">
+								<video width="100%" height="auto" no-controls autoplay muted loop>
+									<source src="videos/Dynamic Player Colliders.mp4" type="video/mp4"/>
+									Your browser does not support the video tag.
+								</video>
+							</div>
+						</div>
+						<br>
+						<h4 class="weight-heavy wow fadeIn" id="Setting-up-Unity">
+							Setting up Unity
+						</h4>
+						<p class="wow fadeIn">
+							In order to get Unity setup for Moon Motion, you just need to ensure you have a compatible Unity version installed via the <a href="https://unity3d.com/get-unity/download" target="blank">Unity Hub</a>. Check the latest verified Unity version <a href="index.html#Unity-compatibility-statement">here</a>. 
+						</p>
+						<br>
+						<h4 class="weight-heavy wow fadeIn" id="The-Moon-Motion-Template-Project">
+							The Moon Motion Template Project
+						</h4>
+						<p class="wow fadeIn">
+							The Moon Motion <a href="https://github.com/MoonMotionProject/MoonMotion" target="blank">repository</a> contains a template project to help you get started. This includes a couple of <a href="Scenes.html">example scenes</a> which can be used to become familiar with the toolkit's features. Here's a peek at the Testing Grounds scene, which was used while creating the toolkit:
+						</p>
+						<img src="images/Propulsion Testing Grounds as of 1-1-2019.jpg" class="docs-screenshot wow fadeIn"/>
+						<p class="wow fadeIn">
+							The example scenes already contain Moon Motion's Player prefab. You can open them up and play around to get a feel for the features of the toolkit. Once you're ready to setup your own scene, you can edit the starting scene given in the project:
+						</p>
+						<img src="images/New Moon Motion Project Scene.jpg" class="docs-screenshot wow fadeIn"/>
+						<p class="wow fadeIn">
+							It is recommended to create your own version of the Moon Motion Player prefab before making changes to it. That way, you can maintain the original version. You can simply drag the Moon Motion one into your scene and then drag it back into your assets folder to create a new copy of the prefab. Once you have a Player in the scene, it should already work with the default locomotions enabled.
+						</p>
+						<br>
+						<h4 class="weight-heavy wow fadeIn" id="Should-I-work-from-the-template-project">
+							Should I work from the template project?
+						</h4>
+						<p class="wow fadeIn">
+							Yes, preferably you should start from a clone, copy, or fork of the Moon Motion template project, although that is not mandatory; you can add the toolkit to a project you've already started if necessary.
+						</p>
+						<p class="wow fadeIn">
+							While the toolkit is mostly contained inside a folder inside the project's <span class="italicized">Assets/Plugins</span> directory, the project does require the proper physics layers setup to function as intended. It also has other VR-friendly project settings configured. These must be set at the project level, so they are not carried by the plugin's folder. Therefore it is easier to start from within the Moon Motion template project.
+						</p>
+						<p class="wow fadeIn">
+							However, if you already have a project in progress and want to add the toolkit to it, you may need to update your project settings to match those of the template project. It's generally easier to put your work in progress into the template project and go from there, instead of importing the toolkit's folder into the project you already have, but that's your call.
+						</p>
+						<br>
+						<h4 class="weight-heavy wow fadeIn" id="Learn-More">
+							To learn more, you can:
+						</h4>
+						<p class="wow fadeIn">
+							<ul class="tabbed">
+								<li class="wow fadeIn">
+									Check out the provided <a href="Locomotions.html">locomotions</a>.
+								</li>
+								<li class="wow fadeIn">
+									Learn to customize the player's locomotions loadout via <a href="Locomotions-Cycling.html">Locomotions Cycling</a>.
+								</li>
+								<li class="wow fadeIn">
+									Become familiar with the features of the <a href="Player.html">player</a>.
+								</li>
+								<li class="wow fadeIn">
+									Explore the rest of the <a href="Documentation.html">docs</a>.
+								</li>
+							</ul>
+						</p>
+						<p class="wow fadeIn">
+							Be sure to <a href="#">join the Discord</a> as well if you have any questions or want to collaborate with others.
+						</p>
+						<p class="wow fadeIn">
+							Also, make a point to read up on the <a href="#">licensing</a>. The toolkit is free to use with proper acknowledgement, but it's important that you understand the details.
+						</p>
+						<p class="wow fadeIn">
+							Moon Motion is open to pull requests! If you are up to contribute, the Moon Motion Project team will gladly review changes to be incorporated into the toolkit.
+						</p>
+						<p class="wow fadeIn">
+							Cheers! Now get <span class="italicized">moving!</span>
+							<br>
+							We've got dreams to realize.
+						</p>
+					</div>
+					
+					<!-- video -->
+					<div class="grid media-grid">
+						<div class="cell media-cell no-padding wow fadeIn">
+							<video width="100%" height="auto" no-controls autoplay muted loop>
+								<source src="videos/Skiing.mp4" type="video/mp4"/>
+								Your browser does not support the video tag.
+							</video>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- footer -->
+		<div class="block-padded background-dark-lighter" id="footer">
+			<!-- text -->
+			<div class="align-center wow fadeIn" id="footer-text">
+				<p>
+					&copy; 2018<script>new Date().getFullYear()>2018&&document.write("-"+new Date().getFullYear());</script> <a href="https://github.com/MoonMotionProject" target="blank">Moon Motion Project</a>. Development by <a href="https://github.com/MoonMotionProject/MoonMotion/graphs/contributors" target="blank">Moon Motion contributors</a>. Website created by <a href="http://hunterbobeck.me/" target="blank" class="link-Felewin">Hunter Bobeck</a>.
+				</p>
+			</div>
+		</div>
+		
+	</div>
+	<!-- postJS -->
+		<!-- Jquery -->							<script src="../js/jquery-3.3.1.js"></script>
+		<!-- Bootstrap -->						<script src="../js/bootstrap.min.js"></script>		
+		<!-- Wow -->							<script src="../js/wow.min.js"></script>		
+		<!-- activate Wow -->					<script>new WOW().init();</script>
+		<!-- Animate (not required by Wow) -->	<script src="../js/animate.js"></script>
+		<!-- Felewin baseline -->				<script src="../js/Felewin-baseline.js"></script>
+		<!-- Felewin subpage titling -->		<script src="../js/Felewin-subpage-titling.js"></script>
+</body>
+</html>
