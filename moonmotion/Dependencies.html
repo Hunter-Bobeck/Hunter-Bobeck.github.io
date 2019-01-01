@@ -99,16 +99,16 @@
 						<p class="wow fadeIn">
 							Want the booster jet audio to be silent in the zero-gravity vacuum since there's no sound in space? Add a dependency to Booster Jet Audio with the requisite that the player is within gravity zonage that is actually affecting them:
 						</p>
-						<img src="images/Dependencies Vacuum Example.jpg" class="Dependencies-screenshot"/>
+						<img src="images/Dependencies Vacuum Example.jpg" class="docs-screenshot"/>
 						<p class="wow fadeIn">
 							Dependencies are basically conditions used by modules to control their state, and often in combination. Dependencies describe logic based on the state of the rest of the <a href="index.html">toolkit</a>:
 						</p>
-						<img src="images/Dependencies Combination.jpg" class="Dependencies-screenshot"/>
+						<img src="images/Dependencies Combination.jpg" class="docs-screenshot"/>
 						<p class="wow fadeIn">
 							Modules using dependencies will show them in the inspector. Each dependency is defined by a requisition ("when" or "when not") and a requisite (state upon which to depend). Dependencies can be easily added, changed, and removed to enforce different conditions upon the module features asking for them.
 						</p>
 						<p class="wow fadeIn">
-							Moon Motion provides dependencies for recognizing when the <a href="Player.html">player</a> is drifting, has a hand clipping through an object, <a href="Player.html#Hand-Holding-Tracking">is holding an object</a> such as the Longbow, is hovering over an Interactable, is within a <a href="Gravity-Zone.html">Gravity Zone</a>, and much more.
+							Moon Motion provides dependencies for recognizing when the <a href="Player.html">player</a> is drifting, has a hand clipping through an object, <a href="Hand-Holding-Tracking.html">is holding an object</a> such as the Longbow, is hovering over an Interactable, is within a <a href="Gravity-Zone.html">Gravity Zone</a>, and much more.
 						</p>
 						<p class="wow fadeIn">
 							You can also create your own dependencies to recognize custom game states. This can be done by extending the <span class="italicized">DependencyRequisite</span> class and creating a corresponding asset. Try copying a dependency script/asset pair already made and editing it to create your own.

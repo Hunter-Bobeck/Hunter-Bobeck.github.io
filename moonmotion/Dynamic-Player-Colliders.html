@@ -114,20 +114,23 @@
 								The Player's 'VRCamera' object (the head object originally provided by the Interaction System) has a new trigger box collider for detecting head trigger collisions with other objects &ndash; this can be used for, say, eating a food object to make it disappear.
 							</li>
 							<li class="wow fadeIn">
-								The Player's 'Feet' object has a trigger box collider for detecting feet trigger collisions with other objects &ndash; <a href="index.html">Moon Motion</a> uses this to detect collision with the Terrain layer for <a href="Player.html#Terrain-Response">Terrain Response</a>.
+								The Player's 'Feet' object has a trigger box collider for detecting feet trigger collisions with other objects &ndash; <a href="index.html">Moon Motion</a> uses this to detect collision with the Terrain layer for <a href="Terrain-Response.html">Terrain Response</a>.
 							</li>
 							<li class="wow fadeIn">
 								The Player's 'Body' object has a capsule collider for providing the physics collision of the Player within the scene to have the Player rest on floors, collide with objects such as crates, and so on. It also has a trigger capsule collider with a larger radius, for picking up powerups and handling other more "sensitive" cases.
 							</li>
 							<li class="wow fadeIn">
-								The Player's <a href="Player.html#Hand-Model-Cycling">Hand Model Cyclers</a> can be setup to cycle between models/colliders; by default, it cycles between some models that together have both trigger and nontrigger colliders.
+								The Player's <a href="Hand-Model-Cycling.html">Hand Model Cyclers</a> can be setup to cycle between models/colliders; by default, it cycles between some models that together have both trigger and nontrigger colliders.
 							</li>
 						</ul>
 						<p class="wow fadeIn">
-							Moon Motion's <a href="Prefabs.html#Interactable-Examples">example Throwable prefabs and Longbow Arrows</a> have been set to a layer that ignores collision with the Player layer.
+							The Player's rigidbody is rotation-locked to prevent forces from rotating the player and causing nausea. Unlock at your own risk.
 						</p>
 						<p class="wow fadeIn">
-							The player collides with <a href="Prefabs.html#Powerup-Templates">Powerups</a>.
+							Moon Motion's <a href="Interactable-Examples.html">example Throwable prefabs and Longbow Arrows</a> have been set to a layer that ignores collision with the Player layer.
+						</p>
+						<p class="wow fadeIn">
+							The player collides with <a href="Powerup-Templates.html">Powerups</a>.
 						</p>
 					</div>
 				</div>

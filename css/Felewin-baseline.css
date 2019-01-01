@@ -111,6 +111,56 @@ button:focus {
 	width: 100%;
 }
 
+/* margining */
+.no-top-margin {
+	margin-top: 0 !important;
+}
+.no-bottom-margin {
+	margin-bottom: 0 !important;
+}
+.no-left-margin {
+	margin-left: 0 !important;
+}
+.no-right-margin {
+	margin-right: 0 !important;
+}
+.no-vertical-margins {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
+.no-horizontal-margins {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+.no-margins {
+	margin: 0 !important;
+}
+
+/* padding */
+.no-top-padding {
+	padding-top: 0 !important;
+}
+.no-bottom-padding {
+	padding-bottom: 0 !important;
+}
+.no-left-padding {
+	padding-left: 0 !important;
+}
+.no-right-padding {
+	padding-right: 0 !important;
+}
+.no-vertical-padding {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+.no-horizontal-padding {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+.no-padding {
+	padding: 0 !important;
+}
+
 /* alignment */
 .align-left {
 	text-align: left;

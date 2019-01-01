@@ -84,33 +84,73 @@
 				<div class="wow fadeInUp">
 					<!-- header -->
 					<h2 class="weight-heavy wow fadeIn">
-						Smooth Monitor Camera Override
+						Locomotions Cycling
 					</h2>
 					<!-- divider -->
 					<div class="block-divider wow fadeIn"></div>
 				</div>
+				<br>
+				<br>
 				<!-- subDocumentation flyer (to animate in intensely) -->
 				<div class="wow fadeInUp">
-					<!-- video -->
-					<div class="grid media-grid">
-						<div class="cell media-cell wow fadeIn">
-							<video width="100%" height="auto" no-controls autoplay muted loop>
-								<source src="videos/Smooth Monitor Camera Override.mp4" type="video/mp4"/>
-								Your browser does not support the video tag.
-							</video>
-						</div>
-					</div>
 					<!-- article -->
 					<div class="block-article-padding align-left">
 						<!-- description -->
 						<p class="wow fadeIn">
-							Exaggerated movement example above.
+							Locomotions Cycling is used to cycle between locomotion combinations, to make different locomotions active. This can include both hand locomotions (such as <a href="Boosting.html">Boosting</a> or <a href="Treading.html">Treading</a>) and <a href="Prefabs.html">prefab</a> locomotions (such as <a href="Gravity-Zone.html">Gravity Zones</a> or <a href="Launcher.html">Launchers</a>). This works on the premise that all locomotions are objects which can be either enabled or disabled.
+						</p>
+						<br>
+						<h4>Setup</h4>
+						<p class="wow fadeIn">
+							Each of the hands on the <a href="Player.html">Player</a> has a Locomotions Cycler:
+						</p>
+						<img src="images/Locomotions Cycler of Hand.jpg" class="docs-screenshot"/>
+						<p class="wow fadeIn">
+							A Locomotions Cycler will, upon <a href="Controller-Input-Handling.html">input</a> or when called programmatically, cycle between locomotion combinations (sets of <a href="Locomotions.html">locomotions</a>) which have been defined in its inspector like so:
+						</p>
+						<img src="images/Locomotions Cycler Combination.jpg" class="docs-screenshot"/>
+						<p class="wow fadeIn">
+							Drag and drop hand locomotions (or prefab locomotions in the scene) into the appropriate hand's Locomotions Cycler inspector view. This will change the "loadout" of locomotion combinations that may become active.
 						</p>
 						<p class="wow fadeIn">
-							The head of the <a href="Player.html">player</a> has not only a VR camera, but a monitor camera as well. The monitor camera has motion smoothing, and is considered an override because when it is off, the VR camera is used for the monitor display. This monitor camera can easily be disabled to turn off the override and thus disable motion smoothing on the monitor display.
+							The player may be allowed to switch between defined interaction styles on the fly, such as <a href="Teleportation.html">Teleportation</a> versus <a href="Treading.html">Treading</a> (seen above). Or perhaps the player needs to change <a href="Boosting.html">Booster jet</a> configurations while using some settings interface:
+						</p>
+						<img src="images/Booster Configurations Cycling.jpg" class="docs-screenshot"/>
+						<p class="wow fadeIn">
+							Another use of Locomotions Cycling is to change between <a href="Controller-Input-Handling.html">control</a> schemes. You may want to change between trigger-based or touchpad-based Treading, for instance:
+						</p>
+						<img src="images/Treading Controls Cycling.jpg" class="docs-screenshot"/>
+						<p class="wow fadeIn">
+							Cycling can also be triggered programmatically as needed by game events. Just call one of the public <span class="italicized">LocomotionsCycler</span> methods.
+						</p>
+						<br>
+						<h4>How cycling works</h4>
+						<p class="wow fadeIn">
+							A number of locomotion combinations can be provided to each Locomotions Cycler. Each Locomotions Cycler will remember its current index, pointing to which which combination is currently active within the array of all combinations. This index starts at 0 by default.
+						</p>
+						<img src="images/Locomotions Cycling Index.jpg" class="docs-screenshot"/>
+						<p class="wow fadeIn">
+							Cycling, then, is the act of incrementing that index (or returning it to 0 once it has reached the end); after cycling the index, the Locomotions Cycler ensures that the locomotions in the combination specified by that index are the ones that are active.
 						</p>
 						<p class="wow fadeIn">
-							This is helpful to smooth out jitteriness when displaying the monitor for spectators, making a video recording, or using the camera as a texture.
+							Activating a locomotion combination is a matter of enabling the given locomotion objects in that combination.
+						</p>
+						<p class="wow fadeIn">
+							So Locomotions Cycling enables the locomotion objects specified by the combination given at the current index, but that's only half the story. The Locomotions Cycler also has to disable the rest of the locomotions it is responsible for managing. To do this, a Locomotions Cycler first disables all the locomotions it manages before enabling the latest combination.
+						</p>
+						<p class="wow fadeIn">
+							The Locomotions Cyclers automatically manage (and thus will disable) all locomotions that are children of the Player (which includes all hand locomotions), plus any prefab locomotions (such as Gravity Zones or Launchers) which have manually been included in one of the Locomotions Cyclers combinations. That is to say, the only locomotions the Locomotions Cyclers don't manage are those prefab locomotions which the developer has not included in any of the Locomotions Cyclers' combinations.
+						</p>
+						<p class="wow fadeIn">
+							As a further example, if you have no locomotion combinations set, the Locomotions Cyclers will disable all of the Player's children/hand locomotions at the start:
+						</p>
+						<img src="images/No Locomotion Combinations.jpg" class="docs-screenshot"/>
+						<p class="wow fadeIn">
+							But you are free to add as many prefab locomotions into the scene as you like without having to include them in the Locomotions Cycling process. For instance, when you have the above setup, you will still find the bunch of Gravity Zones you have put in the scene below to remain enabled:
+						</p>
+						<img src="images/Gravity Zones in Scene Hierarchy.jpg" class="docs-screenshot"/>
+						<p class="wow fadeIn">
+							What this all means is that you should allow the Locomotions Cycler to handle the enablement of the locomotion objects it manages; you shouldn't disable any locomotion objects inside the Player and any prefab locomotions in the scene that are already included in Locomotions Cycling combinations.
 						</p>
 					</div>
 				</div>

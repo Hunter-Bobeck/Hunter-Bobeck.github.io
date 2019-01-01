@@ -84,7 +84,7 @@
 				<div class="wow fadeInUp">
 					<!-- header -->
 					<h2 class="weight-heavy wow fadeIn">
-						Smooth Monitor Camera Override
+						Player Prefab
 					</h2>
 					<!-- divider -->
 					<div class="block-divider wow fadeIn"></div>
@@ -95,7 +95,7 @@
 					<div class="grid media-grid">
 						<div class="cell media-cell wow fadeIn">
 							<video width="100%" height="auto" no-controls autoplay muted loop>
-								<source src="videos/Smooth Monitor Camera Override.mp4" type="video/mp4"/>
+								<source src="videos/Player.mp4" type="video/mp4"/>
 								Your browser does not support the video tag.
 							</video>
 						</div>
@@ -104,13 +104,16 @@
 					<div class="block-article-padding align-left">
 						<!-- description -->
 						<p class="wow fadeIn">
-							Exaggerated movement example above.
+							The <a href="Player-Prefab.html">Player</a> is provided as a <a href="Prefabs.html">Prefab</a> so that it may easily be reused between scenes. 
 						</p>
 						<p class="wow fadeIn">
-							The head of the <a href="Player.html">player</a> has not only a VR camera, but a monitor camera as well. The monitor camera has motion smoothing, and is considered an override because when it is off, the VR camera is used for the monitor display. This monitor camera can easily be disabled to turn off the override and thus disable motion smoothing on the monitor display.
+							The Player prefab has been extended from the <a href="SteamVR-Interaction-System.html">SteamVR Interaction System</a>, and now supports key features such as <a href="Dynamic-Player-Colliders.html">dynamic body colliders</a>, <a href="Terrain-Response.html">terrain detection</a>, <a href="Dynamic-Movement-Audio.html">wind feedback</a>, and <a href="Smooth-Monitor-Camera-Override.html">camera motion smoothing</a>.
 						</p>
 						<p class="wow fadeIn">
-							This is helpful to smooth out jitteriness when displaying the monitor for spectators, making a video recording, or using the camera as a texture.
+							To use <a href="index.html">Moon Motion</a> and set up different <a href="Locomotions.html">locomotion</a> schemes for your player, you will need to put the Player prefab into a scene and make sure it has priority over any other cameras or audio listeners currently in the scene. The Player's hands have <a href="Locomotions-Cycling.html">Locomotions Cyclers</a> from where the locomotion combinations can be defined.
+						</p>
+						<p class="wow fadeIn">
+							Once you have placed a Player prefab in your own scene, or have decided to edit it inside one of the <a href="Scenes.html">toolkit's scenes</a>, you probably want to drag it back into your assets view to start using your own copy of the prefab and maintain the original for reference.
 						</p>
 					</div>
 				</div>

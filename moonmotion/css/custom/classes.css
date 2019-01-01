@@ -199,7 +199,7 @@ h4 > i {
 	max-width: 1000px;
 }
 .media-cell > video {
-	border: 5px solid var(--color-light);
+	border: 3px solid var(--color-light);
 }
 .media-cell > h4 {
 	padding-top: .5em;
@@ -338,8 +338,14 @@ a > .docs-link-header:hover {
 	/* bevel */
 	border-radius: .5em;
 }
-.Dependencies-screenshot {
+.docs-screenshot {
+	/* margin */
 	margin-top: .3em;
 	margin-bottom: 1em;
+
+	/* size */
 	max-width: 100%;
+
+	/* border */
+	border: 2.5px solid var(--color-light);
 }

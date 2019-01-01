@@ -84,33 +84,31 @@
 				<div class="wow fadeInUp">
 					<!-- header -->
 					<h2 class="weight-heavy wow fadeIn">
-						Smooth Monitor Camera Override
+						Controller Input Handling
 					</h2>
 					<!-- divider -->
 					<div class="block-divider wow fadeIn"></div>
 				</div>
+				<br>
+				<br>
 				<!-- subDocumentation flyer (to animate in intensely) -->
 				<div class="wow fadeInUp">
-					<!-- video -->
-					<div class="grid media-grid">
-						<div class="cell media-cell wow fadeIn">
-							<video width="100%" height="auto" no-controls autoplay muted loop>
-								<source src="videos/Smooth Monitor Camera Override.mp4" type="video/mp4"/>
-								Your browser does not support the video tag.
-							</video>
-						</div>
-					</div>
 					<!-- article -->
 					<div class="block-article-padding align-left">
 						<!-- description -->
 						<p class="wow fadeIn">
-							Exaggerated movement example above.
+							The <span class="italicized">Controller.Input</span> enumeration defines the possible controller inputs that may be detected:
+						</p>
+						<img src="images/Controller.Input Enumeration.jpg" class="docs-screenshot"/>
+						<p class="wow fadeIn">
+							This enumeration allows you to set up a number of drop-down lists of controller inputs to choose from, as an inspector setting for any script, by which to control <a href="Locomotions.html">locomotions</a> or any other scripts you may create.
+						</p>
+						<img src="images/Inputs Setting Example.jpg" class="docs-screenshot"/>
+						<p class="wow fadeIn">
+							Moon Motion has input settings for nearly all of its locomotions, cyclers, and modules. Not all of them require input to function, however.
 						</p>
 						<p class="wow fadeIn">
-							The head of the <a href="Player.html">player</a> has not only a VR camera, but a monitor camera as well. The monitor camera has motion smoothing, and is considered an override because when it is off, the VR camera is used for the monitor display. This monitor camera can easily be disabled to turn off the override and thus disable motion smoothing on the monitor display.
-						</p>
-						<p class="wow fadeIn">
-							This is helpful to smooth out jitteriness when displaying the monitor for spectators, making a video recording, or using the camera as a texture.
+							If you want a control that cycles through controls for your locomotions, you can assign input to a <a href="Locomotions-Cycling.html">Locomotions Cycler</a> to cycle between locomotions with different input settings.
 						</p>
 					</div>
 				</div>
