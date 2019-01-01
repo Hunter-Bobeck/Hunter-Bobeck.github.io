@@ -99,6 +99,13 @@
 						<p class="wow fadeIn">
 							Terrain Response specifies terrain and ground collision layers, uses <a href="Dynamic-Player-Colliders.html">player collision</a> and raycasting to track groundedness, broadcasts liftoff/landing events, and <a href="Dynamic-Movement-Audio.html">plays liftoff/landing audio</a> accordingly.
 						</p>
+						<p class="wow fadeIn">
+							You can find this component directly on the <a href="Player-Prefab.html">Player prefab</a>:
+						</p>
+						<img src="images/Terrain Response Recognized Layers.jpg" class="docs-screenshot wow fadeIn"/>
+						<p class="wow fadeIn">
+							This is where you'll want to define which layers are considered "ground terrain" and "nonground terrain". Ground is considered a more particular kind of terrain. For example, by default, <a href="Boosting.html#Modules">Booster Diminishing</a> only recognizes ground terrain. To change the layers for either of these recognized categories, edit the arrays shown above to match layer names set for your Unity project.
+						</p>
 					</div>
 				</div>
 			</div>
