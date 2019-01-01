@@ -42,6 +42,11 @@
 	font-family: "Open Sans", sans-serif;
 }
 
+/* muted text */
+.muted-text {
+	color: var(--color-Steam-text-muted);
+}
+
 /* backgrounds */
 .background-dark-lighter {
 	background-color: var(--color-dark-lighter);

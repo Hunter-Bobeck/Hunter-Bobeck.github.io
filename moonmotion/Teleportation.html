@@ -103,17 +103,26 @@
 					<!-- article -->
 					<div class="block-article-padding align-left">
 						<!-- description -->
-						<p class="wow fadeIn">
+						<h4>
+							Hand Locomotion
+						</h4>
+						<p class="muted-text wow fadeIn">
 							The Teleportation <a href="Locomotions.html">locomotion</a> is a hand locomotion; a Teleporter can be enabled on each hand of the <a href="Player.html">player</a> via <a href="Locomotions-Cycling.html">locomotions cycling</a>. As with any other hand locomotion, this must be done for each hand for which you want its locomotion to become active.
 						</p>
+						<h4>
+							Teleportation
+						</h4>
 						<p class="wow fadeIn">
 							Teleportation comes straight from the <a href="SteamVR-Interaction-System.html">SteamVR Interaction System</a>, allowing you to provide a consistent approach to movement that matches with Valve's foundational <a href="https://store.steampowered.com/app/450390/The_Lab/" target="blank">The Lab</a> experience.
 						</p>
 						<p class="wow fadeIn">
-							The Teleport Points and Teleport Areas from the Interaction System may be used to define available teleportation locations. Moon Motion's <a href="Basic-Platforms-and-Crates.html">platform prefabs</a> come with Teleport Areas attached.
+							Because Teleportation is from the Interaction System, the bulk of its settings reside not in the Teleporters on each hand, but in Valve's Teleportation object that is a child of the player. Refer to the Interaction System's documentation for more information on how to reconfigure teleportation. Currently there is not an inspector-friendly way to change the input setting, because it is hardcoded into Valve's <span class="italicized">Teleport</span> script.
 						</p>
 						<p class="wow fadeIn">
-							The locomotion has been updated to allow <a href="Controller-Input-Handling.html">input customization</a> and to support being cycled alongside other <a href="index.html">Moon Motion</a> locomotions.
+							However, for Moon Motion, the locomotion <span class="italicized">has</span> been updated to support being cycled alongside other <a href="index.html">Moon Motion</a> locomotions, per-hand; you can cycle the Teleporters for that purpose. The Teleporters also have the <a href="Dependencies.html">dependencies</a> setting (just like other hand locomotions do) to manage whether the locomotion is allowed to be used at any given time. Maybe you only want Teleportation to be available while the player is grounded (not in the air), for instance.
+						</p>
+						<p class="wow fadeIn">
+							The Teleport Points and Teleport Areas from the Interaction System may be used to define available teleportation locations. Moon Motion's <a href="Basic-Platforms-and-Crates.html">platform prefabs</a> come with Teleport Areas attached.
 						</p>
 					</div>
 				</div>

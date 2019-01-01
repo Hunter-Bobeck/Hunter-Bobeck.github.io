@@ -174,27 +174,27 @@ button:focus {
 
 /* tabbing */
 .halftabbed {
-  padding-left: 2.5em;
+  padding-left: 37.5px;
 }
 @media (max-width: 1000px) {
   .halftabbed {
-    padding-left: 1.25em;
+    padding-left: 18.75px;
   }
 }
 .tabbed {
-  padding-left: 5em;
+  padding-left: 75px;
 }
 @media (max-width: 1000px) {
   .tabbed {
-    padding-left: 2.5em;
+    padding-left: 37.5px;
   }
 }
 .doubletabbed {
-  padding-left: 10em;
+  padding-left: 150px;
 }
 @media (max-width: 1000px) {
   .doubletabbed {
-    padding-left: 5em;
+    padding-left: 75px;
   }
 }
 
