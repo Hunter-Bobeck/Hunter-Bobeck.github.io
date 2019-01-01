@@ -97,7 +97,17 @@
 					<div class="block-article-padding align-left">
 						<!-- description -->
 						<p class="wow fadeIn">
-							Swap between sets of models to use for hands of the <a href="Player.html">player</a>, upon <a href="Controller-Input-Handling.html">input</a> or via script; especially useful in parallel with <a href="Locomotions-Cycling.html">Locomotions Cycling</a> when you want to have a different hand model for each <a href="Locomotions.html">locomotion</a> or combination of locomotions.
+							Swap between sets of models to use for hands of the <a href="Player.html">player</a>, upon <a href="Controller-Input-Handling.html">input</a> or via script. Cycling hand models is especially useful in parallel with <a href="Locomotions-Cycling.html">Locomotions Cycling</a>, when you want to have a different hand model for each <a href="Locomotions.html">locomotion</a> or combination of locomotions.
+						</p>
+						<img src="images/Hand Models Cycler.jpg" class="docs-screenshot wow fadeIn"/>
+						<p class="wow fadeIn">
+							You can create the models you want to cycle between and put them as children of the cycler. Then hook up references to those children objects in the cycler's inspector.
+						</p>
+						<p class="wow fadeIn">
+							You may provide nontrigger colliders, trigger colliders, or both. Note that <a href="Dynamic-Player-Colliders.html">the player object already has the necessary rigidbody</a>.
+						</p>
+						<p class="wow fadeIn">
+							You also have the option to display the default controller model along with each combination of custom hand models.
 						</p>
 					</div>
 				</div>
