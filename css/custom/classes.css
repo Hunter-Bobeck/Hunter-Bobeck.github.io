@@ -1,2 +1,61 @@
 /* CLASSES */
 
+/* fonts */
+.font-bebas {
+	font-family: 'bebasregular', sans-serif;
+}
+.font-bttf {
+	font-family: 'back_to_the_future_2002Rg', sans-serif;
+}
+.font-roboto {
+	font-family: 'robotomedium', sans-serif;
+}
+
+/* backgrounds */
+.background-gradient {
+	background: linear-gradient(90deg, orange 25%, blue 100%);
+}
+
+/* buttons */
+.button-square {
+  border-radius: 0;
+}
+.button-green {
+	background-color: #5cb85c;
+	border-color: #5cb85c;
+	color: rgb(251, 247, 241);
+}
+
+/* grid items */
+.links-grid-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.portfolio-grid-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.portfolio-grid-item-description {
+	display: block;
+}
+
+/* containers */
+.paddington {
+	text-align: center;
+	margin:	4%;
+}
+/* at least: tablets in landscape mode */
+@media only screen and (min-width: 768px) {
+	.paddington {
+		text-align: start;
+		margin:	2%;
+	}
+}
+
+/* frames */
+iframe {
+	width: 90%;
+	height: 55%;
+}
