@@ -1,47 +1,8 @@
 /* ELEMENTS */
 
-/* images */
-img {
-	/* undraggability */
-	-webkit-user-drag: none;
-	-khtml-user-drag: none;
-	-moz-user-drag: none;
-	-o-user-drag: none;
-	user-drag: none;
+::-webkit-scrollbar { 
+    display: none; 
 }
-
-/* links */
-a {
-	/* undraggability */
-	-webkit-user-drag: none;
-	-khtml-user-drag: none;
-	-moz-user-drag: none;
-	-o-user-drag: none;
-	user-drag: none;
-
-	color: rgb(251, 247, 241);
-    transition: color .8s;
-}
-@-webkit-keyframes neon {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
-  }
-}
-a:hover {
-	color: rgb(251, 247, 241);
-	-webkit-animation: neon 1.5s ease-in-out infinite alternate;
-	-moz-animation: neon 1.5s ease-in-out infinite alternate;
-	animation: neon 1.5s ease-in-out infinite alternate;
-}
-a:visited {
-    color: rgb(251, 247, 241);
-}
-a:active {
-    color: rgb(251, 247, 241);
-}
-a:link {
-    color: rgb(251, 247, 241);
+h6 {
+	font-size: 1.1em;
 }
