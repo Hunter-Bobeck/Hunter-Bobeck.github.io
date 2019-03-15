@@ -36,9 +36,12 @@
 	background-color: black;
 }
 #fol-title-text-Mandelblot {
+	/* text gradient */
 	background-image: linear-gradient(to bottom right, var(--color-Felewin-lush), var(--success));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	/* text color (backup incase gradient doesn't work) */
+	color: var(--color-Felewin-lush);
 }
 #fol-One-Giant-Leap {
 	background-image: url("../../images/Deep Sky 20.jpg");
