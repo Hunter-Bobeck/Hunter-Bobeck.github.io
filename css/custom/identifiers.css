@@ -35,6 +35,11 @@
 #fol-margin-Project-Mandelblot {
 	background-color: black;
 }
+#fol-title-text-Mandelblot {
+	background-image: linear-gradient(to bottom right, var(--color-Felewin-lush), var(--success));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
 #fol-One-Giant-Leap {
 	background-image: url("../../images/Deep Sky 20.jpg");
 }
