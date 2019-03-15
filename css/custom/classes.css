@@ -8,7 +8,7 @@
 	padding-right: 7vw;
 	padding-bottom: 2.777vh;
 }
-@media only screen and (min-width: 600px) {		/* responsivity - at least: 600px */
+@media only screen and (min-width: 600px) {		/* responsivity - at least: tablets in portrait mode */
 	.stripe {
 		padding-left: 14vw;
 		padding-right: 14vw;
@@ -25,7 +25,12 @@
 }
 
 .navstrip-link {
-	font-size: 2em;
+	font-size: 1.9em;
+}
+@media only screen and (min-width: 600px) {		/* responsivity - at least: tablets in portrait mode */
+	.navstrip-link {
+		font-size: 2em;
+	}
 }
 
 .explanation {
