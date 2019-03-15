@@ -382,7 +382,49 @@ button:focus {
 	float: right;
 }
 
-/* display */
+/* alignment - baseline */
+.align-left {
+	text-align: left;
+}
+.align-center {
+	text-align: center;
+}
+.align-right {
+	text-align: right;
+}
+.valign-center {
+	display: flex;
+	align-items: center;
+}
+/* alignment - responsivities */
+@media only screen and (min-width: 1024px) and (max-width: 1499px) {		/* responsivity - within: small desktop */
+	.align-left-at-small-desktop-dimensions {
+		text-align: left;
+	}
+}
+@media only screen and (max-width: 479px) {		/* responsivity - below: phones in landscape mode */
+	.align-center-below-phone-landscape-dimensions {
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 767px) {		/* responsivity - below: tablets in landscape mode */
+	.align-center-below-tablet-landscape-dimensions {
+		text-align: center;
+	}
+}
+@media only screen and (min-width: 1024px) and (max-width: 1499px) {		/* responsivity - within: small desktop */
+	.align-right-at-small-desktop-dimensions {
+		text-align: right;
+	}
+}
+
+/* display baselines */
+.display-inherit {
+	display: inherit;
+}
+.display-none {
+	display: none;
+}
 .display-inline {
 	display: inline;
 }
@@ -394,6 +436,63 @@ button:focus {
 }
 .display-flex {
 	display: flex;
+}
+/* display responsivities - flex */
+@media only screen and (min-width: 1024px) {		/* responsivity - at least: desktop */
+	.display-flex-only-at-desktop-dimensions {
+		display: flex;
+	}
+}
+/* display responsivities - none */
+@media only screen and (max-width: 767px) {		/* responsivity - below: tablets in landscape mode */
+	.display-only-by-tablet-landscape-dimensions {
+		display: none;
+	}
+}
+@media only screen and (min-width: 1024px) {		/* responsivity - at least: desktop */
+	.display-only-at-nondesktop-dimensions {
+		display: none;
+	}
+}
+@media only screen and (min-width: 768px) {		/* responsivity - at least: tablets in landscape mode */
+	.display-only-below-tablet-landscape-dimensions {
+		display: none;
+	}
+}
+@media only screen and (max-width: 767px) {		/* responsivity - below: tablets in landscape mode */
+	.display-only-at-tablet-landscape-dimensions {
+		display: none;
+	}
+}
+@media only screen and (min-width: 1024px) {		/* responsivity - at least: desktop */
+	.display-only-at-tablet-landscape-dimensions {
+		display: none;
+	}
+}
+@media only screen and (max-width: 1023px) {		/* responsivity - below: desktop */
+	.display-only-at-desktop-dimensions {
+		display: none;
+	}
+}
+@media only screen and (min-width: 1500px) {		/* responsivity - at least: smedium desktop */
+	.display-only-below-smedium-desktop-dimensions {
+		display: none;
+	}
+}
+@media only screen and (max-width: 1499px) {		/* responsivity - below: smedium desktop */
+	.display-only-by-smedium-desktop-dimensions {
+		display: none;
+	}
+}
+@media only screen and (min-width: 1600px) {		/* responsivity - at least: medium desktop */
+	.display-only-below-medium-desktop-dimensions {
+		display: none;
+	}
+}
+@media only screen and (max-width: 1599px) {		/* responsivity - below: medium desktop */
+	.display-only-by-medium-desktop-dimensions {
+		display: none;
+	}
 }
 
 /* tabbing */
@@ -438,21 +537,6 @@ button:focus {
     transform: scaleX(-1);
     filter: FlipH;
     -ms-filter: "FlipH";
-}
-
-/* alignment */
-.align-left {
-	text-align: left;
-}
-.align-center {
-	text-align: center;
-}
-.align-right {
-	text-align: right;
-}
-.valign-center {
-	display: flex;
-	align-items: center;
 }
 
 /* links */
@@ -592,6 +676,21 @@ button:focus {
   }
 }
 
+/* iframe responsivity (Gfycat requires a different padding... but not as simple as adding 44 for the white bar to the height) */
+.iframe-container-1280-by-720 {
+	position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;	/* 720 / 1280 */
+}
+.iframe-container-1280-by-720 > iframe {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 /* blocks */
 .block-padded {
 	padding: 2em;
@@ -617,45 +716,6 @@ button:focus {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-
-/* responsivity */
-.display-only-at-nonphone-dimensions {
-	display: none;
-}
-@media only screen and (min-width: 768px) {		/* responsivity - at least: tablets in landscape mode */
-	.display-only-at-nonphone-dimensions {
-		display: inline;
-	}
-}
-.display-only-at-phone-dimensions {
-	display: inline;
-}
-@media only screen and (min-width: 768px) {		/* responsivity - at least: tablets in landscape mode */
-	.display-only-at-phone-dimensions {
-		display: none;
-	}
-}
-.display-only-at-tablet-dimensions {
-	display: none;
-}
-@media only screen and (min-width: 768px) {		/* responsivity - at least: tablets in landscape mode */
-	.display-only-at-tablet-dimensions {
-		display: inline;
-	}
-}
-@media only screen and (min-width: 1024px) {		/* responsivity - at least: desktop */
-	.display-only-at-tablet-dimensions {
-		display: none;
-	}
-}
-.display-only-at-desktop-dimensions {
-	display: none;
-}
-@media only screen and (min-width: 1024px) {		/* responsivity - at least: desktop */
-	.display-only-at-desktop-dimensions {
-		display: inline;
-	}
 }
 
 /* Wow visible-before-animating bugfix */

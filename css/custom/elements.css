@@ -1,8 +1,16 @@
 /* ELEMENTS */
 
+
 ::-webkit-scrollbar { 
     display: none; 
 }
+
 h6 {
 	font-size: 1.1em;
+}
+
+@media only screen and (max-width: 800px) {		/* responsivity - at most: 800px */
+	iframe {
+		width: 100%;
+	}
 }

@@ -1,9 +1,30 @@
 /* IDENTIFIERS */
 
 /* navstrip */
+#navstrip {
+	/* spacing */
+	padding-left: 7vw;
+	padding-right: 7vw;
+}
+@media only screen and (min-width: 600px) {		/* responsivity - at least: 600px */
+	#navstrip {
+		padding-left: 14vw;
+		padding-right: 14vw;
+	}
+}
+@media only screen and (min-width: 1024px) {		/* responsivity - at least: desktop */
+	#navstrip {
+		padding-left: 19vw;
+		padding-right: 19vw;
+	}
+}
+@media only screen and (max-width: 600px) {		/* responsivity - at most: 600px */
+	#titleage {
+		width: 100%;
+	}
+}
 #navstrip-links {
 	margin-top: 1.8vh;
-	text-align: right;
 	vertical-align: middle;
 }
 
@@ -49,20 +70,59 @@
 }
 #portrait {
 	border: 5px solid var(--color-Felewin-blue-darkest-transparent);
-	margin-top: 5em;
+}
+@media only screen and (min-width: 1024px) {		/* responsivity - at least: desktop */
+	#portrait {
+		margin-top: 5em;
+	}
 }
 #portrait-subtitle {
 	text-transform: none;
 	margin-top: .75em;
 }
-#explanation-bio {
-	margin-left: 2em;
+@media only screen and (min-width: 1024px) {		/* responsivity - at least: desktop */
+	#explanation-bio {
+		margin-left: 2em;
+	}
 }
 
 /* Contact */
 #contaction {
-	margin: 10vh 30vw;
+	margin: 6vh 11vw;
 	background-color: var(--color-Felewin-blue-darkest-transparent);
+}
+@media only screen and (min-width: 768px) {		/* responsivity - at least: tablets in landscape mode */
+	#contaction {
+		margin: 9vh 20vw;
+	}
+}
+@media only screen and (min-width: 1024px) {		/* responsivity - at least: desktop */
+	#contaction {
+		margin: 4vh 30vw;
+	}
+}
+@media only screen and (min-width: 1500px) {		/* responsivity - at least: smedium desktop */
+	#contaction {
+		margin: 10vh 30vw;
+	}
+}
+#contaction-text {
+	font-size: 1em;
+}
+@media only screen and (min-width: 600px) {		/* responsivity - at least: tablets in portrait mode */
+	#contaction-text {
+		font-size: 1.1em;
+	}
+}
+@media only screen and (min-width: 768px) {		/* responsivity - at least: tablets in landscape mode */
+	#contaction-text {
+		font-size: 1.2em;
+	}
+}
+@media only screen and (min-width: 1024px) {		/* responsivity - at least: desktop */
+	#contaction-text {
+		font-size: 1.4em;
+	}
 }
 #Bigscreenshot {
 	width: 100%;

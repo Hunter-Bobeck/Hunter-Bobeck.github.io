@@ -4,9 +4,21 @@
 	/* spacing */
 	margin-top: 1.133vh;
 	padding-top: 2.777vh;
-	padding-left: 19vw;
-	padding-right: 19vw;
+	padding-left: 7vw;
+	padding-right: 7vw;
 	padding-bottom: 2.777vh;
+}
+@media only screen and (min-width: 600px) {		/* responsivity - at least: 600px */
+	.stripe {
+		padding-left: 14vw;
+		padding-right: 14vw;
+	}
+}
+@media only screen and (min-width: 1024px) {		/* responsivity - at least: desktop */
+	.stripe {
+		padding-left: 19vw;
+		padding-right: 19vw;
+	}
 }
 .stripes-bottom-margin {
 	margin-bottom: 1.133vh;
@@ -28,8 +40,20 @@
 	padding-bottom: 4em;
 }
 .portfolio-margin {
-	margin-left: 19vw;
-	margin-right: 19vw;
+	margin-left: 7vw;
+	margin-right: 7vw;
+}
+@media only screen and (min-width: 600px) {		/* responsivity - at least: 600px */
+	.portfolio-margin {
+		margin-left: 14vw;
+		margin-right: 14vw;
+	}
+}
+@media only screen and (min-width: 1024px) {		/* responsivity - at least: desktop */
+	.portfolio-margin {
+		margin-left: 19vw;
+		margin-right: 19vw;
+	}
 }
 .fol-banner {
 	width: 100%;
@@ -38,15 +62,17 @@
 	padding-left: 1vw;
 	padding-right: 1vw;
 }
+@media only screen and (max-width: 767px) {		/* responsivity - below: tablets in landscape mode */
+	.fol-text-container {
+		padding-left: 2vw;
+	}
+}
+.fol-description > iframe {
+	padding-right: 1vw;
+}
 .fol-title {
 	/*text-transform: uppercase;*/
 	font-weight: bold;
-}
-.fol-description {
-	
-}
-.fol-text-footer {
-	
 }
 .fol-text-footer > iframe {
 	width: 100%;

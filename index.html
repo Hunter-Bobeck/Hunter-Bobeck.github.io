@@ -34,16 +34,23 @@
 	<div>
 
 		<!-- modified Git Hub Corner (https://github.com/tholman/github-corners); original © Tim Holman 2016 -->
-		<div class="wow fadeIn">
+		<div class="display-only-by-tablet-landscape-dimensions wow fadeIn">
 			<a href="https://github.com/Hunter-Bobeck" class="git-hub-corner" aria-label="Visit on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:var(--color-main); color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.git-hub-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.git-hub-corner:hover .octo-arm{animation:none}.git-hub-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 		</div>
 
 		<!-- navstrip stripe -->
-		<div class="stripe align-left unselectable">
+		<div class="stripe align-left unselectable" id="navstrip">
 			<a href="index.html">
-				<img src="images/Titleage.png"/>
+				<img src="images/Titleage.png" id="titleage"/>
 			</a>
-			<div class="float-right weight-bold" id="navstrip-links">
+			<div class="weight-bold float-right align-right display-only-by-smedium-desktop-dimensions" id="navstrip-links">
+				<a href="index.html" class="navstrip-link color-Felewin-bright hvr-underline-reveal">Portfolio</a>
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<a href="About.html" class="navstrip-link color-light hvr-underline-reveal">About</a>
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<a href="Contact.html" class="navstrip-link color-light hvr-underline-reveal">Contact</a>
+			</div>
+			<div class="weight-bold align-left align-center-below-phone-landscape-dimensions display-only-below-smedium-desktop-dimensions" id="navstrip-links">
 				<a href="index.html" class="navstrip-link color-Felewin-bright hvr-underline-reveal">Portfolio</a>
 				<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
 				<a href="About.html" class="navstrip-link color-light hvr-underline-reveal">About</a>
@@ -51,15 +58,25 @@
 				<a href="Contact.html" class="navstrip-link color-light hvr-underline-reveal">Contact</a>
 			</div>
 		</div>
+			
+		</div>
+
+		<!-- news stripe -->
+		<div class="stripe background-Steam-lightened align-left wow fadeIn">
+			<h1>News!</h1>
+			<br>
+			<h5 class="explanation">
+				<i class="fas fa-user-astronaut"></i>&nbsp;&nbsp;Check out my new <a href="http://moonmotionproject.com" target="blank" class="link-Moon-Motion">locomotion toolkit</a>.
+			</h5>
+		</div>
 
 		<!-- projects stripe -->
-		<div class="stripe background-Steam-lightened align-left wow fadeIn" id="projects-stripe">
+		<div class="stripe background-Steam-lightened align-left wow fadeIn">
 			<h1>Projects!</h1>
 			<br>
 			<h5 class="explanation">
 				I craft moving experiences: virtual reality jetpack physics, diegetic interactions, and new mediums of artistic expression.
 				<br>
-				Check out my new <a href="http://moonmotionproject.com" target="blank" class="link-Moon-Motion">locomotion toolkit</a>.
 			</h5>
 		</div>
 
@@ -70,7 +87,7 @@
 					<div class="fol-text">
 						<br>
 						<h2 class="fol-title color-Felewin-lush wow fadeIn">
-							<img src="images/Mandelblot.png" style="border-radius: 1em; border: 2px solid var(--color-Felewin-lush);"/>&nbsp;&nbsp;Project Mandelblot&nbsp;&nbsp;&nbsp;&nbsp;
+							<img src="images/Mandelblot.png" style="border-radius: 1em; border: 2px solid var(--color-Felewin-lush);"/><br class="display-only-below-tablet-landscape-dimensions"><span class="display-only-by-tablet-landscape-dimensions">&nbsp;&nbsp;</span>Project&nbsp;Mandelblot<span class="display-only-by-tablet-landscape-dimensions">&nbsp;&nbsp;&nbsp;&nbsp;</span>
 						</h2>
 						<br>
 						<h6 class="fol-description wow fadeIn">
@@ -81,7 +98,7 @@
 							<br>
 							<br>
 							<span>
-								<a href="https://www.tiltbrush.com/" target="blank" class="link-Moon-Motion"><h4 class="display-inline">Tilt Brush</h4></a> <span class="">meets</span> <a href="https://www.youtube.com/watch?v=THSSOJ2pksI" target="blank" class="link-Moon-Motion"><h4 class="display-inline">Doodal</h4></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<a href="https://www.tiltbrush.com/" target="blank" class="link-Moon-Motion"><h4 class="display-inline">Tilt Brush</h4></a><br class="display-only-below-tablet-landscape-dimensions"><span class="display-only-by-tablet-landscape-dimensions"> </span><span class="">meets</span><br class="display-only-below-tablet-landscape-dimensions"><span class="display-only-by-tablet-landscape-dimensions">&nbsp; </span><a href="https://www.youtube.com/watch?v=THSSOJ2pksI" target="blank" class="link-Moon-Motion"><h4 class="display-inline">Doodal</h4></a><span class="display-only-by-tablet-landscape-dimensions">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 							</span>
 							<br>
 							<br>
@@ -89,9 +106,8 @@
 						</h6>
 					</div>
 				</div>
-				<div class="display-flex">
-					<iframe src='https://gfycat.com/ifr/flawlesssmoggygallinule' frameborder='0' scrolling='no' allowfullscreen width='592' height='377' class="wow fadeIn"></iframe>
-					&nbsp;&nbsp;&nbsp;&nbsp;
+				<div class="display-flex-only-at-desktop-dimensions">
+					<iframe src='https://gfycat.com/ifr/flawlesssmoggygallinule' frameborder='0' scrolling='no' allowfullscreen width='592' height='377' class="wow fadeIn"></iframe><span class="display-only-at-desktop-dimensions">&nbsp;&nbsp;&nbsp;&nbsp;</span>
 					<iframe src='https://gfycat.com/ifr/FragrantBestAtlasmoth' frameborder='0' scrolling='no' allowfullscreen width='592' height='377' class="wow fadeIn"></iframe>
 				</div>
 			</div>
@@ -105,7 +121,7 @@
 			</div>
 			<div class="portfolio-margin display-flex" id="fol-margin-One-Giant-Leap">
 				<div class="valign-center">
-					<div class="float-left display-block">
+					<div class="float-left display-block display-only-by-medium-desktop-dimensions">
 						<iframe src='https://gfycat.com/ifr/immaterialnauticalantlion' frameborder='0' scrolling='no' allowfullscreen width='592' height='377' class="wow fadeIn"></iframe>
 						<br>
 						<br>
@@ -120,14 +136,24 @@
 						</h2>
 						<br>
 						<h6 class="fol-description">
+							<div class="align-center">
+								<iframe src='https://gfycat.com/ifr/immaterialnauticalantlion' frameborder='0' scrolling='no' allowfullscreen width='592' height='377' class="wow fadeIn display-only-below-medium-desktop-dimensions"></iframe>
+							</div>
+							<br class="display-only-below-medium-desktop-dimensions">
+							<br class="display-only-below-medium-desktop-dimensions">
 							My voyage into the virtual reality space began with a motion-controlled jetpack landing on the moon.
 							<br>
 							<br>
 							Fueled by the unique flying locomotion, <a href="https://store.steampowered.com/app/512750/One_Giant_Leap/" target="blank" class="link-One-Giant-Leap weight-bold">One Giant Leap</a> achieved 100% positive reviews in Early Access. This funded my pursuit of a virtual reality career. The completed game is set to release in 2019.
 							<br>
 							<br>
-							The booster jet locomotion further inspired me to develop the open-source <a href="http://moonmotionproject.com" target="blank" class="link-Moon-Motion weight-bold">Moon Motion Toolkit</a>, which modularizes jet physics, handles locomotion loadouts, provides player collision dynamics, and more. The goal of the toolkit is to <a href="https://tiny.cc/MoonMotionRedditPost" target="blank" class="link-Moon-Motion">create a standard</a> for freedom of movement and locomotion customization.
+							The booster jet locomotion further inspired me to develop the open-source <a href="http://moonmotionproject.com" target="blank" class="link-Moon-Motion weight-bold">Moon Motion Toolkit</a>, which modularizes jet physics, handles locomotion loadouts, provides player collision dynamics, and more. The goal of the toolkit is to create a standard for <a href="https://tiny.cc/MoonMotionRedditPost" target="blank" class="link-Moon-Motion">freedom of movement and locomotion customization</a>.
 							<br>
+							<br class="display-only-below-medium-desktop-dimensions">
+							<div class="align-center">
+								<iframe src='https://gfycat.com/ifr/scalygreedyalligator' frameborder='0' scrolling='no' allowfullscreen width='592' height='377' class="wow fadeIn display-only-below-medium-desktop-dimensions"></iframe>
+							</div>
+							<br class="display-only-below-medium-desktop-dimensions">
 							<br>
 							Play <span class="weight-bold">The Moon Motion Zone</span> <a href="https://hunter-bobeck.itch.io/the-moon-motion-zone" target="blank" class="link-Itch">on Itch</a> now to demo the toolkit! <span class="weight-bold">One Giant Leap</span> is available on both <a href="https://store.steampowered.com/app/512750/One_Giant_Leap/" target="blank" class="link-Steam">Steam</a> and <a href="https://hunter-bobeck.itch.io/one-giant-leap" target="blank" class="link-Itch">Itch</a>.
 							<br>
@@ -168,23 +194,29 @@
 			<!-- image - desktop -->
 			<img src="images/Moon Motion Cover - desktop.jpg" class="fullwidth undraggable display-only-at-desktop-dimensions"/>
 			<!-- image - tablet -->
-			<img src="images/Moon Motion Cover - tablet.jpg" class="fullwidth undraggable display-only-at-tablet-dimensions"/>
+			<img src="images/Moon Motion Cover - tablet.jpg" class="fullwidth undraggable display-only-at-tablet-landscape-dimensions"/>
 			<!-- image - mobile -->
-			<img src="images/Moon Motion Cover - mobile.jpg" class="fullwidth undraggable display-only-at-phone-dimensions"/>
+			<img src="images/Moon Motion Cover - mobile.jpg" class="fullwidth undraggable display-only-below-tablet-landscape-dimensions"/>
 		</div>
 
 		<!-- Felewin's Gallery -->
 		<div class="fol font-Montserrat wow fadeIn" id="fol-Felewin-s-Gallery">
 			<div class="portfolio-margin display-flex" id="fol-margin-Felewin-s-Gallery">
-				<div class="float-left valign-center display-block">
-					<iframe src='https://gfycat.com/ifr/shabbyunsungaoudad' frameborder='0' scrolling='no' allowfullscreen width='592' height='377' class="wow fadeIn"></iframe>
+				<div class="valign-center">
+					<div class="float-left display-block display-only-by-medium-desktop-dimensions">
+						<iframe src='https://gfycat.com/ifr/shabbyunsungaoudad' frameborder='0' scrolling='no' allowfullscreen width='592' height='377' class="wow fadeIn"></iframe>
+					</div>
 				</div>
 				<div class="fol-text-container">
 					<div class="fol-text">
 						<br>
-						<h2 class="fol-title">
+						<h2 class="fol-title align-center-below-tablet-landscape-dimensions">
 							Felewin's Gallery
 						</h2>
+						<br class="display-only-below-medium-desktop-dimensions">
+						<div class="align-center">
+							<iframe src='https://gfycat.com/ifr/shabbyunsungaoudad' frameborder='0' scrolling='no' allowfullscreen width='592' height='377' class="wow fadeIn display-only-below-medium-desktop-dimensions"></iframe>
+						</div>
 						<br>
 						<h6 class="fol-description">
 							I placed my collection of digital spacescapes into a VR art gallery, as an experiment to see many of my artworks "physically" for the first time.
