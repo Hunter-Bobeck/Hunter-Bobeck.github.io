@@ -32,7 +32,7 @@
 #fol-Project-Mandelblot {
 	background-color: black;
 }
-#fol-margin-Project-Mandelblot {
+#fol-subbanner-Project-Mandelblot {
 	background-color: black;
 }
 #fol-title-text-Mandelblot {
@@ -46,19 +46,19 @@
 #fol-One-Giant-Leap {
 	background-image: url("../../images/Deep Sky 20.jpg");
 }
-#fol-margin-One-Giant-Leap {
+#fol-subbanner-One-Giant-Leap {
 	background-color: var(--color-One-Giant-Leap-dark-transparent);
 }
 #fol-Felewin-s-Gallery {
 	background-image: url("../../images/Deep Sky 19.jpg");
 }
-#fol-margin-Felewin-s-Gallery {
+#fol-subbanner-Felewin-s-Gallery {
 	background-color: var(--color-Moon-Motion-cover-dark-transparent);
 }
 #fol-Batteries-Included {
-	background-image: url("../../images/Deep Sky 20.jpg");
+	background-image: url("../../images/Batteries Included Room Screenshot.jpg");
 }
-#fol-margin-Batteries-Included {
+#fol-subbanner-Batteries-Included {
 	background-color: var(--color-One-Giant-Leap-dark-transparent);
 }
 
