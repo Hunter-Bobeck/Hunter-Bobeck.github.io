@@ -494,6 +494,31 @@ button:focus {
 		display: none;
 	}
 }
+@media only screen and (min-width: 1600px) and (max-width: 1919px) {		/* responsivity - from medium desktop until large desktop */
+	.display-only-below-medium-desktop-dimensions-or-above-large-desktop-dimensions {
+		display: none;
+	}
+}
+@media only screen and (max-width: 767px) {		/* responsivity - below: tablets in landscape mode */
+	.display-only-from-tablet-landscape-dimensions-until-large-desktop-dimensions {
+		display: none;
+	}
+}
+@media only screen and (min-width: 1920px) {		/* responsivity - at least: large desktop */
+	.display-only-from-tablet-landscape-dimensions-until-large-desktop-dimensions {
+		display: none;
+	}
+}
+@media only screen and (max-width: 1599px) {		/* responsivity - below: medium desktop */
+	.display-only-from-medium-desktop-dimensions-until-large-desktop-dimensions {
+		display: none;
+	}
+}
+@media only screen and (min-width: 1920px) {		/* responsivity - at least: large desktop */
+	.display-only-from-medium-desktop-dimensions-until-large-desktop-dimensions {
+		display: none;
+	}
+}
 
 /* tabbing */
 .halftabbed {

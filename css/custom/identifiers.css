@@ -61,6 +61,12 @@
 #fol-subbanner-Batteries-Included {
 	background-color: var(--color-One-Giant-Leap-dark-transparent);
 }
+@media only screen and (min-width: 1600px) and (max-width: 1919px) {		/* responsivity - from small desktop until large desktop */
+	#fol-subbanner-Batteries-Included {
+		margin-left: 8vw;
+		margin-right: 8vw;
+	}
+}
 
 
 /* About */
