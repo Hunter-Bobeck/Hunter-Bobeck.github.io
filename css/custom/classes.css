@@ -1,29 +1,5 @@
 /* CLASSES */
 
-.stripe {
-	/* spacing */
-	margin-top: 1.133vh;
-	padding-top: 2.777vh;
-	padding-left: 7vw;
-	padding-right: 7vw;
-	padding-bottom: 2.777vh;
-}
-@media only screen and (min-width: 600px) {		/* responsivity - at least: tablets in portrait mode */
-	.stripe {
-		padding-left: 14vw;
-		padding-right: 14vw;
-	}
-}
-@media only screen and (min-width: 1024px) {		/* responsivity - at least: desktop */
-	.stripe {
-		padding-left: 19vw;
-		padding-right: 19vw;
-	}
-}
-.stripes-bottom-margin {
-	margin-bottom: 1.133vh;
-}
-
 .navstrip-link {
 	font-size: 1.6em;
 }
@@ -46,6 +22,8 @@
 	/*display: flex;*/
 	/*flex-direction: row;*/
 	/*align-items: center;*/
+
+	/* padding */
 	padding-top: 4em;
 	padding-bottom: 4em;
 }

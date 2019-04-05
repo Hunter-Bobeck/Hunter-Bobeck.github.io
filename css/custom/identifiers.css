@@ -29,8 +29,12 @@
 }
 
 /* Portfolio */
+#cover-Moon-Motion {
+    /*box-shadow: 0 0 10px var(--color-Moon-Motion);*/
+}
 #fol-Project-Mandelblot {
 	background-color: black;
+    /*box-shadow: 0 0 10px var(--color-Felewin-lush);*/
 }
 #fol-subbanner-Project-Mandelblot {
 	background-color: black;
@@ -45,18 +49,21 @@
 }
 #fol-One-Giant-Leap {
 	background-image: url("../../images/Deep Sky 20.jpg");
+    /*box-shadow: 0 0 10px var(--color-Felewin-blue-dark);*/
 }
 #fol-subbanner-One-Giant-Leap {
 	background-color: var(--color-One-Giant-Leap-dark-transparent);
 }
 #fol-Felewin-s-Gallery {
 	background-image: url("../../images/Deep Sky 19.jpg");
+    /*box-shadow: 0 0 40px var(--color-Felewin-blue-dark);*/
 }
 #fol-subbanner-Felewin-s-Gallery {
 	background-color: var(--color-Moon-Motion-cover-dark-transparent);
 }
 #fol-Batteries-Included {
 	background-image: url("../../images/Batteries Included Room Screenshot.jpg");
+    /*box-shadow: 0 0 10px orange;*/
 }
 #fol-subbanner-Batteries-Included {
 	background-color: var(--color-One-Giant-Leap-dark-transparent);

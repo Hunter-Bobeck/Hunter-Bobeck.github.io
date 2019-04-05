@@ -68,6 +68,8 @@
 	--color-Youtube: #ff0000;
 	--color-link-Youtube: var(--color-Youtube);
 	--color-link-Youtube-hovered: #cd0000;
+	--color-Gfycat: #3073ff;
+	--color-Gfycat-embed: #3aa8ff;
 }
 /* background colors */
 .background-black {
@@ -716,6 +718,45 @@ button:focus {
     border: 0;
 }
 
+/* stripes */
+.stripe {
+	/* spacing */
+	margin-top: 1.133vh;
+	padding-top: 2.777vh;
+	padding-bottom: 2.777vh;
+	padding-left: 7vw;
+	padding-right: 7vw;
+}
+@media only screen and (min-width: 600px) {		/* responsivity - at least: tablets in portrait mode */
+	.stripe {
+		padding-left: 14vw;
+		padding-right: 14vw;
+	}
+}
+@media only screen and (min-width: 1024px) {		/* responsivity - at least: desktop */
+	.stripe {
+		padding-left: 19vw;
+		padding-right: 19vw;
+	}
+}
+.stripe-slightly-padded-horizontally {
+	/* spacing */
+	margin-top: 1.133vh;
+	padding-top: 2.777vh;
+	padding-bottom: 2.777vh;
+	padding-left: 2vw;
+	padding-right: 2vw;
+}
+.stripe-unpadded-horizontally {
+	/* spacing */
+	margin-top: 1.133vh;
+	padding-top: 2.777vh;
+	padding-bottom: 2.777vh;
+}
+.stripes-bottom-margin {
+	margin-bottom: 1.133vh;
+}
+
 /* blocks */
 .block-padded {
 	padding: 2em;
@@ -741,6 +782,31 @@ button:focus {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+/* media grids/cells */
+.Gfycats-grid {
+	/* grid columns */
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-items: center;
+}
+.Gfycat-cell {
+	/* padding */
+	padding-top: 2vw;
+	padding-bottom: 1vw;
+
+	/* transition duration */
+	-o-transition: 1s;
+	-ms-transition: 1s;
+	-moz-transition: 1s;
+	-webkit-transition: 1s;
+	transition: 1s;
+
+	/* size */
+	max-width: 1000px;
+}
+.Gfycat-cell > iframe {
+	border: 1px solid black;
+	border-radius: .4em;
 }
 
 /* Wow visible-before-animating bugfix */
