@@ -451,6 +451,16 @@ button:focus {
 		display: none;
 	}
 }
+@media only screen and (max-width: 800px) {		/* responsivity - at most: 800px */
+	.display-only-above-800-pixels {
+		display: none;
+	}
+}
+@media only screen and (min-width: 801px) {		/* responsivity - at most: 800px */
+	.display-only-below-801-pixels {
+		display: none;
+	}
+}
 @media only screen and (min-width: 1024px) {		/* responsivity - at least: desktop */
 	.display-only-at-nondesktop-dimensions {
 		display: none;
@@ -744,8 +754,20 @@ button:focus {
 	margin-top: 1.133vh;
 	padding-top: 2.777vh;
 	padding-bottom: 2.777vh;
-	padding-left: 2vw;
-	padding-right: 2vw;
+	padding-left: .73vw;
+	padding-right: .73vw;
+}
+@media only screen and (min-width: 600px) {		/* responsivity - at least: tablets in portrait mode */
+	.stripe-slightly-padded-horizontally {
+		padding-left: 1.47vw;
+		padding-right: 1.47vw;
+	}
+}
+@media only screen and (min-width: 1024px) {		/* responsivity - at least: desktop */
+	.stripe-slightly-padded-horizontally {
+		padding-left: 2vw;
+		padding-right: 2vw;
+	}
 }
 .stripe-unpadded-horizontally {
 	/* spacing */
@@ -786,14 +808,14 @@ button:focus {
 /* media grids/cells */
 .Gfycats-grid {
 	/* grid columns */
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat(auto-fill, 492px);
 	justify-items: center;
+	justify-content: center;
+
+	/* line height */
+	line-height: 0;
 }
 .Gfycat-cell {
-	/* padding */
-	padding-top: 2vw;
-	padding-bottom: 1vw;
-
 	/* transition duration */
 	-o-transition: 1s;
 	-ms-transition: 1s;
@@ -805,6 +827,7 @@ button:focus {
 	max-width: 1000px;
 }
 .Gfycat-cell > iframe {
+	/* border */
 	border: 1px solid black;
 	border-radius: .4em;
 }
