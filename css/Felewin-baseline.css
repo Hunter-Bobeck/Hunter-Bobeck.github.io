@@ -420,6 +420,14 @@ button:focus {
 	}
 }
 
+/* visibility */
+.visibility-hidden {
+	visibility: hidden;
+}
+.visibility-visible {
+	visibility: visible;
+}
+
 /* display baselines */
 .display-inherit {
 	display: inherit;
