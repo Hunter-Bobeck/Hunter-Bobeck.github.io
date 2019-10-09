@@ -25,7 +25,7 @@
 	--color-link: var(--color-Felewin);
 	--color-link-hovered: #428bca;
 	--color-link-Felewin: var(--color-Felewin);
-	--color-link-Felewin-hovered: var(--color-Felewin-saturated);
+	--color-link-Felewin-hovered: #179c17;
 	--color-One-Giant-Leap-light: #fb922b;
 	--color-One-Giant-Leap-dark: #00080f;
 	--color-One-Giant-Leap-dark-transparent: rgba(0, 8, 15, 0.93);
@@ -36,6 +36,8 @@
 	--color-Moon-Motion-cover-dark-transparent: rgba(2, 20, 32, 0.93);
 	--color-link-Moon-Motion: #53bdd3;
 	--color-link-Moon-Motion-hovered: #1996cd;
+	--color-link-Patreon: var(--color-Patreon);
+	--color-link-Patreon-hovered: #ce4e3d;
 	--color-Felewin-s-Gallery-dark-transparent: rgba(0, 15, 6, 0.93);
 	--color-indigo-purple: #23037e;
 	/* other brands */
@@ -70,6 +72,7 @@
 	--color-link-Youtube-hovered: #cd0000;
 	--color-Gfycat: #3073ff;
 	--color-Gfycat-embed: #3aa8ff;
+	--color-Patreon: #f96854;
 }
 /* background colors */
 .background-black {
@@ -591,6 +594,12 @@ button:focus {
 .link-Felewin:hover {
 	color: var(--color-link-Felewin-hovered);
 }
+.link-white {
+	color: white;
+}
+.link-white:hover {
+	color: lightgray;
+}
 .link-One-Giant-Leap {
 	color: var(--color-link-One-Giant-Leap);
 }
@@ -644,6 +653,12 @@ button:focus {
 }
 .link-Youtube:hover {
 	color: var(--color-link-Youtube-hovered);
+}
+.link-Patreon {
+	color: var(--color-link-Patreon);
+}
+.link-Patreon:hover {
+	color: var(--color-link-Patreon-hovered);
 }
 
 /* text formatting */
