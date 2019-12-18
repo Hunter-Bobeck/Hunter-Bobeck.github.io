@@ -34,8 +34,16 @@
 	--color-Moon-Motion: #0073ad;		/* (the average color of the Moon Motion Cover image) */
 	--color-Moon-Motion-transparent: rgba(0, 115, 173, 0.93);
 	--color-Moon-Motion-cover-dark-transparent: rgba(2, 20, 32, 0.93);
-	--color-link-Moon-Motion: #53bdd3;
-	--color-link-Moon-Motion-hovered: #1996cd;
+	--color-Moon-Motion-icon-light: #53bdd3;
+	--color-Moon-Motion-icon-dark: #1996cd;
+	--color-Moon-Motion-button-glow: rgba(0, 69, 253, .4);
+	--color-link-Moon-Motion: var(color-Moon-Motion-icon-light);
+	--color-link-Moon-Motion-hovered: var(color-Moon-Motion-icon-dark);
+	--color-Lunity: #c95eff;		/* (a color from Iridescence) */
+	--color-Lunity-icon-light: #e471f2;
+	--color-Lunity-icon-dark: #920bf0;
+	--color-link-Lunity: var(color-Lunity-icon-light);
+	--color-link-Lunity-hovered: var(color-Lunity-icon-dark);
 	--color-link-Patreon: var(--color-Patreon);
 	--color-link-Patreon-hovered: #ce4e3d;
 	--color-Felewin-s-Gallery-dark-transparent: rgba(0, 15, 6, 0.93);
@@ -660,6 +668,9 @@ button:focus {
 .link-Patreon:hover {
 	color: var(--color-link-Patreon-hovered);
 }
+.link-Trello-image > img {
+	border-radius: 1em;
+}
 
 /* text formatting */
 .weight-light {
@@ -911,14 +922,14 @@ button:focus {
 }
 .Moon-Motion-button:hover {
 	border: 2px solid rgba(255, 255, 255, 1);
-	text-shadow: 0 0 50px rgba(0, 69, 253, .4);
-	box-shadow: 0 0 50px rgba(0, 69, 253, .4);
+	text-shadow: 0 0 50px var(--color-Moon-Motion-button-glow);
+	box-shadow: 0 0 50px var(--color-Moon-Motion-button-glow);
 }
 .Moon-Motion-button:active {
 	color: var(--color-Moon-Motion);
 	background-color: white;
 	text-shadow: none;
-	box-shadow: 0 0 70px rgba(0, 69, 253, .4);
+	box-shadow: 0 0 70px var(--color-Moon-Motion-button-glow);
 
 	/* transition duration */
 	-o-transition: 0s;
@@ -975,6 +986,28 @@ button:focus {
 		/* grid axes */
 		grid-template-columns: repeat(auto-fit, 7.5vw);
 		grid-template-rows: repeat(auto-fit, 2vw);
+	}
+}
+
+/* Lunity for Unity cover */
+#Lunity-for-Unity-cover-buttons-grid-positioner {
+	/* positioning */
+	padding-top: 50vw;
+	left: 37.9vw;
+	margin: 0 auto;
+}
+@media only screen and (min-width: 768px) {		/* responsivity - at least: tablets in landscape mode */
+	#Lunity-for-Unity-cover-buttons-grid-positioner {
+		/* positioning */
+		padding-top: 28vw;
+		left: 42.6vw;
+	}
+}
+@media only screen and (min-width: 1024px) {		/* responsivity - at least: desktop */
+	#Lunity-for-Unity-cover-buttons-grid-positioner {
+		/* positioning */
+		padding-top: 19.8vw;
+		left: 45.9vw; /* 46.3 looks good for when button is going to read 'Asset Store' */
 	}
 }
 
