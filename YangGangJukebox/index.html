@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- metadata -->
+		<meta charset="utf-8">	<!-- Unicode characterset -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">	<!-- Internet Explorer compatibility -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">	<!-- renders the page according to the device width -->
+		<meta name="description" content="Yang Gang Jukebox">		<!-- description (shown on searchengine result) -->
+		<meta name="keywords" content="example, keywords">		<!-- keywords for searchengine optimization -->
+		<meta name="author" content="The Yang Gang">		<!-- author name -->
+		<!--<meta name="theme-color" content="#5cb85c">-->		<!-- Android Chrome bar color -->
+		<link rel="icon" href="images/Icon.png">	<!-- favicon -->
+		<title>Yang Gang Jukebox</title>		<!-- title -->
+	
+	<!-- CSS -->
+		<!-- Reset -->						<link rel="stylesheet" href="css/reset.css">
+		<!-- Bootstrap -->					<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- Font Awesome -->				<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+		<!-- Animate (required by Wow) -->	<link rel="stylesheet" href="css/animate.css">
+		<!-- Hover -->						<link rel="stylesheet" href="css/hover-min.css">
+		<!-- Starfield -->					<link rel="stylesheet" href="css/starfield.css">
+		<!-- Felewin baseline -->			<link rel="stylesheet" href="css/Felewin-baseline.css">
+		<!-- custom - colors -->			<link rel="stylesheet" href="css/custom/colors.css">
+		<!-- custom - elements -->			<link rel="stylesheet" href="css/custom/elements.css">
+		<!-- custom - classes -->			<link rel="stylesheet" href="css/custom/classes.css">
+		<!-- custom - identifiers -->		<link rel="stylesheet" href="css/custom/identifiers.css">
+		<!-- Odibee Sans [Google Fonts] -->	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap">
+
+	<!-- preJS -->
+		<!-- none -->
+</head>
+
+<body class="background-dark">
+	<div>
+
+		<!-- Starfield -->
+		<div class="starfield"></div>
+
+		<!-- spacer block -->
+		<div class="block-padded align-center"></div>
+		
+		<!-- title block -->
+		<a class="block-padded align-center">
+			<a href="index.html"/>
+				<h1 class="align-center wow zoomIn" id="top" style="font-family: 'Odibee Sans'; font-size: 4em; color: white; text-decoration: none">
+					<img src="images/Icon.png"/> Yang Gang Jukebox
+				</h1>
+			</a>
+		</div>
+		
+		<br>
+
+		<!-- Gfycats grid -->
+		<div class="grid Gfycats-grid align-center wow zoomIn">
+			<!-- 1 -->
+			<div class="cell Gfycat-cell wow fadeIn">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/MTkhrosH8xw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<!-- 2 -->
+			<div class="cell Gfycat-cell wow fadeIn">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/SA9SUYBmW0I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<!-- 3 -->
+			<div class="cell Gfycat-cell wow fadeIn">6Is7tdnnbYI
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/6Is7tdnnbYI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<!-- 4 -->
+			<div class="cell Gfycat-cell wow fadeIn">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/ciNWM5ifVcE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<!-- 5 -->
+			<div class="cell Gfycat-cell wow fadeIn">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/twahAcJJGhs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<!-- 6 -->
+			<div class="cell Gfycat-cell wow fadeIn">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/Lh5QudVFplM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+		
+	</div>
+	<!-- postJS -->
+		<!-- Jquery -->							<script src="js/jquery-3.3.1.js"></script>
+		<!-- Bootstrap -->						<script src="js/bootstrap.min.js"></script>
+		<!-- Wow -->							<script src="js/wow.min.js"></script>
+		<!-- activate Wow -->					<script>new WOW().init();</script>
+		<!-- Animate (not required by Wow) -->	<script src="js/animate.js"></script>
+		<!-- Starfield -->						<script src="js/starfield.js"></script>
+		<!-- Felewin baseline -->				<script src="js/Felewin-baseline.js"></script>
+		<!-- Felewin subpage titling -->		<script src="js/Felewin-subpage-titling.js"></script>
+		<!-- Example button click: smooth identifier scrolling, delayed animation, delayed smooth identifier scrolling -->
+		<script>
+			$("#button-Example").click(function()
+			{
+				scrollTo("#Example", 500);
+				setTimeout(function()
+				{
+					$('#Example').animateCss('flash', function()
+					{
+						scrollTo("#top", 500);
+					});
+				}, 500);
+			});
+		</script>
+</body>
+</html>
