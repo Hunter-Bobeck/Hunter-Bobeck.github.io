@@ -839,7 +839,7 @@ button:focus {
 	align-items: center;
 	justify-content: center;
 }
-/* media grids/cells */
+/* Gfycat grids/cells */
 .Gfycats-grid {
 	/* grid columns */
 	grid-template-columns: repeat(auto-fill, 492px);
@@ -864,6 +864,27 @@ button:focus {
 	/* border */
 	border: 1px solid black;
 	border-radius: .4em;
+}
+/* VSR map grids/cells */
+.VSR-map-grid {
+	/* grid columns */
+	grid-template-columns: repeat(auto-fill, 330px);
+	justify-items: center;
+	justify-content: center;
+
+	/* line height */
+	line-height: 1.4;
+}
+.VSR-map-cell {
+	/* transition duration */
+	-o-transition: 1s;
+	-ms-transition: 1s;
+	-moz-transition: 1s;
+	-webkit-transition: 1s;
+	transition: 1s;
+
+	/* size */
+	max-width: 1000px;
 }
 
 /* Wow visible-before-animating bugfix */
