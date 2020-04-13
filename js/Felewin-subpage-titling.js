@@ -5,6 +5,6 @@ $(document).ready(function()
 	let fileTitle = filePath.substring(fileNameStartIndex);
 	let fileName = fileTitle.replace(".html", "");
 	let fileNameSpaced = fileName.replace(/-/g, ' ');
-
+	
 	document.title += (((fileNameSpaced === "index") || !fileTitle.includes(".html")) ? "" : " | "+fileNameSpaced);
 });

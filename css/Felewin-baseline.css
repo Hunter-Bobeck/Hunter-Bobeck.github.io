@@ -3,6 +3,19 @@
 
 
 
+/* IMPORTS */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@800&display=swap');
+
+
+
+
 /* COLORS */
 
 
@@ -12,9 +25,13 @@
     --color-Felewin-saturated: #34af34;
     --color-Felewin-bright: #80ff80;
     --color-Felewin-lush: #b6ff43;
+    --color-Felewin-lush-dark: #86bd32;
+    --color-link-Felewin-lush: var(--color-Felewin-lush);
+    --color-link-Felewin-lush-hovered: var(--color-Felewin-lush-dark);
     --color-Felewin-dark: #233f28;
     --color-Felewin-darker: #243227;
     --color-Felewin-transparent: rgba(188, 255, 128, 0.1);
+    --color-Felewin-periwinkle: #4766c8;
     --color-Felewin-blue-dark: #232d3f;
     --color-Felewin-blue-darker: #242932;
     --color-Felewin-blue-darkest: #1c1d22;
@@ -81,6 +98,10 @@
     --color-Gfycat: #3073ff;
     --color-Gfycat-embed: #3aa8ff;
     --color-Patreon: #f96854;
+    --color-Spotify: #1ed760;
+    --color-Spotify-darker: #1DB954;
+    --color-link-Spotify: var(--color-Spotify);
+    --color-link-Spotify-hovered: var(--color-Spotify-darker);
 }
 /* background colors */
 .background-black {
@@ -144,10 +165,23 @@
 	color: white;
 }
 /* background gradients */
+.background-Felewin-dark-to-Felewin-bright {
+	background-image: linear-gradient(to right, var(--color-Felewin-dark), var(--color-Felewin-bright));
+	color: white;
+}
 .background-Felewin-lush-to-Felewin-bright {
 	background-image: linear-gradient(to right, var(--color-Felewin-lush), var(--color-Felewin-bright));
 	color: white;
 }
+.background-Felewin-to-Felewin-lush {
+	background-image: linear-gradient(to right, var(--color-Felewin), var(--color-Felewin-lush));
+	color: white;
+}
+.background-Felewin-bright-to-Felewin-lush {
+	background-image: linear-gradient(to right, var(--color-Felewin-bright), var(--color-Felewin-lush));
+	color: white;
+}
+background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('landingpagepic.jpg');
 .background-black-to-Steam-lightened {
 	background-image: linear-gradient(to right, black, var(--color-Steam-lightened));
 	color: white;
@@ -192,6 +226,10 @@
 	background-image: linear-gradient(to right, var(--color-indigo-purple), var(--color-Moon-Motion));
 	color: white;
 }
+.background-Spotify-to-Spotify-darker {
+	background-image: linear-gradient(to right, var(--color-Spotify), var(--color-Spotify-darker));
+	color: white;
+}
 /* text colors */
 .color-Felewin {
 	color: var(--color-Felewin);
@@ -213,6 +251,9 @@
 }
 .color-One-Giant-Leap-light {
 	color: var(--color-One-Giant-Leap-light);
+}
+.Felewin-post-title {
+	font-size: 3em;
 }
 
 
@@ -281,24 +322,43 @@ button:focus {
 
 /* background images */
 .background-test-image {
+	background-image: url("images/Test.jpg");
+	background-size: 100%;
+}
+.background-test-image-upleveled {
 	background-image: url("../images/Test.jpg");
+	background-size: 100%;
+}
+.background-Blue-And-Purple-Cosmic-Sky {
+	background-image: url("images/Blue And Purple Cosmic Sky [Pexels].jpg");
+	background-size: 100%;
+}
+.background-Blue-And-Purple-Cosmic-Sky-upleveled {
+	background-image: url("../images/Blue And Purple Cosmic Sky [Pexels].jpg");
+	background-size: 100%;
 }
 
 /* fonts */
 .font-Arial {
 	font-family: "Arial", sans-serif;
 }
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+.font-Roboto-Slab {
+	font-family: "Roboto Slab", serif;
+}
 .font-Raleway {
-	font-family: 'Raleway', sans-serif;
+	font-family: "Raleway", sans-serif;
 }
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
 .font-Montserrat {
-	font-family: 'Montserrat', sans-serif;
+	font-family: "Montserrat", sans-serif;
 }
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 .font-Open-Sans {
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Open Sans", sans-serif;
+}
+.font-Odibee-Sans {
+	font-family: "Odibee Sans", sans-serif;
+}
+.font-Work-Sans {
+	font-family: "Work Sans", sans-serif;
 }
 
 /* uninteractibility */
@@ -596,17 +656,23 @@ button:focus {
 }
 
 /* links */
+.link-white {
+	color: white;
+}
+.link-white:hover {
+	color: lightgray;
+}
 .link-Felewin {
 	color: var(--color-link-Felewin);
 }
 .link-Felewin:hover {
 	color: var(--color-link-Felewin-hovered);
 }
-.link-white {
-	color: white;
+.link-Felewin-lush {
+	color: var(--color-link-Felewin-lush);
 }
-.link-white:hover {
-	color: lightgray;
+.link-Felewin-lush:hover {
+	color: var(--color-link-Felewin-lush-hovered);
 }
 .link-One-Giant-Leap {
 	color: var(--color-link-One-Giant-Leap);
@@ -668,6 +734,24 @@ button:focus {
 .link-Patreon:hover {
 	color: var(--color-link-Patreon-hovered);
 }
+.link-Spotify {
+	color: var(--color-link-Spotify);
+}
+.link-Spotify:hover {
+	color: var(--color-link-Spotify-hovered);
+}
+/* not currently used; doesn't seem to work */
+.link-Spotify-to-Felewin-lush {
+	background: -webkit-linear-gradient(45deg, var(--color-link-Spotify), var(--color-link-Felewin-lush) 80%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.link-Spotify-to-Felewin-lush:hover {
+	background: -webkit-linear-gradient(45deg, var(--color-link-Spotify-hovered), var(--color-link-Felewin-lush-hovered) 80%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+/**/
 .link-Trello-image > img {
 	border-radius: 1em;
 }
@@ -817,6 +901,37 @@ button:focus {
 .block-padded {
 	padding: 2em;
 }
+.block-shortpadded {
+	padding: .5em 2em;
+}
+.spacer-block {
+	padding: 2em;
+	display: block;
+}
+
+/* block article padding */
+.block-article-padding {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+@media only screen and (min-width: 768px) {		/* responsivity - at least: tablets in landscape mode */
+	.block-article-padding {
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+}
+@media only screen and (min-width: 1024px) {		/* responsivity - at least: desktop */
+	.block-article-padding {
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+}
+@media only screen and (min-width: 1400px) {		/* responsivity - at least: {arbitrary} */
+	.block-article-padding {
+		padding-left: 30%;
+		padding-right: 30%;
+	}
+}
 
 /* grids/cells */
 .grid {
@@ -839,7 +954,7 @@ button:focus {
 	align-items: center;
 	justify-content: center;
 }
-/* media grids/cells */
+/* Gfycat grids/cells */
 .Gfycats-grid {
 	/* grid columns */
 	grid-template-columns: repeat(auto-fill, 492px);
@@ -864,6 +979,27 @@ button:focus {
 	/* border */
 	border: 1px solid black;
 	border-radius: .4em;
+}
+/* VSR map grids/cells */
+.VSR-map-grid {
+	/* grid columns */
+	grid-template-columns: repeat(auto-fill, 330px);
+	justify-items: center;
+	justify-content: center;
+
+	/* line height */
+	line-height: 1.4;
+}
+.VSR-map-cell {
+	/* transition duration */
+	-o-transition: 1s;
+	-ms-transition: 1s;
+	-moz-transition: 1s;
+	-webkit-transition: 1s;
+	transition: 1s;
+
+	/* size */
+	max-width: 1000px;
 }
 
 /* Wow visible-before-animating bugfix */
