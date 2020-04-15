@@ -846,7 +846,35 @@ button:focus {
     border: 0;
 }
 
-/* stripes */
+/* common content spacing */
+.pad {
+	padding: 2em;
+}
+.slip {
+	padding: .5em 2em;
+}
+.article-padding {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+@media only screen and (min-width: 768px) {		/* responsivity - at least: tablets in landscape mode */
+	.article-padding {
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+}
+@media only screen and (min-width: 1024px) {		/* responsivity - at least: desktop */
+	.article-padding {
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+}
+@media only screen and (min-width: 1400px) {		/* responsivity - at least: {arbitrary} */
+	.article-padding {
+		padding-left: 30%;
+		padding-right: 30%;
+	}
+}
 .stripe {
 	/* spacing */
 	margin-top: 1.133vh;
@@ -895,42 +923,6 @@ button:focus {
 }
 .stripes-bottom-margin {
 	margin-bottom: 1.133vh;
-}
-
-/* blocks */
-.block-padded {
-	padding: 2em;
-}
-.block-shortpadded {
-	padding: .5em 2em;
-}
-.spacer-block {
-	padding: 2em;
-	display: block;
-}
-
-/* block article padding */
-.block-article-padding {
-	padding-left: 10%;
-	padding-right: 10%;
-}
-@media only screen and (min-width: 768px) {		/* responsivity - at least: tablets in landscape mode */
-	.block-article-padding {
-		padding-left: 20%;
-		padding-right: 20%;
-	}
-}
-@media only screen and (min-width: 1024px) {		/* responsivity - at least: desktop */
-	.block-article-padding {
-		padding-left: 20%;
-		padding-right: 20%;
-	}
-}
-@media only screen and (min-width: 1400px) {		/* responsivity - at least: {arbitrary} */
-	.block-article-padding {
-		padding-left: 30%;
-		padding-right: 30%;
-	}
 }
 
 /* grids/cells */
