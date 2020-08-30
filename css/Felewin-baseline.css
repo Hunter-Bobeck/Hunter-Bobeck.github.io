@@ -86,6 +86,9 @@
     --color-Twitter: #1DA1F2;
     --color-link-Twitter: var(--color-Twitter);
     --color-link-Twitter-hovered: #1782c4;
+    --color-Paypal: #3B7BBF;
+    --color-link-Paypal: var(--color-Paypal);
+    --color-link-Paypal-hovered: #3469a1;
     --color-Linkedin: #0077B5;
     --color-link-Linkedin: var(--color-Linkedin);
     --color-link-Linkedin-hovered: #005e8f;
@@ -709,6 +712,12 @@ button:focus {
 }
 .link-Twitter:hover {
 	color: var(--color-link-Twitter-hovered);
+}
+.link-Paypal {
+	color: var(--color-link-Paypal);
+}
+.link-Paypal:hover {
+	color: var(--color-link-Paypal-hovered);
 }
 .link-Linkedin {
 	color: var(--color-link-Linkedin);
