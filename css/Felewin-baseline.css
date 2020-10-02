@@ -325,18 +325,10 @@ button:focus {
 
 /* background images */
 .background-test-image {
-	background-image: url("images/Test.jpg");
-	background-size: 100%;
-}
-.background-test-image-upleveled {
 	background-image: url("../images/Test.jpg");
 	background-size: 100%;
 }
 .background-Blue-And-Purple-Cosmic-Sky {
-	background-image: url("images/Blue And Purple Cosmic Sky [Pexels].jpg");
-	background-size: 100%;
-}
-.background-Blue-And-Purple-Cosmic-Sky-upleveled {
 	background-image: url("../images/Blue And Purple Cosmic Sky [Pexels].jpg");
 	background-size: 100%;
 }
