@@ -878,6 +878,21 @@ button:focus {
     border: 0;
 }
 
+/* navstrip */
+.navstrip-link {
+	font-size: 1.6em;
+}
+@media only screen and (min-width: 450px) {		/* responsivity - at least: Chrome min width */
+	.navstrip-link {
+		font-size: 1.9em;
+	}
+}
+@media only screen and (min-width: 600px) {		/* responsivity - at least: tablets in portrait mode */
+	.navstrip-link {
+		font-size: 2em;
+	}
+}
+
 /* common content spacing */
 .pad {
 	padding: 2em;
