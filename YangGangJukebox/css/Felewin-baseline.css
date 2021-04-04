@@ -65,6 +65,17 @@
     --color-link-Patreon-hovered: #ce4e3d;
     --color-Felewin-s-Gallery-dark-transparent: rgba(0, 15, 6, 0.93);
     --color-indigo-purple: #23037e;
+    /* Kaarii */
+    --color-Kaarii: #a9007d;
+    --color-Kaarii-saturated: #f304b5;
+    --color-link-Kaarii: var(--color-Kaarii);
+    --color-link-Kaarii-hovered: var(--color-Kaarii-saturated);
+    --color-Ravens-Nest-highlight: var(--color-Felewin-lush)/*Wix: #d2fd62*/;
+    --color-Ravens-Nest: #99da61;
+    --color-Ravens-Nest-dark: #331c0f;
+    --color-link-Ravens-Nest: var(--color-Ravens-Nest);
+    --color-link-Ravens-Nest-hovered: #70aa3d;
+    --color-link-Ravens-Nest-active: var(--color-Ravens-Nest-highlight);
     /* other brands */
     --color-Itch: #fa5c5c;
     --color-link-Itch: var(--color-Itch);
@@ -145,6 +156,14 @@
 }
 .background-Felewin-blue-darkest {
 	background-color: var(--color-Felewin-blue-darkest);
+	color: white;
+}
+.background-Ravens-Nest {
+	background-color: var(--color-Ravens-Nest);
+	color: white;
+}
+.background-Ravens-Nest-dark {
+	background-color: var(--color-Ravens-Nest-dark);
 	color: white;
 }
 .background-Moon-Motion {
@@ -258,6 +277,15 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('land
 .Felewin-post-title {
 	font-size: 3em;
 }
+.color-Kaarii {
+	color: var(--color-Kaarii);
+}
+.color-Kaarii-saturated {
+	color: var(--color-Kaarii-saturated);
+}
+.color-Ravens-Nest {
+	color: var(--color-Ravens-Nest);
+}
 
 
 
@@ -332,6 +360,9 @@ button:focus {
 	background-image: url("../images/Blue And Purple Cosmic Sky [Pexels].jpg");
 	background-size: 100%;
 }
+.background-transparent {
+	background-color: transparent;
+}
 
 /* fonts */
 .font-Arial {
@@ -403,6 +434,9 @@ button:focus {
 	-o-user-drag: none;
 	user-drag: none;
 }
+.pointer-ignorant {
+	pointer-events: none;
+}
 
 /* positioning */
 .relative {
@@ -415,6 +449,9 @@ button:focus {
 /* sizing */
 .fullwidth {
 	width: 100%;
+}
+.fullheight {
+	height: 100%;
 }
 
 /* margining */
@@ -700,6 +737,21 @@ button:focus {
 .link-Felewin-lush:hover {
 	color: var(--color-link-Felewin-lush-hovered);
 }
+.link-Kaarii {
+	color: var(--color-link-Kaarii);
+}
+.link-Kaarii:hover {
+	color: var(--color-link-Kaarii-hovered);
+}
+.link-Ravens-Nest {
+	color: var(--color-link-Ravens-Nest);
+}
+.link-Ravens-Nest:hover {
+	color: var(--color-link-Ravens-Nest-hovered);
+}
+.link-Ravens-Nest:active {
+    color: var(--color-link-Ravens-Nest-active);
+}
 .link-One-Giant-Leap {
 	color: var(--color-link-One-Giant-Leap);
 }
@@ -876,6 +928,21 @@ button:focus {
     width: 100%;
     height: 100%;
     border: 0;
+}
+
+/* navstrip links */
+.navstrip-link {
+	font-size: 1.6em;
+}
+@media only screen and (min-width: 450px) {		/* responsivity - at least: Chrome min width */
+	.navstrip-link {
+		font-size: 1.9em;
+	}
+}
+@media only screen and (min-width: 600px) {		/* responsivity - at least: tablets in portrait mode */
+	.navstrip-link {
+		font-size: 2em;
+	}
 }
 
 /* common content spacing */
@@ -1105,6 +1172,50 @@ button:focus {
 /* IDENTIFIERS */
 
 
+/* navstrip */
+#navstrip {
+	/* spacing */
+	padding-left: 7vw;
+	padding-right: 7vw;
+}
+@media only screen and (min-width: 600px) {		/* responsivity - at least: 600px */
+	#navstrip {
+		padding-left: 14vw;
+		padding-right: 14vw;
+	}
+}
+@media only screen and (min-width: 1024px) {		/* responsivity - at least: desktop */
+	#navstrip {
+		padding-left: 19vw;
+		padding-right: 19vw;
+	}
+}
+#navstrip-links {
+	margin-top: 1.8vh;
+	vertical-align: middle;
+}
+
+/* titleage */
+@media only screen and (max-width: 600px) {		/* responsivity - at most: 600px */
+	#titleage {
+		width: 100%;
+	}
+}
+
+/* footer */
+#footer {
+	display: table;
+	overflow: hidden;
+	width: 100%;
+}
+#footer-text {
+	display: table-cell;
+	vertical-align: middle;
+}
+#footer-text > p {
+	margin-bottom: 0;
+}
+
 /* Moon Motion cover */
 #Moon-Motion-cover-buttons-grid-positioner {
 	/* positioning */
@@ -1169,18 +1280,4 @@ button:focus {
 		padding-top: 19.8vw;
 		left: 45.9vw; /* 46.3 looks good for when button is going to read 'Asset Store' */
 	}
-}
-
-/* footer */
-#footer {
-	display: table;
-	overflow: hidden;
-	width: 100%;
-}
-#footer-text {
-	display: table-cell;
-	vertical-align: middle;
-}
-#footer-text > p {
-	margin-bottom: 0;
 }
