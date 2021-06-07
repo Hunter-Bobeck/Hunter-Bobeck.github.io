@@ -39,6 +39,7 @@
     --color-light: white;
     --color-dark: #232325;
     --color-selection: #b0f3e6;
+    --color-sharp-button: #ef79fd;
     --color-link: var(--color-Felewin);
     --color-link-hovered: #428bca;
     --color-link-Felewin: var(--color-Felewin);
@@ -252,6 +253,42 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('land
 	background-image: linear-gradient(to right, var(--color-Spotify), var(--color-Spotify-darker));
 	color: white;
 }
+/* background animated rainbow gradient */
+.background-animated-rainbow-gradient { 
+    height: 100%;
+    width: 100%;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background-size: 1800% 1800%;
+    -webkit-animation: rainbow 18s ease infinite;
+    -z-animation: rainbow 18s ease infinite;
+    -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;
+}
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
 /* text colors */
 .color-Felewin {
 	color: var(--color-Felewin);
@@ -344,6 +381,18 @@ button {
 button:focus {
 	outline: 0;
 }
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+.sharp-button {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 1.44rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1em 2em;
+    background-color: var(--color-sharp-button);
+}
+.sharp-button:hover {color:white;}
 
 
 
@@ -444,6 +493,11 @@ button:focus {
 }
 .absolute {
 	position: absolute;
+}
+.center-absolutely {
+	position: absolute;
+	top: 50%;
+	left: 50%;
 }
 
 /* sizing */
