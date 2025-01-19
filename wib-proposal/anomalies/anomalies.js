@@ -1,3 +1,5 @@
+let isAuthenticated = false;
+
 function initializeAnomalies(starsContainer) {
     // Animation timing constants
     const ANIMATION_DURATION = 5500;
@@ -63,34 +65,34 @@ function initializeAnomalies(starsContainer) {
         }, 4330); // Match CSS duration
     }
 
-    // Initial delay (20s-120s)
-    const initialFlashDelay = Math.random() * 100000 + 20000;
-    setTimeout(playFlashbulbAnimation, initialFlashDelay);
-
+    // Start repeating animations immediately
     scheduleAnimation(shooter, playAnimation);
     scheduleAnimation(streaker, playAnimation);
+    setTimeout(playFlashbulbAnimation, Math.random() * 100000 + 20000);
 
-    // Create and schedule one-time powerup
+    // Create one-time elements but wait to start them
     const powerup = createAnimatedElement('powerup');
-    
-    // Create and schedule one-time craft flyby
     const craft = createAnimatedElement('craft');
-    // Add inner elements
     const craftBody = document.createElement('div');
     craftBody.className = 'craft-body';
     const craftRing = document.createElement('div');
     craftRing.className = 'craft-ring';
     craft.appendChild(craftBody);
     craft.appendChild(craftRing);
-    
-    // Start craft animation after 10 seconds
-    setTimeout(() => {
-        craft.classList.add('animate');
-    }, 10000);
 
-    // Random delay between 10-30 seconds
-    const powerupDelay = Math.random() * 20000 + 10000;
-    setTimeout(() => {
-        powerup.style.animationPlayState = 'running';  // Start the animation
-    }, powerupDelay);
+    // Function to start one-time animations after authentication
+    window.startOneTimeAnomalies = () => {
+        if (!isAuthenticated) return;
+
+        // Start craft animation after 10 seconds
+        setTimeout(() => {
+            craft.classList.add('animate');
+        }, 10000);
+
+        // Random delay between 10-30 seconds for powerup
+        const powerupDelay = Math.random() * 20000 + 10000;
+        setTimeout(() => {
+            powerup.style.animationPlayState = 'running';
+        }, powerupDelay);
+    };
 } 

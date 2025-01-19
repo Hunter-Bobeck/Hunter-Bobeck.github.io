@@ -203,4 +203,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize holographic glows
     initializeHolographicGlows();
+
+    const passwordModal = document.getElementById('password-modal');
+    const passwordInput = document.getElementById('password-input');
+    const submitButton = document.getElementById('submit-password');
+
+    function checkPassword() {
+        const password = passwordInput.value.toLowerCase();
+        if (password === 'bingo') {
+            passwordModal.style.animation = 'fadeOut 0.5s forwards';
+            setTimeout(() => {
+                passwordModal.style.display = 'none';
+                // Start one-time anomalies after successful password
+                isAuthenticated = true;
+                window.startOneTimeAnomalies();
+            }, 500);
+        } else {
+            passwordInput.style.animation = 'shake 0.5s';
+            setTimeout(() => {
+                passwordInput.style.animation = '';
+            }, 500);
+        }
+    }
+
+    submitButton.addEventListener('click', checkPassword);
+    passwordInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+            checkPassword();
+        }
+    });
 }); 
