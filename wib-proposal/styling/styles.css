@@ -575,12 +575,15 @@ ul {
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    margin: 2rem 0;
+    margin: 2rem auto;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 1rem 0;
 }
 
 .transform-item {
-    width: 200px;
-    height: 200px;
+    width: min(200px, 40vw);
+    height: min(200px, 40vw);
     object-fit: cover;
     border-radius: 4px;
     box-shadow: 0 0 20px rgba(0, 255, 242, 0.2);
@@ -713,4 +716,40 @@ ul {
 #overview .role:hover strong {
     color: rgba(0, 255, 242, 0.9);
     text-shadow: 0 0 8px rgba(0, 255, 242, 0.4);
+}
+
+@media (orientation: portrait) {
+    .transformation-showcase {
+        gap: 1rem;
+    }
+
+    .transform-item {
+        width: min(150px, 35vw);
+        height: min(150px, 35vw);
+    }
+
+    .transform-arrow {
+        font-size: 1.5rem;
+    }
+
+    /* Hide all tooltips on mobile/portrait view */
+    .audio-tooltip {
+        display: none !important;
+    }
+
+    /* This ensures even the always-show class is overridden */
+    .audio-tooltip.always-show {
+        display: none !important;
+    }
+
+    /* Center tab button text on mobile */
+    .tab-button {
+        text-align: center;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 } 
