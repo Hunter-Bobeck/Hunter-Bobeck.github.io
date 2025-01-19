@@ -1,0 +1,716 @@
+:root {
+    --primary-color: #00fff2;
+    --secondary-color: #0066ff;
+    --background-color: #000810;
+    --text-color: #ffffff;
+    --glow-color: rgba(0, 255, 242, 0.2);
+}
+
+/* Custom text selection color */
+::selection {
+    background: rgba(0, 255, 128, 0.3);
+    color: #fff;
+    text-shadow: 0 0 8px rgba(0, 255, 242, 0.6);
+}
+
+::-moz-selection {
+    background: rgba(0, 255, 128, 0.3);
+    color: #fff;
+    text-shadow: 0 0 8px rgba(0, 255, 242, 0.6);
+}
+
+/* Stars Background */
+.stars-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+    background: radial-gradient(circle at center, #001324 0%, #000810 100%);
+}
+
+.star {
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    animation: twinkle var(--twinkle-duration) infinite ease-in-out;
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.2; }
+    50% { opacity: 1; }
+}
+
+/* Font Classes */
+.space-grotesk-heading {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.space-grotesk-subheading {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.space-mono-regular {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.space-mono-bold {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Space Mono", monospace;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+}
+
+.holographic-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 65%, rgba(0, 255, 242, 0.1) 100%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 10;
+}
+
+h1 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: var(--primary-color);
+    text-shadow: 0 0 10px var(--glow-color);
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+    position: relative;
+    z-index: 12;
+}
+
+h2 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    letter-spacing: -0.01em;
+    text-shadow: 0 0 15px rgba(0, 102, 255, 0.3);
+    position: relative;
+    z-index: 8;
+}
+
+h3 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: -0.01em;
+}
+
+h4 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.01em;
+}
+
+.roles {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.role {
+    font-family: "Space Mono", monospace;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.role i {
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+    width: 1.2em;
+    text-align: center;
+}
+
+.subtitle {
+    font-family: "Space Mono", monospace;
+    font-size: 1.2rem;
+    opacity: 0.8;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+    position: relative;
+    z-index: 8;
+}
+
+.gradient-text {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+    opacity: 1;
+    text-shadow: none;
+}
+
+.holographic-green {
+    background: linear-gradient(45deg, rgba(0, 255, 128, 0.9), rgba(0, 255, 242, 0.9));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+    opacity: 1;
+    text-shadow: none;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.tab-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.tab-button {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--text-color);
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+.tab-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(0, 255, 242, 0.2), transparent);
+    transition: 0.5s;
+}
+
+.tab-button:hover::before {
+    left: 100%;
+}
+
+.tab-button.active {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    box-shadow: 0 0 15px var(--glow-color);
+}
+
+.tab-content {
+    display: none;
+    padding: 2rem;
+    background: rgba(0, 8, 16, 0.8);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    position: relative;
+    z-index: 2;
+}
+
+.tab-content.active {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.phase-content {
+    margin-top: 1rem;
+}
+
+.cost-estimate {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-left: 3px solid var(--primary-color);
+    background: rgba(0, 255, 242, 0.05);
+    transition: all 0.3s ease;
+}
+
+.cost-estimate:hover {
+    background: rgba(0, 255, 242, 0.08);
+    box-shadow: 
+        0 0 20px rgba(0, 255, 242, 0.15),
+        inset 0 0 30px rgba(0, 255, 242, 0.05);
+    transform: translateX(4px);
+    border-left: 3px solid rgba(0, 255, 242, 0.9);
+}
+
+.cost-estimate h4 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+    color: var(--primary-color);
+}
+
+.cost-estimate h4.thank-you {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.cost-estimate h4.completion-date {
+    font-size: 1rem;
+}
+
+.cost-estimate p {
+    font-family: "Space Mono", monospace;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+ul {
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    .tab-container {
+        flex-wrap: wrap;
+    }
+    
+    .tab-button {
+        flex: 1 1 calc(33.333% - 1rem);
+    }
+} 
+
+/* Audio Button Styles */
+.audio-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease, opacity 0.3s ease;
+    background: rgba(0, 8, 16, 0.8);
+    z-index: 3;
+}
+
+.audio-button svg {
+    width: 1.2rem;
+    height: 1.2rem;
+    stroke: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.audio-button:hover {
+    background: var(--primary-color);
+    box-shadow: 0 0 15px var(--glow-color);
+}
+
+.audio-button:hover svg {
+    stroke: var(--background-color);
+}
+
+.audio-button.playing {
+    animation: pulse 2s infinite;
+}
+
+.audio-tooltip {
+    position: absolute;
+    background: rgba(0, 8, 16, 0.9);
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    right: 3rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    font-family: "Space Mono", monospace;
+    border: 1px solid var(--primary-color);
+    user-select: none;
+}
+
+.audio-tooltip.always-show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.audio-button:hover .audio-tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 255, 242, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(0, 255, 242, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 255, 242, 0);
+    }
+}
+
+.waveform-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.waveform-container.visible {
+    opacity: 0.15;
+}
+
+.waveform {
+    width: 100%;
+    height: 100%;
+}
+
+/* Ensure content stays above the waveform */
+.tab-content > h3,
+.tab-content > p,
+.tab-content > .phase-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* New powerup CSS */
+/* This section is now empty as the powerup CSS has been moved to powerup.css */ 
+
+@keyframes buttonFadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    70% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    85% {
+        transform: scale(0.98);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+} 
+
+.stage {
+    margin-bottom: 2rem;
+}
+
+.stage h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.feature-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+.feature-list li {
+    margin-bottom: 0.8rem;
+    padding: 0.3rem 0.5rem;
+    margin-left: -0.5rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.feature-list li:hover {
+    background: rgba(0, 255, 242, 0.05);
+    box-shadow: 
+        0 0 15px rgba(0, 255, 242, 0.1),
+        inset 0 0 20px rgba(0, 255, 242, 0.05);
+    transform: translateX(4px);
+}
+
+.feature-list li:hover i {
+    text-shadow: 0 0 8px rgba(0, 255, 242, 0.8);
+}
+
+/* Direct strong elements in list items */
+.feature-list > li:hover > strong {
+    color: rgba(0, 255, 242, 0.9);
+    text-shadow: 0 0 8px rgba(0, 255, 242, 0.4);
+}
+
+/* Nested list items' strong elements */
+.feature-list li li:hover strong {
+    color: rgba(0, 255, 242, 0.9);
+    text-shadow: 0 0 8px rgba(0, 255, 242, 0.4);
+}
+
+.feature-list i {
+    color: var(--primary-color);
+    width: 1.5em;
+    display: inline-block;
+    text-align: center;
+}
+
+.feature-list ul {
+    margin-top: 0.5rem;
+    margin-left: 2.5rem;
+}
+
+.purpose-section ul,
+.voice-section ul,
+.speech-section ul,
+.docs-section ul,
+.deploy-section ul,
+.tag-section ul,
+.analysis-section ul {
+    list-style: none;
+}
+
+.phase-title {
+    margin-top: 0.3rem;
+    font-size: 1.3rem;
+    opacity: 0.9;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.phase-description {
+    font-family: "Space Mono", monospace;
+    font-size: 1rem;
+    opacity: 0.8;
+    margin-top: 0.5rem;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.phase-video {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(0, 255, 242, 0.2);
+}
+
+.phase-title::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, 
+        var(--primary-color) 0%,
+        rgba(0, 255, 242, 0.8) 25%,
+        rgba(0, 255, 242, 0.8) 75%,
+        var(--primary-color) 100%
+    );
+}
+
+.phase-title i {
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+}
+
+.transformation-showcase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.transform-item {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(0, 255, 242, 0.2);
+    transition: all 0.3s ease;
+}
+
+.transform-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 255, 242, 0.3);
+}
+
+.transform-arrow {
+    color: var(--primary-color);
+    font-size: 2rem;
+    text-shadow: 0 0 10px rgba(0, 255, 242, 0.4);
+}
+
+.scope-header {
+    color: var(--primary-color);
+    opacity: 0.9;
+    margin: 0.5rem 0 1.5rem 0;
+    font-size: 1.1rem;
+    font-family: "Space Mono", monospace;
+}
+
+.next-section {
+    margin-bottom: 2.5rem;
+}
+
+.next-section h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.next-section h4 i {
+    margin-right: 0.5rem;
+}
+
+.next-steps-list {
+    margin: 1rem 0 1rem 2rem;
+    list-style-type: decimal;
+}
+
+.next-steps-list li {
+    margin-bottom: 0.5rem;
+}
+
+.payment-method {
+    margin-top: 1rem;
+}
+
+.paypal-link {
+    display: inline-block;
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-top: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.paypal-link:hover {
+    text-shadow: 0 0 10px var(--glow-color);
+}
+
+.paypal-link i {
+    margin-right: 0.5rem;
+}
+
+/* Emoji heartbeat animation */
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.2); }
+    40% { transform: scale(1); }
+    60% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.cost-estimate:hover h4.thank-you span {
+    display: inline-block;
+    animation: heartbeat 1.3s ease-in-out infinite;
+}
+
+/* Special positioning for Future tab's audio button */
+#future .cost-estimate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#future .cost-estimate .audio-button {
+    position: static;
+    margin: 0;
+    width: 2rem;
+    height: 2rem;
+}
+
+#future .cost-estimate .audio-button svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+#future .cost-estimate .audio-tooltip {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Overview section hover effects */
+#overview p,
+#overview .role {
+    padding: 0.3rem 0.5rem;
+    margin-left: -0.5rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+#overview p:hover,
+#overview .role:hover {
+    background: rgba(0, 255, 242, 0.05);
+    box-shadow: 
+        0 0 15px rgba(0, 255, 242, 0.1),
+        inset 0 0 20px rgba(0, 255, 242, 0.05);
+    transform: translateX(4px);
+}
+
+#overview .role:hover i {
+    text-shadow: 0 0 8px rgba(0, 255, 242, 0.8);
+}
+
+#overview p:hover .bold,
+#overview .role:hover strong {
+    color: rgba(0, 255, 242, 0.9);
+    text-shadow: 0 0 8px rgba(0, 255, 242, 0.4);
+} 

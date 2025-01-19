@@ -1,0 +1,66 @@
+.powerup {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: 
+        movePowerup 30s linear forwards,
+        scalePowerup 30s linear forwards,
+        boxShadowPowerup 30s linear forwards;
+    transform-origin: center center;
+    background: #fff;
+    z-index: 10;
+    animation-play-state: paused;
+}
+
+@keyframes movePowerup {
+    from { left: 0%; top: 35%; }
+    to { left: 100%; top: 10%; }
+}
+
+@keyframes scalePowerup {
+    0% { transform: scale(.5); }
+    27% { transform: scale(.5); }
+    33% { transform: scale(1.5); }
+    50% { transform: scale(1.5); }
+    70% { transform: scale(.5); }
+    100% { transform: scale(.5); }
+}
+
+@keyframes boxShadowPowerup {
+    0% { box-shadow: 0 0 100px 1px rgba(255, 255, 255, 1); }
+    27% { box-shadow: 0 0 100px 1px rgba(255, 255, 255, 1); }
+    34% { 
+        box-shadow: 
+            /* larger circle */
+            0 0 20px 18px rgba(255, 255, 255, .1),
+            0 0 20px 18px rgba(255, 255, 255, 0.05),
+            /* Bright circle with hard edge */
+            0 0 10px 8px rgba(255, 255, 255, .25),
+            0 0 10px 8px rgba(255, 255, 255, 0.2),
+            /* Immediate sharp dropoff */
+            0 0 15.2px 8px rgba(255, 255, 255, 0.05),
+            /* Far-reaching glow */
+            0 0 40px 25px rgba(255, 255, 255, 0.05),
+            0 0 70px 40px rgba(255, 255, 255, 0.025);
+    }
+    42%, 59% { 
+        box-shadow: 
+            /* larger circle */
+            0 0 20px 18px rgba(255, 255, 255, .2),
+            0 0 20px 18px rgba(255, 255, 255, 0.1),
+            /* Bright circle with hard edge */
+            0 0 10px 8px rgba(255, 255, 255, .65),
+            0 0 10px 8px rgba(255, 255, 255, 0.6),
+            /* Immediate sharp dropoff */
+            0 0 15.2px 8px rgba(255, 255, 255, 0.05),
+            /* Far-reaching glow */
+            0 0 40px 25px rgba(255, 255, 255, 0.1),
+            0 0 70px 40px rgba(255, 255, 255, 0.05);
+    }
+    70% { box-shadow: 0 0 100px 1px rgba(255, 255, 255, 1); }
+    100% { box-shadow: 0 0 100px 1px rgba(255, 255, 255, 1); }
+} 
