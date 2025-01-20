@@ -23,10 +23,10 @@
     <script src="scripts/script.js"></script>
 </head>
 <body>
-    <div id="password-modal" class="password-modal">
-        <div class="password-content">
+    <div id="password-modal" class="password-modal" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0, 8, 16, 0.98); display: flex; justify-content: center; align-items: center; z-index: 9999;">
+        <div class="password-content" style="background: rgba(0, 255, 242, 0.05); padding: 2rem; border-radius: 8px; border: 1px solid #00fff2; box-shadow: 0 0 30px rgba(0, 255, 242, 0.2);">
             <h2>Authentication Required</h2>
-            <div class="password-input-container">
+            <div class="password-input-container" style="display: flex; gap: 1rem; margin-top: 1.5rem; width: 100%;">
                 <input type="password" id="password-input" placeholder="Enter password" autofocus>
                 <button id="submit-password">
                     <i class="fa-solid fa-right-to-bracket"></i>
