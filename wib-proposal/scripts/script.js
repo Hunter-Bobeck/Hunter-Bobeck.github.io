@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Button click sound function that creates new instance each time
     function playButtonSound() {
-        const buttonSound = new Audio('https://raw.githubusercontent.com/Felewin/WB-Smith-Avatar/main/SFX/button1.ogg');
+        const buttonSound = new Audio('https://hunterbobeck.com/wib-proposal/SFX/button1.ogg');
         buttonSound.volume = 0.3;
         buttonSound.play();
     }
