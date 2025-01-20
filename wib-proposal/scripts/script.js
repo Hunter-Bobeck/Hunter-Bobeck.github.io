@@ -4,14 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const passwordInput = document.getElementById('password-input');
     const submitButton = document.getElementById('submit-password');
 
-    if (passwordModal) {
-        passwordModal.style.display = 'flex';
-        passwordModal.style.opacity = '1';
-        passwordModal.style.visibility = 'visible';
-        // Focus the input for immediate typing
-        passwordInput.focus();
-    }
-
     function checkPassword() {
         const password = passwordInput.value.toLowerCase();
         if (password === 'bingo') {
