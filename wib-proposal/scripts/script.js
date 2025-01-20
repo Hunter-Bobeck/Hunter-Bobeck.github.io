@@ -1,3 +1,32 @@
+// Initialize password protection immediately
+const passwordModal = document.getElementById('password-modal');
+const passwordInput = document.getElementById('password-input');
+const submitButton = document.getElementById('submit-password');
+
+function checkPassword() {
+    const password = passwordInput.value.toLowerCase();
+    if (password === 'bingo') {
+        passwordModal.style.animation = 'fadeOut 0.5s forwards';
+        setTimeout(() => {
+            passwordModal.style.display = 'none';
+            isAuthenticated = true;
+            window.startOneTimeAnomalies();
+        }, 500);
+    } else {
+        passwordInput.style.animation = 'shake 0.5s';
+        setTimeout(() => {
+            passwordInput.style.animation = '';
+        }, 500);
+    }
+}
+
+submitButton?.addEventListener('click', checkPassword);
+passwordInput?.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        checkPassword();
+    }
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     // Ensure modal is visible and interactive immediately
     const passwordModal = document.getElementById('password-modal');
