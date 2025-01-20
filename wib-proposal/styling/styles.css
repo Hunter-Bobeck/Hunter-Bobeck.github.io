@@ -765,10 +765,13 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
+    z-index: 9999;
+    pointer-events: auto;
 }
 
 .password-content {
+    position: relative;
+    z-index: 10000;
     background: rgba(0, 255, 242, 0.05);
     padding: 2rem;
     border-radius: 8px;
