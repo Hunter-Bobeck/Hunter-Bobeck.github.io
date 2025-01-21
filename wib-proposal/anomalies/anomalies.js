@@ -1,4 +1,5 @@
 let isAuthenticated = false;
+const isSlideShow = window.location.pathname.endsWith('slide.html');
 
 function initializeAnomalies(starsContainer) {
     // Animation timing constants
@@ -80,10 +81,8 @@ function initializeAnomalies(starsContainer) {
     craft.appendChild(craftBody);
     craft.appendChild(craftRing);
 
-    // Function to start one-time animations after authentication
-    window.startOneTimeAnomalies = () => {
-        if (!isAuthenticated) return;
-
+    // Start one-time animations immediately for slideshow, or wait for auth for index
+    if (isSlideShow) {
         // Start craft animation after 10 seconds
         setTimeout(() => {
             craft.classList.add('animate');
@@ -94,5 +93,21 @@ function initializeAnomalies(starsContainer) {
         setTimeout(() => {
             powerup.style.animationPlayState = 'running';
         }, powerupDelay);
-    };
+    } else {
+        // Function to start one-time animations after authentication
+        window.startOneTimeAnomalies = () => {
+            if (!isAuthenticated) return;
+
+            // Start craft animation after 10 seconds
+            setTimeout(() => {
+                craft.classList.add('animate');
+            }, 10000);
+
+            // Random delay between 10-30 seconds for powerup
+            const powerupDelay = Math.random() * 20000 + 10000;
+            setTimeout(() => {
+                powerup.style.animationPlayState = 'running';
+            }, powerupDelay);
+        };
+    }
 } 
