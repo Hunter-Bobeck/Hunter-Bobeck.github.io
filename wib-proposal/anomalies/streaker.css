@@ -22,7 +22,7 @@
         glowStreaker var(--streaker-duration) ease-in-out !important;
 }
 
-.streaker::after {
+.streaker.animate::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -32,8 +32,8 @@
     transform: translateY(-50%);
     opacity: 0;
     animation: 
-        trailLength var(--streaker-duration) linear infinite,
-        trailFade var(--streaker-duration) ease-in-out infinite !important;
+        trailLength var(--streaker-duration) linear,
+        trailFade var(--streaker-duration) ease-in-out !important;
 }
 
 @keyframes moveStreaker {
