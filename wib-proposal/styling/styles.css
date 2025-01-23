@@ -123,13 +123,15 @@ h1 {
 }
 
 h2 {
-    font-family: "Space Grotesk", sans-serif;
-    font-weight: 500;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
     font-size: 1.8rem;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     margin-bottom: 1rem;
     letter-spacing: -0.01em;
-    text-shadow: 0 0 15px rgba(0, 102, 255, 0.3);
+    text-shadow: 0 0 15px rgba(0, 255, 242, 0.3);
     position: relative;
     z-index: 8;
 }
@@ -227,6 +229,7 @@ h4 {
     letter-spacing: 0.05em;
     opacity: 0;
     transform: scale(0.8);
+    user-select: none;
 }
 
 .tab-button::before {
@@ -416,6 +419,23 @@ ul {
     opacity: 0;
     transition: opacity 0.3s ease;
     z-index: 1;
+}
+
+/* Specific styling for Phase 1 and 2 waveform containers */
+#digitize .waveform-container,
+#communicate .waveform-container,
+#next .waveform-container {
+    height: 140px;  /* Height to cover just the title area */
+    bottom: auto;   /* Remove bottom positioning */
+}
+
+/* Specific styling for Future tab waveform container */
+#future .waveform-container {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    height: 100px;  /* Height of the quote section */
+    width: 100%;
 }
 
 .waveform-container.visible {
@@ -783,6 +803,15 @@ ul {
         inset 0 0 50px rgba(0, 255, 242, 0.1);
     transform: translateZ(0);
     backface-visibility: hidden;
+}
+
+.password-content h2 {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin: 0;
+    color: var(--primary-color);
 }
 
 .password-input-container {

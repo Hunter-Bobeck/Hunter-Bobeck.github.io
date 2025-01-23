@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
         bgMusic.play();
         // Fade in
         let volume = 0;
-        const targetVolume = 0.1;  // Lower max volume to 10%
+        const targetVolume = 0.08;  // Lower max volume to 8%
         const fadeInterval = setInterval(() => {
             volume = Math.min(volume + 0.02, targetVolume);
             bgMusic.volume = volume;

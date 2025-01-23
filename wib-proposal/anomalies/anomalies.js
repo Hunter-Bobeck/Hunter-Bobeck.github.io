@@ -1,5 +1,5 @@
 let isAuthenticated = false;
-const isSlideShow = window.location.pathname.endsWith('slide.html');
+const isSlideShow = window.location.pathname.endsWith('slides.html');
 
 function initializeAnomalies(starsContainer) {
     // Animation timing constants
