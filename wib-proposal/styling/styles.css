@@ -597,8 +597,8 @@ ul {
     gap: 2rem;
     margin: 2rem auto;
     max-width: 100%;
-    overflow: hidden;
-    padding: 1rem 0;
+    overflow: visible;
+    padding: 2rem;
 }
 
 .transform-item {
@@ -608,11 +608,16 @@ ul {
     border-radius: 4px;
     box-shadow: 0 0 20px rgba(0, 255, 242, 0.2);
     transition: all 0.3s ease;
+    position: relative;
 }
 
 .transform-item:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 25px rgba(0, 255, 242, 0.3);
+    box-shadow: 
+        0 0 25px rgba(0, 255, 242, 0.3),
+        0 0 40px rgba(0, 255, 242, 0.2),
+        0 0 60px rgba(0, 255, 242, 0.1);
+    z-index: 3;
 }
 
 .transform-arrow {
